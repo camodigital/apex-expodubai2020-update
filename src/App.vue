@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <header id="theHeader" class="theHeader">
-      header
-    </header>
-    <main id="theMain" class="theMain">
-      <router-view />
-    </main>
-    <footer id="theFooter" class="theFooter">
-      footer
-    </footer>
+    <TheHeader />
+    <TheMain />
+    <TheFooter />
   </div>
 </template>
+
+<script>
+import TheHeader from "@/templates/TheHeader/";
+import TheMain from "@/templates/TheMain/";
+import TheFooter from "@/templates/TheFooter/";
+export default {
+  components: {
+    TheHeader,
+    TheMain,
+    TheFooter
+  }
+};
+</script>
