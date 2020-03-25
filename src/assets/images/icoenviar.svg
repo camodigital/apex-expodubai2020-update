@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130" viewBox="0 0 130 130">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Elipse_2" data-name="Elipse 2" cx="65" cy="65" r="65" transform="translate(131 10)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icoenviar" transform="translate(-131 -10)" clip-path="url(#clip-path)">
+    <path id="ico_sendemail" d="M-17.52,8.885A65.026,65.026,0,0,0-82.539,73.9,65.026,65.026,0,0,0-17.52,138.921,65.026,65.026,0,0,0,47.5,73.9,65.005,65.005,0,0,0-17.52,8.885ZM24.472,40.03,9.137,103.272a4.756,4.756,0,0,1-6.8,3.108l-19.41-10.022-9.182,15.018a4.749,4.749,0,0,1-8.8-2.474V92.172a4.789,4.789,0,0,1,1.475-3.441L4.237,52.622a.638.638,0,0,0-1-.507L-41.91,83.529l-15.16-7.818a4.751,4.751,0,0,1,.285-8.579L17.954,34.559A4.75,4.75,0,0,1,24.472,40.03Z" transform="translate(213.539 1.115)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119" height="119" viewBox="0 0 119 119">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Elipse_2" data-name="Elipse 2" cx="59.5" cy="59.5" r="59.5" transform="translate(131.484 10)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icoparticipe" transform="translate(-10 250.484) rotate(-90)" clip-path="url(#clip-path)">
+    <g id="right-arrow" transform="translate(131 10)">
+      <g id="Grupo_141" data-name="Grupo 141">
+        <path id="Caminho_204" data-name="Caminho 204" d="M59.742,0a59.742,59.742,0,1,0,59.742,59.742A59.708,59.708,0,0,0,59.742,0ZM90.3,62.882,61.8,85.117a3.985,3.985,0,0,1-6.433-3.14V70.794H31.634a3.983,3.983,0,0,1-3.983-3.983V52.673a3.983,3.983,0,0,1,3.983-3.983H55.365V37.507a3.986,3.986,0,0,1,6.433-3.14L90.3,56.6A3.984,3.984,0,0,1,90.3,62.882Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
