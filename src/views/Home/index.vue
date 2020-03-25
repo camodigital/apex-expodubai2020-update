@@ -21,7 +21,7 @@ import SecPavilion from "./SecPavilion/";
 import SecNews from "./SecNews/";
 import SecSocial from "./SecSocial/";
 import SecParticipate from "./SecParticipate/";
-import secContactUs from "./secContactUs/";
+import secContactUs from "./SecContactUs/";
 
 export default {
   name: "HomePage",
