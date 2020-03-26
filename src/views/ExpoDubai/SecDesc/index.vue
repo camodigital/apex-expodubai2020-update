@@ -1,5 +1,9 @@
 <template>
-  <div class="secDesc">SecDesc</div>
+  <div class="secDesc">
+    <div class="secDesc__container">
+      <div class="secDesc__content">text</div>
+    </div>
+  </div>
 </template>
 
 <script>

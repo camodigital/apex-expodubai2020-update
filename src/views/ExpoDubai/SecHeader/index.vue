@@ -1,5 +1,9 @@
 <template>
-  <div class="secHeader">SecHeader</div>
+  <div class="secHeader">
+    <div class="secHeader__container">
+      <h1>title</h1>
+    </div>
+  </div>
 </template>
 
 <script>
