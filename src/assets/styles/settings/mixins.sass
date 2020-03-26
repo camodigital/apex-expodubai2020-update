@@ -1,0 +1,69 @@
+@mixin titleBig
+  font-size: 40px
+
+@mixin titleBigBold
+  font-size: 40px
+  font-weight: bold
+
+@mixin titleMedium
+  font-size: 30px
+
+@mixin titleMediumBold
+  font-size: 30px
+  font-weight: bold
+
+@mixin titleBase
+  font-size: 30px
+
+@mixin titleBaseBold
+  font-size: 30px
+  font-weight: bold
+
+@mixin textBase
+  font-size: 1rem
+  line-height: 1.3rem
+
+@mixin textBaseBold
+  font-size: 1rem
+  font-weight: bold
+
+@mixin textUp
+  font-size: 20px
+  text-transform: uppercase
+  @include sm
+    font-size: 1rem
+
+@mixin textUpBold
+  font-size: 20px
+  font-weight: bold
+  text-transform: uppercase
+  @include sm
+    font-size: 1rem
+
+@mixin textNav
+  font-size: .8rem
+  text-transform: uppercase
+  @include md
+    font-size: 1rem
+  @include sm
+    font-size: 1rem
+
+@mixin textButton
+  font-size: .8rem
+  text-transform: uppercase
+
+@mixin textCountDown
+  font-size: .8rem
+  font-weight: bold
+  letter-spacing: 1px
+  text-transform: uppercase
+
+
+@mixin transitionFast
+  transition: .3s ease-in-out
+
+@mixin transitionMedium
+  transition: .6s ease-in-out
+
+@mixin transitionSlow
+  transition: .1s ease-in-out

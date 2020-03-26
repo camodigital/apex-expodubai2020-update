@@ -1,6 +1,6 @@
 $sm-width: 0px
 $md-width: 992px
-$lg-width: 1349px
+$lg-width: 1280px
 
 @mixin sm 
   @media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) 
@@ -12,4 +12,16 @@ $lg-width: 1349px
 
 @mixin lg 
   @media (min-width: #{$lg-width}) 
+    @content
+
+@mixin landscape
+  @media (min-aspect-ratio: 16/9)
+    @content
+
+@mixin portrait
+  @media (max-aspect-ratio: 16/9)
+    @content
+
+@mixin mobile
+  @media (max-width: 767px)
     @content
