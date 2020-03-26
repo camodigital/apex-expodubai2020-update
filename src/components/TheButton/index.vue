@@ -1,7 +1,7 @@
 <template>
   <div class="theButton">
     <div class="theButton__container">
-      <div class="theButton__text" :v-html="text"></div>
+      <div class="theButton__text">{{ text }}</div>
       <div class="theButton__icon">
         <slot>
           <IcoReadMore />
