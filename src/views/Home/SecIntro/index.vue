@@ -14,8 +14,16 @@
       </div>
       <div class="secIntro__content">
         <div class="secIntro__content__buttons">
-          <TheButton />
-          <TheButton />
+          <TheButton text="Assita ao vídeo">
+            <slot>
+              <IcoPlay />
+            </slot>
+          </TheButton>
+          <TheButton text="Participe">
+            <slot>
+              <IcoParticipate />
+            </slot>
+          </TheButton>
         </div>
       </div>
       <div class="secIntro__content__countdown">
@@ -33,6 +41,8 @@ import Logo from "@/assets/images/logo.svg";
 import TheButton from "@/components/TheButton/";
 import TheCountDown from "@/components/TheCountDown/";
 import TheVideoBg from "@/components/TheVideoBg";
+import IcoPlay from "@/assets/images/play-button.svg";
+import IcoParticipate from "@/assets/images/up.svg";
 
 export default {
   name: "SecIntro",
@@ -40,7 +50,9 @@ export default {
     Logo,
     TheButton,
     TheCountDown,
-    TheVideoBg
+    TheVideoBg,
+    IcoPlay,
+    IcoParticipate
   }
 };
 </script>
