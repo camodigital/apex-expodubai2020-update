@@ -2,10 +2,10 @@
   <div class="theNavigation">
     <div class="TheNavigation__container">
       <div class="TheNavigation__brand">
-        <a
-          href="#"
+        <router-link
+          :to="`/${$i18n.language}/`"
           class="TheNavigation__brand__link"
-          title="Brasil na Expo Dubai 2020"
+          :title="$t('intro.title')"
         >
           <div class="TheNavigation__brand__imagefix">
             <Logo />
@@ -13,10 +13,10 @@
           <div class="TheNavigation__brand__image">
             <img
               src="@/assets/images/logo-color.png"
-              alt="Brasil na Expo Dubai 2020"
+              :alt="$t('intro.title')"
             />
           </div>
-        </a>
+        </router-link>
       </div>
       <nav class="theNavigation__nav">
         <div class="theNavigation__nav__icon">
@@ -26,30 +26,44 @@
         </div>
         <ul class="theNavigation__nav__list">
           <li class="theNavigation__nav__item">
-            <router-link :to="{ name: 'Home' }">home</router-link>
+            <router-link :to="`/${$i18n.locale}/`">
+              {{ $t("nav.home") }}
+            </router-link>
           </li>
           <li class="theNavigation__nav__item">
-            <router-link :to="{ name: 'ExpoDubai' }">ExpoDubai</router-link>
+            <router-link :to="`/${$i18n.locale}/expodubai`">
+              {{ $t("nav.ExpoDubai") }}
+            </router-link>
           </li>
           <li class="theNavigation__nav__item">
-            <router-link :to="{ name: 'BrazilExpo' }">BrazilExpo</router-link>
+            <router-link :to="`/${$i18n.locale}/brazilexpo`">
+              {{ $t("nav.BrazilExpo") }}
+            </router-link>
           </li>
           <li class="theNavigation__nav__item">
-            <router-link :to="{ name: 'Pavilion' }">Pavilion</router-link>
-          </li>
-          <li>
-            <a href="#">Noticias</a>
-          </li>
-          <li>
-            <a href="#">Participe</a>
+            <router-link :to="`/${$i18n.locale}/pavilion`">
+              {{ $t("nav.pavilion") }}
+            </router-link>
           </li>
           <li class="theNavigation__nav__item">
-            <router-link :to="{ name: 'ContactUs' }">ContactUs</router-link>
+            <a href="#">
+              {{ $t("nav.news") }}
+            </a>
+          </li>
+          <li class="theNavigation__nav__item">
+            <a href="#">
+              {{ $t("nav.participate") }}
+            </a>
+          </li>
+          <li class="theNavigation__nav__item">
+            <router-link :to="`/${$i18n.locale}/contactus`">
+              {{ $t("nav.contactus") }}
+            </router-link>
           </li>
         </ul>
         <div class="theNavigation__nav__language">
-          <span>PT</span>
-          <span>EN</span>
+          <span @click.prevent="setLocale('pt')">PT</span>
+          <span @click.prevent="setLocale('en')">EN</span>
         </div>
       </nav>
     </div>
@@ -61,8 +75,21 @@ import Logo from "@/assets/images/logo.svg";
 
 export default {
   name: "TheNavigation",
+  data() {
+    return {
+      language: "pt"
+    };
+  },
   components: {
     Logo
+  },
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+      this.$router.push({
+        params: { lang: locale }
+      });
+    }
   }
 };
 </script>

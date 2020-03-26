@@ -5,34 +5,49 @@ import ExpoDubai from "@/views/ExpoDubai/index.vue";
 import BrazilExpo from "@/views/BrazilExpo/index.vue";
 import Pavilion from "@/views/Pavilion/index.vue";
 import ContactUs from "@/views/ContactUs/index.vue";
+import i18n from "../i18n";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    redirect: `/${i18n.locale}`
   },
   {
-    path: "/ExpoDubai",
-    name: "ExpoDubai",
-    component: ExpoDubai
-  },
-  {
-    path: "/BrazilExpo",
-    name: "BrazilExpo",
-    component: BrazilExpo
-  },
-  {
-    path: "/Pavilion",
-    name: "Pavilion",
-    component: Pavilion
-  },
-  {
-    path: "/ContactUs",
-    name: "ContactUs",
-    component: ContactUs
+    path: "/:lang",
+    component: {
+      render(c) {
+        return c("router-view");
+      }
+    },
+    children: [
+      {
+        path: "/",
+        name: "Home",
+        component: Home
+      },
+      {
+        path: "expodubai",
+        name: "ExpoDubai",
+        component: ExpoDubai
+      },
+      {
+        path: "brazilexpo",
+        name: "BrazilExpo",
+        component: BrazilExpo
+      },
+      {
+        path: "pavilion",
+        name: "Pavilion",
+        component: Pavilion
+      },
+      {
+        path: "contactus",
+        name: "ContactUs",
+        component: ContactUs
+      }
+    ]
   }
 ];
 

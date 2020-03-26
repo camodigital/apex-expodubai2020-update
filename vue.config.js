@@ -12,5 +12,14 @@ module.exports = {
       .end()
       .use("vue-svg-loader")
       .loader("vue-svg-loader");
+  },
+
+  pluginOptions: {
+    i18n: {
+      locale: "pt",
+      fallbackLocale: "pt",
+      localeDir: "locales",
+      enableInSFC: false
+    }
   }
 };
