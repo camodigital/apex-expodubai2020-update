@@ -1,9 +1,23 @@
 @mixin titleBig
-  font-size: 40px
+  font-size: 1.4rem
+  line-height: 2.5rem
+  @include md
+    font-size: 2rem
+    line-height: 3rem
+  @include lg
+    font-size: 2.5rem
+    line-height: 5rem
 
 @mixin titleBigBold
-  font-size: 40px
+  font-size: 1.4rem
+  line-height: 2.4rem
   font-weight: bold
+  @include md
+    font-size: 2rem
+    line-height: 3rem
+  @include lg
+    font-size: 2.5rem
+    line-height: 5rem
 
 @mixin titleMedium
   font-size: 30px
@@ -24,12 +38,25 @@
     font-size: 2rem
 
 @mixin textBase
-  font-size: 1rem
-  line-height: 1.3rem
+  font-size: .9rem
+  line-height: 1.5rem
+  @include md
+    font-size: 1rem
+    line-height: 1.7rem
+  @include lg
+    font-size: 1rem
+    line-height: 1.7rem
 
 @mixin textBaseBold
-  font-size: 1rem
+  font-size: .9rem
+  line-height: 1.5rem
   font-weight: bold
+  @include md
+    font-size: 1rem
+    line-height: 1.7rem
+  @include lg
+    font-size: 1rem
+    line-height: 1.7rem
 
 @mixin textUp
   font-size: 20px

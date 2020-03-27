@@ -1,25 +1,27 @@
 <template>
-  <div class="SecExpoDubai">
-    <div class="SecExpoDubai__container">
-      <div class="SecExpoDubai__col">
-        <div class="SecExpoDubai__figure">
-          <img
+  <div class="secExpoDubai">
+    <div class="secExpoDubai__container">
+      <div class="secExpoDubai__col">
+        <div class="secExpoDubai__figure">
+          <!-- <img
             src="@/assets/images/expo2020-call.jpg"
             alt="O que é a Expo 2020?"
-            class="SecExpoDubai__image"
-          />
+            class="secExpoDubai__image"
+          /> -->
         </div>
       </div>
-      <div class="SecExpoDubai__col">
-        <div class="SecExpoDubai__content">
-          <h1 class="SecExpoDubai__content__title">
-            O que é a Expo 2020?
-          </h1>
-          <div class="SecExpoDubai__content__text">
-            call
-          </div>
-          <div class="SecExpoDubai__content__button">
-            <TheButton text="Saiba Mais" />
+      <div class="secExpoDubai__col">
+        <div class="secExpoDubai__content">
+          <h1
+            class="secExpoDubai__content__title"
+            v-html="$t('ExpoDubai.titlecall')"
+          ></h1>
+          <div
+            class="secExpoDubai__content__text"
+            v-html="$t('ExpoDubai.call')"
+          ></div>
+          <div class="secExpoDubai__content__button">
+            <TheButton :text="$t('ExpoDubai.buttoncall')" />
           </div>
         </div>
       </div>
@@ -31,7 +33,7 @@
 import TheButton from "@/components/TheButton/";
 
 export default {
-  name: "secExpoDubai",
+  name: "SecExpoDubai",
   components: {
     TheButton
   }
