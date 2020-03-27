@@ -1,0 +1,517 @@
+.theNavigation
+  @include transitionSlow
+  width: 100%
+  padding: .5rem
+  position: fixed
+  top: 0
+  left: 0
+  color: $color8
+
+  &__container
+    width: 100%
+    display: grid
+    grid-template-columns: 12rem 1fr
+    grid-template-rows: 1fr
+
+  &__brand
+    display: block
+    position: relative
+    z-index: 21
+    &__link
+      display: block
+    &__image
+      svg
+        width: 100%
+        height: 6rem
+        fill: $color8
+        @include transitionFast
+        &:hover
+          fill: $color3
+    &__imagefix
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      top: 0
+      left: 0
+      opacity: 0
+      img
+        width: 100%
+        height: auto
+  
+  &__nav
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    &__list
+      width: 70%
+      height: 100vh
+      position: absolute
+      top: 0
+      right: 0
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      background-color: $color8
+      z-index: 20
+    &__item
+      @include textNav
+      margin-bottom: .5rem
+      a
+        @include transitionFast
+        color: $color5
+        text-decoration: none
+        &:hover
+          color: $color3
+
+    &__support
+      display: flex
+      justify-content: center
+      align-items: center
+  
+    &__language
+      margin-right: 1.5rem
+      display: inline-block
+      position: relative
+      z-index: 21
+      &__button
+        @include transitionFast
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: .8rem
+        text-transform: uppercase
+        font-weight: bold
+        cursor: pointer
+        svg
+          @include transitionFast
+          width: .7rem
+          height: .7rem
+          position: relative
+          top: -3px
+          fill: $color8
+
+        &:hover
+          color: $color3
+          svg
+            top: 0px
+            fill: $color3
+      &__list
+        @include transitionFast
+        position: absolute
+        right: -1.8rem
+        display: flex
+        transform: translateX(200px)
+        opacity: 0
+        color: $color5
+        font-size: .8rem
+        font-weight: bold
+        border-radius: .5rem
+        background-color: $color8
+        &:hover
+          background-color: $color3
+        li
+          @include transitionFast
+          padding: .5rem
+          border-radius: .5rem
+          background-color: $color8
+          cursor: pointer
+          &:hover
+            border: none
+            background-color: $color3
+            
+        svg
+          width: 1.3rem
+          height: 1.3rem
+          margin-bottom: -5px
+
+    &__icon
+      width: 40px
+      display: inline-block
+      position: relative
+      cursor: pointer
+      z-index: 21
+      div
+        @include transitionFast
+        width: 100%
+        height: 3px
+        background-color: $color8
+        &:nth-child(1)
+          transform: translateY(-3px)
+        &:nth-child(2)
+          display: block
+        &:nth-child(3)
+          transform: translateY(3px)
+      &:hover
+        div
+          background-color: $color3
+          &:nth-child(1)
+            transform: translateY(-6px)
+          &:nth-child(2)
+            display: block
+          &:nth-child(3)
+            transform: translateY(6px)
+      
+  &__overlay
+    display: none
+          
+
+
+
+
+
+
+// fix ******************
+.navFix .theNavigation
+  padding: 0 .5rem
+  position: fixed
+  top: 0
+  left: 0
+  color: $color4
+  box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.2)
+  background-color: $color7
+
+  &__container
+    width: 100%
+    display: grid
+    grid-template-columns: 12rem 1fr
+    grid-template-rows: 1fr
+
+  &__brand
+    display: block
+    position: relative
+    z-index: 21
+    &__link
+      display: block
+    &__image
+      opacity: 0
+      svg
+        width: 100%
+        height: 4rem
+        fill: $color8
+        @include transitionFast
+        &:hover
+          fill: $color3
+    &__imagefix
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      top: 0
+      left: 0
+      opacity: 1
+      img
+        width: 100%
+        height: auto
+  
+  &__nav
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    &__list
+      position: absolute
+      top: 0
+      right: 0
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      background-color: $color8
+      z-index: 20
+    &__item
+      @include textNav
+      margin-bottom: .5rem
+      a
+        @include transitionFast
+        color: $color5
+        text-decoration: none
+        &:hover
+          color: $color3
+
+    &__support
+      display: flex
+      justify-content: center
+      align-items: center
+  
+    &__language
+      margin-right: 1.5rem
+      display: inline-block
+      position: relative
+      z-index: 21
+      &__button
+        @include transitionFast
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: .8rem
+        text-transform: uppercase
+        font-weight: bold
+        cursor: pointer
+        svg
+          @include transitionFast
+          width: .7rem
+          height: .7rem
+          position: relative
+          top: -3px
+          fill: $color4
+
+        &:hover
+          color: $color3
+          svg
+            top: 0px
+            fill: $color3
+      &__list
+        @include transitionFast
+        position: absolute
+        right: -1.8rem
+        display: flex
+        transform: translateX(200px)
+        opacity: 0
+        color: $color5
+        font-size: .8rem
+        font-weight: bold
+        border-radius: .5rem
+        background-color: $color8
+        &:hover
+          background-color: $color3
+        li
+          @include transitionFast
+          padding: .5rem
+          border-radius: .5rem
+          background-color: $color8
+          cursor: pointer
+          &:hover
+            border: none
+            background-color: $color3
+            
+        svg
+          width: 1.3rem
+          height: 1.3rem
+          margin-bottom: -5px
+
+    &__icon
+      width: 40px
+      display: inline-block
+      position: relative
+      cursor: pointer
+      z-index: 21
+      div
+        @include transitionFast
+        width: 100%
+        height: 3px
+        background-color: $color4
+        &:nth-child(1)
+          transform: translateY(-3px)
+        &:nth-child(2)
+          display: block
+        &:nth-child(3)
+          transform: translateY(3px)
+      &:hover
+        div
+          background-color: $color3
+          &:nth-child(1)
+            transform: translateY(-6px)
+          &:nth-child(2)
+            display: block
+          &:nth-child(3)
+            transform: translateY(6px)
+      
+  &__overlay
+    display: none
+
+
+
+
+
+
+// navActived ***************
+.navActived .theNavigation
+  width: 100%
+  padding: 0 .5rem
+  position: fixed
+  top: 0
+  left: 0
+  color: $color4
+  box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.2)
+  background-color: $color7
+
+  &__container
+    width: 100%
+    display: grid
+    grid-template-columns: 12rem 1fr
+    grid-template-rows: 1fr
+
+  &__brand
+    display: block
+    position: relative
+    z-index: 21
+    &__link
+      display: block
+    &__image
+      opacity: 0
+      svg
+        width: 100%
+        height: 4rem
+        fill: $color8
+        @include transitionFast
+        &:hover
+          fill: $color3
+    &__imagefix
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      top: 0
+      left: 0
+      opacity: 1
+      img
+        width: 100%
+        height: auto
+  
+  &__nav
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    &__list
+      width: 25rem
+      height: 100vh
+      position: absolute
+      top: 0
+      right: 0
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      background-color: $color8
+      z-index: 20
+    &__item
+      @include textNav
+      margin-bottom: .5rem
+      a
+        @include transitionFast
+        color: $color5
+        text-decoration: none
+        &:hover
+          color: $color3
+
+    &__support
+      display: flex
+      justify-content: center
+      align-items: center
+  
+    &__language
+      margin-right: 1.5rem
+      display: inline-block
+      position: relative
+      z-index: 21
+      &__button
+        @include transitionFast
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: .8rem
+        text-transform: uppercase
+        font-weight: bold
+        cursor: pointer
+        svg
+          @include transitionFast
+          width: .7rem
+          height: .7rem
+          position: relative
+          top: -3px
+          fill: $color4
+
+        &:hover
+          color: $color3
+          svg
+            top: 0px
+            fill: $color3
+      &__list
+        @include transitionFast
+        position: absolute
+        right: -1.8rem
+        display: flex
+        transform: translateX(200px)
+        opacity: 0
+        color: $color5
+        font-size: .8rem
+        font-weight: bold
+        border-radius: .5rem
+        background-color: $color8
+        &:hover
+          background-color: $color3
+        li
+          @include transitionFast
+          padding: .5rem
+          border-radius: .5rem
+          background-color: $color8
+          cursor: pointer
+          &:hover
+            border: none
+            background-color: $color3
+            
+        svg
+          width: 1.3rem
+          height: 1.3rem
+          margin-bottom: -5px
+
+    &__icon
+      width: 40px
+      display: inline-block
+      position: relative
+      cursor: pointer
+      z-index: 21
+      div
+        @include transitionFast
+        width: 100%
+        height: 3px
+        background-color: $color4
+        &:nth-child(1)
+          width: 70%
+          height: 5px
+          border-radius: 5px
+          transform: rotate(45deg) translateY(3px) translateX(3px)
+        &:nth-child(2)
+          width: 0
+          opacity: 0
+          display: block
+        &:nth-child(3)
+          width: 70%
+          height: 5px
+          border-radius: 5px
+          transform: rotate(-45deg) translateY(-3px) translateX(3px)
+      &:hover
+        div
+          background-color: $color3
+          &:nth-child(1)
+            width: 70%
+            height: 5px
+            border-radius: 5px
+            transform: rotate(45deg) translateY(3px) translateX(3px)
+          &:nth-child(2)
+            width: 0
+            opacity: 0
+            display: block
+          &:nth-child(3)
+            width: 70%
+            height: 5px
+            border-radius: 5px
+            transform: rotate(-45deg) translateY(-3px) translateX(3px)
+      
+  &__overlay
+    width: 100vh
+    height: 100vh
+    position: absolute
+    top: 0
+    left: 0
+    background-color: red

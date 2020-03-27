@@ -1,16 +1,16 @@
 <template>
-  <div class="theNavigation">
-    <div class="TheNavigation__container">
-      <div class="TheNavigation__brand">
+  <div class="theNavigation" ref="theNavigation">
+    <div class="theNavigation__container">
+      <div class="theNavigation__brand">
         <router-link
           :to="`/${$i18n.language}/`"
-          class="TheNavigation__brand__link"
+          class="theNavigation__brand__link"
           :title="$t('intro.title')"
         >
-          <div class="TheNavigation__brand__imagefix">
+          <div class="theNavigation__brand__image">
             <Logo />
           </div>
-          <div class="TheNavigation__brand__image">
+          <div class="theNavigation__brand__imagefix">
             <img
               src="@/assets/images/logo-color.png"
               :alt="$t('intro.title')"
@@ -19,12 +19,7 @@
         </router-link>
       </div>
       <nav class="theNavigation__nav">
-        <div class="theNavigation__nav__icon">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <ul class="theNavigation__nav__list">
+        <ul class="theNavigation__nav__list" ref="navList">
           <li class="theNavigation__nav__item">
             <router-link :to="`/${$i18n.locale}/`">
               {{ $t("nav.home") }}
@@ -61,17 +56,36 @@
             </router-link>
           </li>
         </ul>
-        <div class="theNavigation__nav__language">
-          <span @click.prevent="setLocale('pt')">PT</span>
-          <span @click.prevent="setLocale('en')">EN</span>
+        <div class="theNavigation__nav__support">
+          <div class="theNavigation__nav__language">
+            <div class="theNavigation__nav__language__button" ref="langButton">
+              pt
+              <ArrowDown />
+            </div>
+            <ul class="theNavigation__nav__language__list" ref="langList">
+              <li ref="langButtonPt"><flagPt />PT</li>
+              <li ref="langButtonEn"><flagEn />EN</li>
+            </ul>
+          </div>
+          <div class="theNavigation__nav__icon" ref="navButton">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </nav>
     </div>
+    <div class="theNavigation__overlay" ref="navOverlay"></div>
   </div>
 </template>
 
 <script>
 import Logo from "@/assets/images/logo.svg";
+import ArrowDown from "@/assets/images/down-arrow.svg";
+import flagEn from "@/assets/images/en.svg";
+import flagPt from "@/assets/images/pt.svg";
+// import { TweenMax, TimelineMax, Power4 } from "gsap/all";
+import { TweenMax, TimelineMax } from "gsap/all";
 
 export default {
   name: "TheNavigation",
@@ -81,15 +95,175 @@ export default {
     };
   },
   components: {
-    Logo
+    Logo,
+    ArrowDown,
+    flagEn,
+    flagPt
   },
   methods: {
-    setLocale(locale) {
-      this.$i18n.locale = locale;
-      this.$router.push({
-        params: { lang: locale }
+    handleLanguage() {
+      const langList = this.$refs.langList;
+      const langButton = this.$refs.langButton;
+      const langButtonPt = this.$refs.langButtonPt;
+      const langButtonEn = this.$refs.langButtonEn;
+      let langListActive = false;
+      let lang = "pt";
+
+      const openLangList = () => {
+        TweenMax.to(langList, 0.5, {
+          x: 0,
+          opacity: 1
+        });
+        langListActive = true;
+      };
+
+      const closeLangList = () => {
+        TweenMax.to(langList, 0.5, {
+          x: 200,
+          opacity: 0
+        });
+        langListActive = false;
+      };
+
+      const handleButton = () => {
+        if (!langListActive) {
+          openLangList();
+        } else {
+          closeLangList();
+        }
+      };
+
+      const handleButtonPt = () => {
+        if (lang != "pt") {
+          lang = "pt";
+          this.$i18n.locale = lang;
+          this.$router.push({
+            params: { lang: lang }
+          });
+          closeLangList();
+        } else {
+          closeLangList();
+        }
+      };
+
+      const handleButtonEn = () => {
+        if (lang != "en") {
+          lang = "en";
+          this.$i18n.locale = lang;
+          this.$router.push({
+            params: { lang: lang }
+          });
+          closeLangList();
+        } else {
+          closeLangList();
+        }
+      };
+
+      langButton.addEventListener("click", handleButton);
+      langButtonPt.addEventListener("click", handleButtonPt);
+      langButtonEn.addEventListener("click", handleButtonEn);
+    },
+    fixNav() {
+      const body = document.body;
+
+      let navFix = false;
+      const checkPosNav = () => {
+        if (window.pageYOffset > 100 && !navFix) {
+          body.classList.add("navFix");
+          navFix = true;
+        } else if (window.pageYOffset < 100 && navFix) {
+          body.classList.remove("navFix");
+          navFix = false;
+        }
+      };
+      window.addEventListener("scroll", checkPosNav);
+    },
+    activeNav() {
+      const navOverlay = this.$refs.navOverlay;
+
+      if (window.innerWidth <= 1170) {
+        const navButton = this.$refs.navButton;
+        const body = document.body;
+        const navList = this.$refs.navList;
+        const navItems = document.querySelectorAll(".theNavigation__nav__item");
+        let navActive = false;
+        const tl = new TimelineMax();
+
+        TweenMax.set(navList, {
+          x: "100%"
+        });
+
+        TweenMax.set(navItems, {
+          y: -20,
+          opacity: 0
+        });
+
+        const openNav = () => {
+          body.classList.add("navActived");
+
+          tl.to(navList, 0.5, {
+            x: "0"
+          }).staggerTo(
+            navItems,
+            1,
+            {
+              y: 0,
+              opacity: 1
+            },
+            0.1,
+            "-=0.3"
+          );
+
+          navActive = true;
+        };
+
+        const closeNav = () => {
+          body.classList.remove("navActived");
+
+          tl.staggerTo(
+            navItems,
+            1,
+            {
+              y: -20,
+              opacity: 0
+            },
+            0.1
+          ).to(
+            navList,
+            0.5,
+            {
+              x: "100%"
+            },
+            "-=0.8"
+          );
+
+          navActive = false;
+        };
+
+        const handleClick = () => {
+          if (!navActive) {
+            openNav();
+          } else {
+            closeNav();
+          }
+        };
+
+        navOverlay.addEventListener("click", closeNav);
+
+        navButton.addEventListener("click", handleClick);
+      }
+    },
+    handleResize() {
+      window.addEventListener("resize", () => {
+        location.reload();
       });
     }
+  },
+  mounted() {
+    this.handleLanguage();
+    this.fixNav();
+    this.activeNav();
+    this.handleResize();
   }
 };
 </script>

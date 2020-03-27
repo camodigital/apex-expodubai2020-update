@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import i18n from "./i18n";
+import { TweenMax, TimelineMax, CSSPlugin } from "gsap/all";
 
 import "./assets/styles/main.sass";
 
@@ -25,5 +26,8 @@ new Vue({
   router,
   store,
   i18n,
+  TweenMax,
+  TimelineMax,
+  CSSPlugin,
   render: h => h(App)
 }).$mount("#app");
