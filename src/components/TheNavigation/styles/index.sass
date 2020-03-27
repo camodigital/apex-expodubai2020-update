@@ -6,12 +6,21 @@
   top: 0
   left: 0
   color: $color8
+  @include lg
+    padding: 2rem
 
   &__container
     width: 100%
     display: grid
     grid-template-columns: 12rem 1fr
     grid-template-rows: 1fr
+    @include md
+      grid-template-columns: 20rem 1fr
+      grid-template-rows: 1fr
+    @include lg
+      grid-template-columns: 18rem 1fr
+      grid-template-rows: 1fr
+
 
   &__brand
     display: block
@@ -45,6 +54,10 @@
     flex-direction: column
     justify-content: center
     align-items: flex-end
+    @include lg
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
     &__list
       width: 70%
       height: 100vh
@@ -57,6 +70,18 @@
       align-items: center
       background-color: $color8
       z-index: 20
+      @include md
+        width: 35%
+      @include lg
+        width: auto
+        height: 100%
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        align-items: center
+        background-color: transparent
+      
     &__item
       @include textNav
       margin-bottom: .5rem
@@ -66,6 +91,11 @@
         text-decoration: none
         &:hover
           color: $color3
+        @include lg
+          color: $color8
+      @include lg
+        margin-left: 1rem
+        display: inline-block
 
     &__support
       display: flex
@@ -77,6 +107,9 @@
       display: inline-block
       position: relative
       z-index: 21
+      @include lg
+        margin: 0
+        margin-left: 1rem
       &__button
         @include transitionFast
         display: flex
@@ -135,6 +168,8 @@
       position: relative
       cursor: pointer
       z-index: 21
+      @include lg
+        display: none
       div
         @include transitionFast
         width: 100%
@@ -155,6 +190,9 @@
             display: block
           &:nth-child(3)
             transform: translateY(6px)
+      
+  &__overlay
+    display: none
           
 
 
@@ -168,6 +206,8 @@
   color: $color4
   box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.2)
   background-color: $color7
+  @include lg
+    padding: 0 2rem
 
   &__brand
     &__image
@@ -178,6 +218,12 @@
       opacity: 1
   
   &__nav
+
+    &__list
+    
+    &__item
+      a
+        color: $color4
   
     &__language
       &__button

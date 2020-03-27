@@ -181,7 +181,7 @@ export default {
     activeNav() {
       const navOverlay = this.$refs.navOverlay;
 
-      if (window.innerWidth <= 1170) {
+      if (window.innerWidth <= 1260) {
         const navButton = this.$refs.navButton;
         const body = document.body;
         const navList = this.$refs.navList;
