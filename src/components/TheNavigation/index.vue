@@ -263,7 +263,7 @@ export default {
     this.handleLanguage();
     this.fixNav();
     this.activeNav();
-    this.handleResize();
+    // this.handleResize();
   }
 };
 </script>

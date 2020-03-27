@@ -6,20 +6,20 @@
           <Logo />
         </div>
         <div class="secIntro__header__title">
-          <h1>O Brasil na Expo Dubai 2020</h1>
+          <h1>{{ $t("intro.title") }}</h1>
         </div>
         <div class="secIntro__header__subtitle">
-          <h2>De 20.10.2020 a 10.04.2021 Dubai, Emirados Árabes Unidos</h2>
+          <h2>{{ $t("intro.subtitle") }}</h2>
         </div>
       </div>
       <div class="secIntro__content">
         <div class="secIntro__content__buttons">
-          <TheButton text="Assita ao vídeo">
+          <TheButton :text="$t('intro.buttonvideo')">
             <slot>
               <IcoPlay />
             </slot>
           </TheButton>
-          <TheButton text="Participe">
+          <TheButton :text="$t('intro.buttonparticipate')">
             <slot>
               <IcoParticipate />
             </slot>

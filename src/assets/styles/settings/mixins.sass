@@ -13,11 +13,15 @@
   font-weight: bold
 
 @mixin titleBase
-  font-size: 30px
+  font-size: 1.2rem
+  @include lg
+    font-size: 2rem
 
 @mixin titleBaseBold
-  font-size: 30px
+  font-size: 1.2rem
   font-weight: bold
+  @include lg
+    font-size: 2rem
 
 @mixin textBase
   font-size: 1rem

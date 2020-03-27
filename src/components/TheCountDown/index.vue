@@ -1,6 +1,6 @@
 <template>
   <div class="theCountdown">
-    <h3 class="theCountdown__title">Em breve</h3>
+    <h3 class="theCountdown__title" v-html="$t('intro.titlecountdown')"></h3>
     <div class="theCountdown__list">
       <div class="theCountdown__item">
         <div class="theCountdown__number">
@@ -8,7 +8,7 @@
           <countDownIcon />
         </div>
         <div class="theCountdown__text">
-          dias
+          {{ $t("intro.dayscountdown") }}
         </div>
       </div>
       <div class="theCountdown__item">
@@ -17,7 +17,7 @@
           <countDownIcon />
         </div>
         <div class="theCountdown__text">
-          horas
+          {{ $t("intro.hourscountdown") }}
         </div>
       </div>
       <div class="theCountdown__item">
@@ -26,7 +26,7 @@
           <countDownIcon />
         </div>
         <div class="theCountdown__text">
-          minutos
+          {{ $t("intro.minutescountdown") }}
         </div>
       </div>
       <div class="theCountdown__item">
@@ -35,7 +35,7 @@
           <countDownIcon />
         </div>
         <div class="theCountdown__text">
-          segundos
+          {{ $t("intro.secondscountdown") }}
         </div>
       </div>
     </div>
