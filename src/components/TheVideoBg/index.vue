@@ -11,7 +11,6 @@
       >
         <source src="@/assets/images/videointro.mp4" type="video/mp4" />
       </video>
-      <img class="theVideoBg__poster" src="@/assets/images/intro.jpg" alt="" />
     </div>
   </div>
 </template>

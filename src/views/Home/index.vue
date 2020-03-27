@@ -1,5 +1,5 @@
 <template>
-  <div class="homePage">
+  <div class="homePage page">
     <SecIntro />
     <SecExpoDubai />
     <SecPhoto />
