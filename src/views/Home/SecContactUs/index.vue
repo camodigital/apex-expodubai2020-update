@@ -1,13 +1,13 @@
 <template>
   <div class="secContactUs">
     <div class="secContactUs__header">
-      <h1>fale conosco</h1>
-      <h2>subtitle</h2>
+      <h1 v-html="$t('contactus.titlecall')" class="zBigTitle"></h1>
+      <h2 v-html="$t('contactus.subtitlecall')"></h2>
     </div>
     <div class="secContactUs__container">
       <div class="secContactUs__contact">
         <div class="secContactUs__contact__title">
-          <h2>Entre em contato</h2>
+          <h3 v-html="$t('contactus.titleform')" class="zTitleSmall"></h3>
         </div>
         <div class="secContactUs__contact__content">
           <form action="" class="secContactUs__contact__form">
@@ -27,16 +27,26 @@
               cols="30"
               rows="10"
               placeholder="Mensagem"
+              class="secContactUs__contact__textarea"
             ></textarea>
-            <button>Enviar</button>
+            <div class="secContactUs__contact__button">
+              <TheButton :text="$t('contactus.buttonform')">
+                <slot>
+                  <IcoSubmit />
+                </slot>
+              </TheButton>
+            </div>
           </form>
         </div>
       </div>
       <div class="secContactUs__faq">
-        <h2 class="secContactUs__faq__title">perguntas frequentes</h2>
-        <div class="secContactUs__faq__text">text</div>
+        <h3
+          class="secContactUs__faq__title zTitleSmall"
+          v-html="$t('faq.titlecall')"
+        ></h3>
+        <div class="secContactUs__faq__text" v-html="$t('faq.call')"></div>
         <div class="secContactUs__faq__button">
-          <TheButton text="Acessar o faq">
+          <TheButton :text="$t('faq.buttoncall')">
             <slot>
               <IcoFaq />
             </slot>
@@ -50,12 +60,14 @@
 <script>
 import IcoFaq from "@/assets/images/question2.svg";
 import TheButton from "@/components/TheButton";
+import IcoSubmit from "@/assets/images/telegram.svg";
 
 export default {
   name: "SecContactUs",
   components: {
     TheButton,
-    IcoFaq
+    IcoFaq,
+    IcoSubmit
   }
 };
 </script>

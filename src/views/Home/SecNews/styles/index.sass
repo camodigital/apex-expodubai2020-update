@@ -1,0 +1,36 @@
+.secNews
+  display: none
+  @include lg
+    padding: 2rem 0
+    display: block
+  &__container
+    width: 100%
+    max-width: 70rem
+    margin: 0 auto
+    padding: 1rem
+  &__header
+    display: block
+  &__list
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 2fr
+    column-gap: 1rem
+  &__col
+    &:nth-child(1)
+      grid-column: 1 / span 3
+      display: flex
+      
+  &__content
+    padding: 2rem 0
+  &__title
+    margin-bottom: 2rem
+  &__call
+    margin-bottom: 2rem
+  &__button
+    display: block
+  &__figure
+    display: block
+  &__image
+    display: block
+  .zTitleSmall
+    color: $color4

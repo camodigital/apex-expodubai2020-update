@@ -2,16 +2,20 @@
   <div class="secNews">
     <div class="secNews__container">
       <header class="secNews__header">
-        <h1>Noticias</h1>
+        <h1 class="zBigTitleSimple">Noticias</h1>
       </header>
       <div class="secNews__list">
         <div class="secNews__col">
           <div class="secNews__content">
             <div class="secNews__title">
-              <h2>title</h2>
+              <h2 class="zTitleSmall">
+                Brasil inaugura obra do Pavilhão Nacional na Expo 2020, em Dubai
+              </h2>
             </div>
             <div class="secNews__call">
-              call
+              Previsão é de que a obra seja iniciada em dezembro. País é, neste
+              momento, o que está em mais avançado estágio de preparação no
+              continente, à frente inclusive de EUA e Canadá
             </div>
             <div class="secNews__button">
               <TheButton text="saiba mais" />
@@ -33,7 +37,9 @@
               class="secNews__images"
             />
           </div>
-          <h3>title</h3>
+          <h3 class="zTitleSmall">
+            Aberto credenciamento de mídia para cobertura da Expo 2020 em Dubai
+          </h3>
         </div>
         <div class="secNews__col">
           <div class="secNews__figure">
@@ -43,7 +49,10 @@
               class="secNews__images"
             />
           </div>
-          <h3>title</h3>
+          <h3 class="zTitleSmall">
+            Projeto arquitetônico para o pavilhão do Brasil na Expo Dubai 2020 é
+            divulgado
+          </h3>
         </div>
         <div class="secNews__col">
           <div class="secNews__figure">
@@ -53,7 +62,10 @@
               class="secNews__images"
             />
           </div>
-          <h3>title</h3>
+          <h3 class="zTitleSmall">
+            Reta final: Inscrição para seleção do projeto para a Expo Dubai 2020
+            termina sábado, 27/10
+          </h3>
         </div>
       </div>
     </div>

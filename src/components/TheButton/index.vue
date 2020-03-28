@@ -21,7 +21,7 @@ export default {
   },
   props: {
     text: {
-      default: "Text Default"
+      default: "saiba mais"
     }
   }
 };

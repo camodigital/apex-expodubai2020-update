@@ -1,0 +1,32 @@
+.secHeader
+  @include lg
+    min-height: 25rem
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    color: $color8
+    background-image: url("../../../assets/images/expodubai2020.jpg")
+    background-size: cover
+    background-attachment: fixed
+  &__container
+    h1
+      span
+    @include lg
+      h1
+        @include titleBig
+        position: relative
+        text-align: center
+        z-index: 2
+        span
+          display: block
+          @include titleBigBold
+  &__overlay
+    @include lg
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      opacity: .8
+      background-color: $color4

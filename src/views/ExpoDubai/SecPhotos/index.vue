@@ -2,10 +2,10 @@
   <div class="secPhotos">
     <div class="secPhotos__container">
       <header class="secPhotos__header">
-        <h1>photos</h1>
+        <h1 v-html="$t('ExpoDubai.titlephotos')"></h1>
       </header>
       <div class="secPhotos__slider">
-        <carousel>
+        <carousel :items="1">
           <div class="secPhotos__slide">
             <div class="secPhotos__list">
               <div class="secPhotos__item">
@@ -129,7 +129,7 @@
 </template>
 
 <script>
-import carousel from "vue-owl-carousel";
+import carousel from "vue-owl-carousel2";
 
 export default {
   name: "SecPhotos",

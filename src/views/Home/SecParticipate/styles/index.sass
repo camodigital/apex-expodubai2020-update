@@ -1,0 +1,61 @@
+.secParticipate
+  width: 100%
+  padding: 2rem
+  position: relative
+  color: $color8
+  background-image: url("../../../assets/images/participate.jpg")
+  background-size: cover
+  @include lg
+    padding: 3rem
+  &__container
+    position: relative
+    z-index: 2
+  &__content
+  &__title
+    margin-bottom: 1rem
+    color: $color3
+    h1
+      @include titleBig
+      text-align: center
+    @include md
+      width: 20rem
+      height: 100%
+      position: absolute
+      top: 10%
+      right: 10%
+      h1
+        @include titleBig
+        text-align: center
+    @include lg
+      width: 100%
+      max-width: 30rem
+      height: 100%
+      margin-bottom: 2rem
+      position: relative
+      top: 0
+      right: 0
+      h1
+        @include titleBig
+        text-align: left
+  &__text
+    @include textBase
+    @include lg
+      width: 100%
+      max-width: 30rem
+      margin-bottom: 2rem
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    @include lg
+      width: 100%
+      max-width: 30rem
+  &__overlay
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    opacity: .9
+    background-color: $color4
+    z-index: 1

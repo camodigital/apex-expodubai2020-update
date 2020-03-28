@@ -2,18 +2,16 @@
   <div class="secPavilion">
     <div class="secPavilion__container">
       <div class="secPavilion__header">
-        <h1>title</h1>
+        <h1 v-html="$t('pavilion.titlecall')" class="zBigTitle"></h1>
       </div>
       <div class="secPavilion__content">
-        <div class="secPavilion__text">
-          text
-        </div>
+        <div class="secPavilion__text" v-html="$t('pavilion.call')"></div>
         <div class="secPavilion__button">
-          <TheButton text="saiba mais" />
+          <TheButton :text="$t('pavilion.buttoncall')" />
         </div>
       </div>
       <div class="secPavilion__slider">
-        <carousel>
+        <carousel :items="2" :loop="true">
           <div class="secPavilion__slide">
             <div class="secPavilion__slide__figure">
               <img
@@ -71,12 +69,14 @@
         </carousel>
       </div>
     </div>
+    <div class="secPavilion__line"></div>
+    <div class="secPavilion__overlay"></div>
   </div>
 </template>
 
 <script>
 import TheButton from "@/components/TheButton/";
-import carousel from "vue-owl-carousel";
+import carousel from "vue-owl-carousel2";
 
 export default {
   name: "SecPavilion",

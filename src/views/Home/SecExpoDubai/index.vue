@@ -1,27 +1,22 @@
 <template>
   <div class="secExpoDubai">
-    <div class="secExpoDubai__container">
-      <div class="secExpoDubai__col">
-        <div class="secExpoDubai__figure">
-          <!-- <img
-            src="@/assets/images/expo2020-call.jpg"
-            alt="O que é a Expo 2020?"
-            class="secExpoDubai__image"
-          /> -->
-        </div>
-      </div>
-      <div class="secExpoDubai__col">
-        <div class="secExpoDubai__content">
-          <h1
-            class="secExpoDubai__content__title"
-            v-html="$t('ExpoDubai.titlecall')"
-          ></h1>
-          <div
-            class="secExpoDubai__content__text"
-            v-html="$t('ExpoDubai.call')"
-          ></div>
-          <div class="secExpoDubai__content__button">
-            <TheButton :text="$t('ExpoDubai.buttoncall')" />
+    <div class="secExpoDubai__container theContainer">
+      <div class="secExpoDubai__content">
+        <div class="zRow">
+          <div class="zCol">
+            <TheFigure>
+              <img src="@/assets/images/expo2020-call.jpg" alt="" />
+            </TheFigure>
+          </div>
+          <div class="zCol">
+            <TheContent1
+              :title="$t('ExpoDubai.titlecall')"
+              :text="$t('ExpoDubai.call')"
+            >
+              <slot>
+                <TheButton :text="$t('ExpoDubai.buttoncall')" />
+              </slot>
+            </TheContent1>
           </div>
         </div>
       </div>
@@ -30,12 +25,16 @@
 </template>
 
 <script>
+import TheFigure from "@/components/TheFigure";
+import TheContent1 from "@/components/TheContent1";
 import TheButton from "@/components/TheButton/";
 
 export default {
   name: "SecExpoDubai",
   components: {
-    TheButton
+    TheButton,
+    TheContent1,
+    TheFigure
   }
 };
 </script>

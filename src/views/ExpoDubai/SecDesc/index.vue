@@ -1,7 +1,7 @@
 <template>
   <div class="secDesc">
     <div class="secDesc__container">
-      <div class="secDesc__content">text</div>
+      <div class="secDesc__content" v-html="$t('ExpoDubai.call')"></div>
     </div>
   </div>
 </template>

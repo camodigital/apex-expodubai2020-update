@@ -1,7 +1,8 @@
 <template>
   <div class="secHeader">
     <div class="secHeader__container">
-      <h1>title</h1>
+      <h1 v-html="$t('BrazilExpo.titlecall')"></h1>
+      <div class="secHeader__overlay"></div>
     </div>
   </div>
 </template>

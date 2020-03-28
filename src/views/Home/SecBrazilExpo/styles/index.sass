@@ -1,0 +1,50 @@
+.secBrazilExpo
+  position: relative
+  
+  @include lg
+    padding: 4rem 0
+
+  &__slide
+    .zRow
+      display: block
+
+      @include lg
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 1fr
+
+      .zCol
+        &:nth-child(1)
+          @include lg
+            order: 2
+        &:nth-child(2)
+          @include lg
+            order: 1
+
+      .zFigure
+        overflow: hidden
+        max-height: 11rem
+
+        @include md
+          max-height: 20rem
+
+        @include lg
+          max-height: 100%
+
+        &__overlay
+          opacity: .5
+  
+  .sliderNavigation
+    width: 100%
+    position: absolute
+    top: 7rem
+
+    @include md
+      width: 400px
+      top: 16rem
+      right: 50%
+      transform: translate(200px, 0)
+
+    @include lg
+      top: -20px
+      transform: translate(300px, 0)

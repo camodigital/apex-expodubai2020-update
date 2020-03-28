@@ -8255,10 +8255,10 @@ vue-loader@^15.8.3:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-owl-carousel@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/vue-owl-carousel/-/vue-owl-carousel-2.0.3.tgz#5f011f75ef7dadb9fec589ccb371454c10cd4af1"
-  integrity sha512-TRl6pnbL0HqlebOpEzbGbXL4KxJwlDGxAWeCREjNumvsjB5MXg875y+fkko/M3ML1nxJXIRHw1XWmXgxaQbang==
+vue-owl-carousel2@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/vue-owl-carousel2/-/vue-owl-carousel2-2.0.7.tgz#6210edac0a6d6fc9a1a33ef055021f30eb955e86"
+  integrity sha512-26Aha9FGd8OrxnWEVoNGyJseo48QqDtk1aveLVsg1bT2NWwiXel0NQi7RPE7H7KwKpra5Hk+yLj8tOPqFcWWTQ==
   dependencies:
     css-loader "^1.0.0"
     file-loader "^2.0.0"

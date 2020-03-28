@@ -1,5 +1,5 @@
 $sm-width: 0px
-$md-width: 770px
+$md-width: 758px
 $lg-width: 1260px
 
 @mixin sm 
@@ -7,7 +7,7 @@ $lg-width: 1260px
     @content
 
 @mixin md 
-  @media (min-width: #{$md-width}) and (max-width: #{$lg-width - 1px}) 
+  @media (min-width: #{$md-width})
     @content
 
 @mixin lg 

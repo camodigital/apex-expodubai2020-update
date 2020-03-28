@@ -3,13 +3,11 @@
     <div class="secParticipate__container">
       <div class="secParticipate__content">
         <div class="secParticipate__title">
-          <h1>title</h1>
+          <h1 v-html="$t('participate.titlecall')"></h1>
         </div>
-        <div class="secParticipate__text">
-          text
-        </div>
+        <div class="secParticipate__text" v-html="$t('participate.call')"></div>
         <div class="secParticipate__button">
-          <TheButton text="Participe">
+          <TheButton :text="$t('participate.button')">
             <slot>
               <IcoParticipate />
             </slot>
@@ -17,6 +15,7 @@
         </div>
       </div>
     </div>
+    <div class="secParticipate__overlay"></div>
   </div>
 </template>
 

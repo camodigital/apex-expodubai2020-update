@@ -1,6 +1,6 @@
 <template>
   <footer class="theFooter">
-    <div class="theFooter__cotainer">
+    <div class="theFooter__container">
       <div class="theFooter__col">
         <div class="theFooter__logo">
           <a href="">
@@ -12,37 +12,53 @@
         <nav class="theFooter__nav">
           <ul class="theFooter__nav__list">
             <li class="theFooter__nav__item">
-              <router-link :to="{ name: 'Home' }">home</router-link>
+              <router-link :to="`/${$i18n.locale}/`">
+                {{ $t("nav.home") }}
+              </router-link>
             </li>
             <li class="theFooter__nav__item">
-              <router-link :to="{ name: 'ExpoDubai' }">ExpoDubai</router-link>
+              <router-link :to="`/${$i18n.locale}/expodubai`">
+                {{ $t("nav.ExpoDubai") }}
+              </router-link>
             </li>
             <li class="theFooter__nav__item">
-              <router-link :to="{ name: 'BrazilExpo' }">BrazilExpo</router-link>
+              <router-link :to="`/${$i18n.locale}/brazilexpo`">
+                {{ $t("nav.BrazilExpo") }}
+              </router-link>
             </li>
             <li class="theFooter__nav__item">
-              <router-link :to="{ name: 'Pavilion' }">Pavilion</router-link>
+              <router-link :to="`/${$i18n.locale}/pavilion`">
+                {{ $t("nav.pavilion") }}
+              </router-link>
             </li>
             <li class="theFooter__nav__item">
-              <a href="#">Noticias</a>
+              <a href="#">
+                {{ $t("nav.news") }}
+              </a>
             </li>
             <li class="theFooter__nav__item">
-              <a href="#">Participe</a>
+              <a href="#">
+                {{ $t("nav.participate") }}
+              </a>
             </li>
             <li class="theFooter__nav__item">
-              <router-link :to="{ name: 'ContactUs' }">ContactUs</router-link>
+              <router-link :to="`/${$i18n.locale}/contactus`">
+                {{ $t("nav.contactus") }}
+              </router-link>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="theFooter__col__">
-        <div class="theFooter__social__title">siga</div>
-        <a href="#" class="theFooter__social__link">
-          <IcoFacebook />
-        </a>
-        <a href="#" class="theFooter__social__link">
-          <IcoInstagram />
-        </a>
+      <div class="theFooter__col">
+        <div class="theFooter__social">
+          <div class="theFooter__social__title">SIGA-NOS</div>
+          <a href="#" class="theFooter__social__link">
+            <IcoFacebook />
+          </a>
+          <a href="#" class="theFooter__social__link">
+            <IcoInstagram />
+          </a>
+        </div>
       </div>
     </div>
   </footer>
@@ -50,8 +66,8 @@
 
 <script>
 import Logo from "@/assets/images/logo.svg";
-import IcoFacebook from "@/assets/images/icofacebook.svg";
-import IcoInstagram from "@/assets/images/icoinstagram.svg";
+import IcoFacebook from "@/assets/images/facebook3.svg";
+import IcoInstagram from "@/assets/images/instagram.svg";
 
 export default {
   name: "TheFooter",

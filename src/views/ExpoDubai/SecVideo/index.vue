@@ -2,8 +2,8 @@
   <div class="secVideo">
     <div class="secVideo__container">
       <div class="secVideo__content">
-        <h1>assista...</h1>
-        <h2>evento...</h2>
+        <h1 v-html="$t('ExpoDubai.titlevideo')"></h1>
+        <h2 v-html="$t('ExpoDubai.subtitlevideo')"></h2>
         <div class="secVideo__button">
           <TheButton text="Assita ao vídeo">
             <slot>

@@ -1,0 +1,72 @@
+.secContactUs
+  padding: 2rem 1rem
+  @include lg
+    padding: 2rem 0rem 0rem
+  &__header
+    text-align: center
+    h2
+      margin-bottom: 2rem
+      text-align: center
+      color: $color2
+  &__container
+    display: block
+    @include lg
+      width: 100%
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr
+  &__contact
+    &__title
+      margin-bottom: 1rem
+      @include lg
+        width: 100%
+        max-width: 40rem
+        margin: 0 auto
+        margin-bottom: 1rem
+    &__content
+      display: block
+    &__form
+      display: block
+      @include lg
+        width: 100%
+        max-width: 40rem
+        margin: 0 auto
+    &__input
+      width: 100%
+      height: 45px
+      margin-bottom: 1rem
+      padding: 1rem
+      display: block
+      border: none
+    &__textarea
+      width: 100%
+      height: 200px
+      padding: 1rem
+      display: block
+      border: none
+    &__button
+      display: flex
+      justify-content: flex-end
+      position: relative
+      top: -50px
+  &__faq
+    background-color: $color8
+    @include lg
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__title
+      text-align: center
+      margin-bottom: 1rem
+    &__text
+      width: 100%
+      max-width: 20rem
+      margin: 0 auto
+      text-align: center
+    &__button
+      display: flex
+      justify-content: center
+      align-items: center
+  .zTitleSmall
+    color: $color4

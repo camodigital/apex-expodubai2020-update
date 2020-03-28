@@ -1,0 +1,54 @@
+.theFooter
+  padding: 2rem 1rem
+  background-color: $color2
+  &__container
+    @include lg
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-rows: 1fr
+  &__col
+    display: flex
+    justify-content: center
+    align-items: center
+    @include lg
+      &:nth-child(1)
+        justify-content: flex-start
+      &:nth-child(3)
+        justify-content: flex-end
+        
+  &__logo
+    a
+      svg
+        width: 20rem
+        height: auto
+        fill: $color8
+  &__nav
+    padding: 2rem 0
+    &__list
+      text-align: center
+      @include lg
+        text-align: left
+    &__item
+      a
+        @include transitionFast
+        color: $color8
+        text-decoration: none
+        &:hover
+          color: $color3
+  &__social
+    &__title
+      color: $color8
+      text-transform: uppercase
+      @include lg
+        text-align: center
+    &__link
+      display: inline-block
+      svg
+        width: 4rem
+        height: auto
+        fill: $color8
+      @include lg
+        svg
+          width: 3rem
+          height: auto
+          margin: 0 1rem

@@ -29,10 +29,10 @@
     "titlevideo": "Assista <span>ao vídeo</span>",
     "subtitlevideo": "do evento abaixo.",
     "buttonvideo": "Clique Aqui",
-    "titlephotos": "Vejas as Fotos"
+    "titlephotos": "Vejas <span>as Fotos</span>"
   },
   "BrazilExpo":{
-    "titlecall": "O Brasil <span>na Expo Dubai 2020</span>",
+    "titlecall": "O Brasil na Expo <span>Dubai 2020</span>",
     "call": "<p>O Brasil tem o passaporte carimbado desde a primeira edição da Exposição Universal, realizada no Reino Unido em 1851, e sempre contribuiu com várias inovações de design e tecnologia.</p><p>Em Dubai o país participa do evento com um pavilhão na área da Sustentabilidade, abordando temas como o aproveitamento consciente do meio ambiente para produção, os diferentes potenciais agrícolas e a geração de energia renovável, entre outros temas.</p><p>O pavilhão brasileiro traz uma proposta imersiva aos seus visitantes, com sons e cheiros únicos de vários ecossistemas de diversas regiões do país, garantindo uma experiência única.</p>",
     "buttoncall": "Saiba Mais",
     "titlepage": "O Brasil na <span>Expo Dubai 2020</span>",
@@ -49,7 +49,7 @@
     "attractinvestments": "Atrair Investimentos Estrangeiros"
   },
   "history":{
-    "titlecall": "História do Brasil na Expo",
+    "titlecall": "História do <span>Brasil na Expo</span>",
     "call": "<p>Conectando Mentes, Criando o Futuro. Na Expo Dubai 2020, o Brasil traz uma experiência única de sensações para apresentar propostas de melhoria do uso de recursos naturais, estratégias de crescimento agrícola sustentável, e novas forma de geração de energia limpa, entre outros temas.</p><p>Sinta os perfumes das grandes matas, descubra os climas dos diversos biomas e se encante-se com as cores de um país unicamente especial, tudo isso enquanto descobre como o Brasil está agindo para preservar o planeta e expandir a oferta de alimentos!</p>",
     "buttoncall": "Saiba Mais",
     "title1851": "Expo Londres 1851,  Reino Unido.",
@@ -74,7 +74,7 @@
     "content2020": "<p>O tema geral da Expo Dubai é Connecting Minds, Creating the Future, com três subtemas: Opportunity, Mobility e Sustainability. Esses três temas dividem geograficamente o parque de Exposições. O Pavilhão do Brasil está localizado no distrito da sustentabilidade e está sendo construído em um lote de 3.772,59m². O projeto é dos arquitetos da JPG.ARG, MMBB Arquitetos e Ben-Avid e tem a água como elemento principal. Espera-se que, enquanto caminham pele enorme espelho d’água que domina a praça central do pavilhão, os visitantes sejam transportados pelo Brasil em uma experiência sensorial composta por projeções, sons e aromas.</p>"
   },
   "pavilion": {
-    "titlecall": "O Pavilhão do Brasil",
+    "titlecall": "O Pavilhão <span>do Brasil</span>",
     "call": "<p>Um mergulho refrescante no Brasil! </p><p>O pavilhão será como um oásis no deserto, um mistura de climas, sons e cheiros dos biomas brasileiros transportados exclusivamente para a Expo Dubai 2020.</p><p>Sinta a água nos seus pés e conecte-se com um país repleto de oportunidades.</p>",
     "buttoncall": "Saiba Mais",
     "titlepage": "O Pavilhão do Brasil",
