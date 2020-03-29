@@ -2,12 +2,7 @@
   <div class="secBrazilExpo">
     <div class="secBrazilExpo__container theContainerFluid">
       <div class="secBrazilExpo__slider zSlidertheme1">
-        <carousel
-          :items="1"
-          :loop="true"
-          :navText="['', '']"
-          animateOut="fadeOut"
-        >
+        <carousel :items="1" :loop="true" :navText="['', '']">
           <div class="secBrazilExpo__slide">
             <div class="zRow">
               <div class="zCol">

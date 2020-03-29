@@ -40,14 +40,16 @@
               {{ $t("nav.pavilion") }}
             </router-link>
           </li>
-          <li class="theNavigation__nav__item">
+          <!-- <li class="theNavigation__nav__item">
             <a href="#">
               {{ $t("nav.news") }}
             </a>
-          </li>
+          </li> -->
           <li class="theNavigation__nav__item">
             <a href="#">
-              {{ $t("nav.participate") }}
+              <span>
+                {{ $t("nav.participate") }}
+              </span>
             </a>
           </li>
           <li class="theNavigation__nav__item">
@@ -84,7 +86,6 @@ import Logo from "@/assets/images/logo.svg";
 import ArrowDown from "@/assets/images/down-arrow.svg";
 import flagEn from "@/assets/images/en.svg";
 import flagPt from "@/assets/images/pt.svg";
-// import { TweenMax, TimelineMax, Power4 } from "gsap/all";
 import { TweenMax, TimelineMax } from "gsap/all";
 
 export default {
@@ -181,7 +182,7 @@ export default {
     activeNav() {
       const navOverlay = this.$refs.navOverlay;
 
-      if (window.innerWidth <= 1260) {
+      if (window.innerWidth <= 1170) {
         const navButton = this.$refs.navButton;
         const body = document.body;
         const navList = this.$refs.navList;
