@@ -2,14 +2,14 @@
   <div class="secHeader">
     <div class="secHeader__container splitterSec">
       <div class="secHeader__content">
-        <h1 class="zTitleWaves" v-html="$t('pavilion.titlecall')"></h1>
+        <h1 class="zTitleWaves" v-html="$t('contactus.titlecall')"></h1>
       </div>
     </div>
     <div class="secHeader__bg">
       <TheFigure>
         <img
           src="@/assets/images/expodubai2020.jpg"
-          :alt="$t('pavilion.titlecall')"
+          :alt="$t('BrazilExpo.titlecall')"
         />
       </TheFigure>
     </div>

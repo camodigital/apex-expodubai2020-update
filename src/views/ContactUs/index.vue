@@ -1,17 +1,20 @@
 <template>
-  <div class="constactUsPage">
+  <div class="page constactUsPage">
+    <SecHeader />
     <SecFAQ />
     <SecForm />
   </div>
 </template>
 
 <script>
+import SecHeader from "./SecHeader/";
 import SecFAQ from "./SecFAQ/";
 import SecForm from "./SecForm/";
 
 export default {
   name: "ConstactUsPage",
   components: {
+    SecHeader,
     SecFAQ,
     SecForm
   }

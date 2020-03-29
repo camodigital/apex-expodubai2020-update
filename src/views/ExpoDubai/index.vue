@@ -1,5 +1,5 @@
 <template>
-  <div class="ExpoDubaiPage">
+  <div class="page ExpoDubaiPage">
     <SecHeader />
     <SecDesc />
     <SecVideo />

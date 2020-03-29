@@ -1,5 +1,5 @@
 <template>
-  <div class="brazilExpoPage">
+  <div class="page brazilExpoPage">
     <SecDesc />
     <SecVideo />
     <SecSustainability />

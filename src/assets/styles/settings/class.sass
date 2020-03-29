@@ -79,6 +79,43 @@
     background-repeat: no-repeat
     background-position: center
 
+.titleIcon
+  padding: 1rem 2rem
+  display: inline-block
+  border-top: 1px solid rgba($color8, .2 )
+  border-bottom: 1px solid rgba($color8, .2 )
+  &__title
+    @include titleBig
+    margin-top: .5rem
+  &__icon
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      width: 4rem 
+      height: 4rem 
+      fill: $color8
+
+.titleBigSpanWave
+  @include titleBig
+  display: inline-block
+  padding: 2rem 0 2rem 7rem
+  position: relative
+  span
+    @include titleBigBold
+    color: $color2
+  &::before
+    content: ""
+    width: 100px
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-image: url(../images/icoWave.png)
+    background-size: 6rem auto
+    background-repeat: no-repeat
+    background-position: center
+
 .zSlidertheme1
   .owl-theme
     .sliderNavigation
@@ -121,3 +158,106 @@
   background-position: left 100.5%
   background-repeat: no-repeat
   background-size: 100% auto
+
+.secVideoButton
+  width: 100%
+  height: 100%
+  position: relative
+  &__content
+    padding: 4rem 1rem
+    position: relative
+    z-index: 1
+  &__title
+    @include titleBig
+    text-align: center
+    color: $color8
+    span
+      @include titleBigBold
+      color: $color3  
+  &__subtitle
+    @include titleSmallBold
+    text-align: center
+    color: $color8
+  &__button
+    margin-top: 2rem
+    display: flex
+    justify-content: center
+    align-items: center  
+  &__bg
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    .zFigure
+      &__overlay
+        opacity: .8
+
+.megaHeader
+  min-height: 100vh
+  padding: 8rem 1rem 1rem
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  @include md
+    padding: 8rem 0 1rem 1rem
+  @include lg
+    justify-content: flex-end
+  &__content
+    position: relative
+    z-index: 1
+    @include lg
+      width: 100%
+      max-width: 70rem
+  &__title
+    @include titleBig
+    margin-bottom: 2rem
+    color: $color8
+    span
+      @include titleBigBold
+      color: $color3
+  &__text
+    color: $color8
+    @include md
+      padding: 1rem
+      color: $color5
+      background-color: $color7
+    @include lg
+      padding: 4rem 0 4rem 8rem
+      div
+        max-width: 40rem
+  &__bg
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    .zFigure
+      &__overlay
+        opacity: .9
+        @include md
+          opacity: .8
+
+.cardIcon
+  max-width: 210px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &__icon
+    min-width: 150px
+    min-height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background-color: $color8
+    img
+      width: 50%
+      height: 50%
+  &__text
+    margin: 1rem 0 2rem
+    color: $color2
+    text-align: center

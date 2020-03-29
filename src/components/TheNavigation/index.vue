@@ -7,7 +7,7 @@
           class="theNavigation__brand__link"
           :title="$t('intro.title')"
         >
-          <div class="theNavigation__brand__image">
+          <div class="theNavigation__brand__image" ref="brand">
             <Logo />
           </div>
           <div class="theNavigation__brand__imagefix">

@@ -1,5 +1,5 @@
 <template>
-  <div class="pavilionPage">
+  <div class="page pavilionPage">
     <SecHeader />
     <SecDesc />
     <SecBusiness />

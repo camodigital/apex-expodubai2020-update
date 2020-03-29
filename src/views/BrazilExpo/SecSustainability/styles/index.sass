@@ -1,0 +1,41 @@
+.secSustainability
+  padding: 1rem
+  position: relative
+  color: $color7
+
+  @include lg
+    padding: 4rem 1rem
+
+  &__content
+    position: relative
+    z-index: 1
+
+  &__title
+    margin-bottom: 2rem
+    display: flex
+    justify-content: center
+    align-items: center
+
+    @include lg
+      max-width: 80rem
+      margin: 0 auto 3rem
+      justify-content: flex-start
+
+  &__text
+    @include lg
+      max-width: 80rem
+      margin: 0 auto
+      div
+        max-width: 60rem
+
+  &__bg
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+
+    .zFigure
+      &__overlay
+        opacity: .9
