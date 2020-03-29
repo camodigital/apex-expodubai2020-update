@@ -1,71 +1,105 @@
 <template>
   <div class="secNews">
-    <div class="secNews__container">
+    <div class="secNews__container theContainer">
       <header class="secNews__header">
-        <h1 class="zBigTitleSimple">Noticias</h1>
+        <h1 class="zTitleBigBold">Notícias</h1>
       </header>
-      <div class="secNews__list">
-        <div class="secNews__col">
-          <div class="secNews__content">
-            <div class="secNews__title">
-              <h2 class="zTitleSmall">
-                Brasil inaugura obra do Pavilhão Nacional na Expo 2020, em Dubai
-              </h2>
+      <div class="secNews__content">
+        <div class="secNews__grid">
+          <div class="secNews__item">
+            <div class="zRow">
+              <div class="zCol">
+                <TheFigure>
+                  <slot>
+                    <img
+                      src="@/assets/images/news1.jpg"
+                      alt="O Pavilhão do Brasil"
+                    />
+                  </slot>
+                </TheFigure>
+              </div>
+              <div class="zCol">
+                <TheContent1
+                  title="Brasil inaugura obra do Pavilhão Nacional naExpo 2020, em Dubai"
+                  text="Previsão é de que a obra seja iniciada em dezembro. País é, neste omento, o que está em mais avançado estágio de preparação no continente, à frente inclusive de EUA e Canadá"
+                  classTitle="zTitleSmallBold"
+                >
+                  <slot>
+                    <TheButton text="saiba mais" />
+                  </slot>
+                </TheContent1>
+              </div>
             </div>
-            <div class="secNews__call">
-              Previsão é de que a obra seja iniciada em dezembro. País é, neste
-              momento, o que está em mais avançado estágio de preparação no
-              continente, à frente inclusive de EUA e Canadá
+          </div>
+
+          <div class="secNews__item">
+            <div class="zRow">
+              <div class="zCol">
+                <TheFigure>
+                  <slot>
+                    <img
+                      src="@/assets/images/news2.jpg"
+                      alt="O Pavilhão do Brasil"
+                    />
+                  </slot>
+                </TheFigure>
+              </div>
+              <div class="zCol">
+                <h2 class="zTitleSmallBold">
+                  <a href="">
+                    Aberto credenciamento de mídia para cobertura da Expo 2020
+                    em Dubai
+                  </a>
+                </h2>
+              </div>
             </div>
-            <div class="secNews__button">
-              <TheButton text="saiba mais" />
+          </div>
+
+          <div class="secNews__item">
+            <div class="zRow">
+              <div class="zCol">
+                <TheFigure>
+                  <slot>
+                    <img
+                      src="@/assets/images/news3.jpg"
+                      alt="O Pavilhão do Brasil"
+                    />
+                  </slot>
+                </TheFigure>
+              </div>
+              <div class="zCol">
+                <h2 class="zTitleSmallBold">
+                  <a href="">
+                    Projeto arquitetônico para o pavilhão do Brasil na Expo
+                    Dubai 2020 é divulgado
+                  </a>
+                </h2>
+              </div>
             </div>
           </div>
-          <div class="secNews__figure">
-            <img
-              src="@/assets/images/news1.jpg"
-              alt=""
-              class="secNews__image"
-            />
+
+          <div class="secNews__item">
+            <div class="zRow">
+              <div class="zCol">
+                <TheFigure>
+                  <slot>
+                    <img
+                      src="@/assets/images/news4.jpg"
+                      alt="O Pavilhão do Brasil"
+                    />
+                  </slot>
+                </TheFigure>
+              </div>
+              <div class="zCol">
+                <h2 class="zTitleSmallBold">
+                  <a href="">
+                    Reta final: Inscrição para seleção do projeto para a Expo
+                    Dubai 2020 termina sábado, 27/10
+                  </a>
+                </h2>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="secNews__col">
-          <div class="secNews__figure">
-            <img
-              src="@/assets/images/news2.jpg"
-              alt=""
-              class="secNews__images"
-            />
-          </div>
-          <h3 class="zTitleSmall">
-            Aberto credenciamento de mídia para cobertura da Expo 2020 em Dubai
-          </h3>
-        </div>
-        <div class="secNews__col">
-          <div class="secNews__figure">
-            <img
-              src="@/assets/images/news3.jpg"
-              alt=""
-              class="secNews__images"
-            />
-          </div>
-          <h3 class="zTitleSmall">
-            Projeto arquitetônico para o pavilhão do Brasil na Expo Dubai 2020 é
-            divulgado
-          </h3>
-        </div>
-        <div class="secNews__col">
-          <div class="secNews__figure">
-            <img
-              src="@/assets/images/news4.jpg"
-              alt=""
-              class="secNews__images"
-            />
-          </div>
-          <h3 class="zTitleSmall">
-            Reta final: Inscrição para seleção do projeto para a Expo Dubai 2020
-            termina sábado, 27/10
-          </h3>
         </div>
       </div>
     </div>
@@ -73,12 +107,16 @@
 </template>
 
 <script>
+import TheFigure from "@/components/TheFigure";
+import TheContent1 from "@/components/TheContent1";
 import TheButton from "@/components/TheButton";
 
 export default {
   name: "SecNews",
   components: {
-    TheButton
+    TheButton,
+    TheFigure,
+    TheContent1
   }
 };
 </script>
