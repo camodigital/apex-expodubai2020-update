@@ -39,18 +39,23 @@
   background-repeat: no-repeat
   background-position: center right
 
+.textCenter
+  max-width: 40rem
+  margin: 0 auto
+  padding: 2rem 1rem
+  @include md
+    padding: 4rem 1rem
+
 .zTitleWaves
   @include titleBig
   padding: 0 110px
   display: inline-block
   position: relative
   text-align: center
-
   span
     @include titleBigBold
     display: block
     color: $color3
-
   &::before
     content: ""
     width: 100px
@@ -62,7 +67,6 @@
     background-size: 100px auto
     background-repeat: no-repeat
     background-position: center
-
   &::after
     content: ""
     width: 100px
