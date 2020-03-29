@@ -20,11 +20,22 @@
     line-height: 2.5rem
 
 @mixin titleMedium
-  font-size: 30px
+  font-size: 1.5rem
 
 @mixin titleMediumBold
-  font-size: 30px
+  font-size: 1.5rem
   font-weight: bold
+
+@mixin titleSmall
+  font-size: 1rem
+  @include md
+    font-size: 1.1rem
+
+@mixin titleSmallBold
+  font-size: 1rem
+  font-weight: bold
+  @include md
+    font-size: 1.1rem
 
 @mixin titleBase
   font-size: 1.2rem
@@ -57,17 +68,6 @@
   @include lg
     font-size: 1rem
     line-height: 1.7rem
-
-@mixin titleSmall
-  font-size: 1rem
-  @include md
-    font-size: 1.1rem
-
-@mixin titleSmallBold
-  font-size: 1rem
-  font-weight: bold
-  @include md
-    font-size: 1.1rem
 
 @mixin textUp
   font-size: 20px
