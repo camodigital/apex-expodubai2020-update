@@ -1,45 +1,62 @@
 <template>
   <div class="secVideo">
     <div class="secVideo__container">
-      <div class="secVideoButton">
-        <div class="secVideoButton__content">
-          <h1
-            class="secVideoButton__title"
-            v-html="$t('ExpoDubai.titlevideo')"
-          ></h1>
-          <div
-            class="secVideoButton__subtitle"
-            v-html="$t('ExpoDubai.subtitlevideo')"
-          ></div>
-          <div class="secVideoButton__button">
-            <TheButton :text="$t('ExpoDubai.buttonvideo')">
-              <slot>
-                <IcoPlay />
-              </slot>
-            </TheButton>
+      <div class="secVideo__content">
+        <div class="secVideoButton">
+          <div class="secVideoButton__content">
+            <h1
+              class="secVideoButton__title"
+              v-html="$t('ExpoDubai.titlevideo')"
+            ></h1>
+            <div
+              class="secVideoButton__subtitle"
+              v-html="$t('ExpoDubai.subtitlevideo')"
+            ></div>
+            <div class="secVideoButton__button">
+              <button @click="toggler = !toggler">
+                <TheButton :text="$t('ExpoDubai.buttonvideo')">
+                  <slot>
+                    <IcoPlay />
+                  </slot>
+                </TheButton>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="secVideoButton__bg">
-          <TheFigure>
-            <img src="@/assets/images/expo2020-call.jpg" alt="" />
-          </TheFigure>
+          <div class="secVideoButton__bg">
+            <TheFigure>
+              <img src="@/assets/images/expo2020-call.jpg" alt="" />
+            </TheFigure>
+          </div>
         </div>
       </div>
     </div>
+    <FsLightbox
+      :toggler="toggler"
+      :sources="[
+        'https://www.youtube.com/watch?v=SPmg9_kVqC4&feature=youtu.be'
+      ]"
+    />
   </div>
 </template>
 
 <script>
 import TheFigure from "@/components/TheFigure";
-import TheButton from "@/components/TheButton";
 import IcoPlay from "@/assets/images/play-button.svg";
+import TheButton from "@/components/TheButton/";
+import FsLightbox from "fslightbox-vue";
 
 export default {
   name: "SecVideo",
   components: {
-    TheFigure,
+    IcoPlay,
     TheButton,
-    IcoPlay
+    TheFigure,
+    FsLightbox
+  },
+  data() {
+    return {
+      toggler: false
+    };
   }
 };
 </script>

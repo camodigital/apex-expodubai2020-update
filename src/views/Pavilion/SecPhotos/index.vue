@@ -2,139 +2,227 @@
   <div class="secPhotos">
     <div class="secPhotos__container">
       <header class="secPhotos__header">
-        <h1 v-html="$t('ExpoDubai.titlephotos')"></h1>
+        <h1 class="titleBigSpanWave" v-html="$t('ExpoDubai.titlephotos')"></h1>
       </header>
-      <div class="secPhotos__slider">
-        <carousel :items="1">
+      <div class="secPhotos__slider zSlidertheme1">
+        <carousel :items="1" :loop="true" :navText="['', '']">
           <div class="secPhotos__slide">
             <div class="secPhotos__list">
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo1.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(1)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-01.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo2.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-02.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo3.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-03.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo4.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-04.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo5.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-05.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo6.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-06.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
             </div>
           </div>
           <div class="secPhotos__slide">
             <div class="secPhotos__list">
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo1.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-07.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo2.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-08.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo3.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-09.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo4.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-10.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo5.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-11.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
               <div class="secPhotos__item">
-                <div class="secPhotos__figure">
-                  <img
-                    src="@/assets/images/expo6.jpg"
-                    alt=""
-                    class="secPhotos_image"
-                  />
-                </div>
+                <button @click="openLightboxOnSlide(2)">
+                  <div class="secPhotos__figure">
+                    <img
+                      src="@/assets/images/brasil-12.jpg"
+                      alt=""
+                      class="secPhotos_image"
+                    />
+                  </div>
+                </button>
               </div>
             </div>
           </div>
         </carousel>
       </div>
     </div>
+
+    <FsLightbox
+      :toggler="toggler"
+      :slide="slide"
+      :sources="[
+        'http://camodigital.com.br/cdn/images/brasil-01.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-02.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-03.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-04.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-05.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-06.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-07.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-08.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-09.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-10.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-11.jpg',
+        'http://camodigital.com.br/cdn/images/brasil-12.jpg'
+      ]"
+      type="image"
+      :types="[
+        'image',
+        'image',
+        'image',
+        'image',
+        'image',
+        'image',
+        'image',
+        'image',
+        'image',
+        'image',
+        'image',
+        'image'
+      ]"
+    />
   </div>
 </template>
 
 <script>
 import carousel from "vue-owl-carousel2";
+import FsLightbox from "fslightbox-vue";
 
 export default {
   name: "SecPhotos",
   components: {
-    carousel
+    carousel,
+    FsLightbox
+  },
+  data() {
+    return {
+      toggler: false,
+      slide: 1
+    };
+  },
+  methods: {
+    openLightboxOnSlide: function(number) {
+      this.slide = number;
+      this.toggler = !this.toggler;
+    },
+
+    organizeNavSlider() {
+      const slider = document.querySelector(".secPhotos .owl-carousel");
+      const owlNav = document.querySelector(".secPhotos .owl-nav");
+      const owlDots = document.querySelector(".secPhotos .owl-dots");
+      const sliderNavigation = document.createElement("div");
+
+      sliderNavigation.classList.add("sliderNavigation");
+
+      slider.append(sliderNavigation);
+      sliderNavigation.append(owlNav);
+      sliderNavigation.append(owlDots);
+    }
+  },
+  mounted() {
+    this.organizeNavSlider();
   }
 };
 </script>

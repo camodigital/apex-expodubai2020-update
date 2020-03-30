@@ -7,12 +7,6 @@
   &__header
     margin-bottom: 2rem
     text-align: center
-    h1
-      @include titleBig
-      span
-        @include titleBigBold
-  &__slider
-  &__slide
   &__list
     display: grid
     grid-template-columns: 1fr 1fr 1fr
@@ -21,4 +15,9 @@
   &__item
     margin-bottom: 1rem
   &__figure
-  &__image
+    cursor: pointer
+  
+  .sliderNavigation
+    width: 100%
+    max-width: 400px
+    margin: 0 auto

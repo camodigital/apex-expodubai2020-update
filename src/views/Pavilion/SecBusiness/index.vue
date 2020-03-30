@@ -1,10 +1,37 @@
 <template>
-  <div class="secBusiness">SecBusiness</div>
+  <div class="secBusiness">
+    <div class="secBusiness__container">
+      <div class="secBusiness__content">
+        <div class="zRow">
+          <div class="zCol">
+            <TheFigure>
+              <img src="@/assets/images/expo2020-call.jpg" alt="" />
+            </TheFigure>
+          </div>
+          <div class="zCol">
+            <TheContent1
+              :title="$t('pavilion.titlebusinessgeneration')"
+              :text="$t('pavilion.contentbusinessgeneration')"
+            >
+              <slot> </slot>
+            </TheContent1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import TheFigure from "@/components/TheFigure";
+import TheContent1 from "@/components/TheContent1";
+
 export default {
-  name: "SecBusiness"
+  name: "SecBusiness",
+  components: {
+    TheFigure,
+    TheContent1
+  }
 };
 </script>
 

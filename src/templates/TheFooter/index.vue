@@ -66,6 +66,10 @@
           </a>
         </div>
       </div>
+      <span class="theCountdown__days" style="display: none"></span>
+      <span class="theCountdown__hours" style="display: none"></span>
+      <span class="theCountdown__minutes" style="display: none"></span>
+      <span class="theCountdown__seconds" style="display: none"></span>
     </div>
   </footer>
 </template>

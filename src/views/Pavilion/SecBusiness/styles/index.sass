@@ -1,0 +1,32 @@
+.secBusiness
+  position: relative
+
+  &__content
+    @include md
+      border-radius: 4px
+      background-color: $color8
+
+    .zRow
+      display: block
+
+      @include md
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 1fr
+
+      .zCol
+        &:nth-child(2)
+          @include md
+            padding: 1rem 0
+
+      img
+        @include md
+          border-radius: 4px 0 0 4px
+
+    .zContent1
+      @include lg
+        padding: 1rem 2rem
+      &__title
+        @include lg
+          position: relative
+          z-index: 1
