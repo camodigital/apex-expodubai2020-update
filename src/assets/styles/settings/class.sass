@@ -116,6 +116,26 @@
     background-repeat: no-repeat
     background-position: center
 
+.titleBigSpanWaveGray
+  @include titleBig
+  display: inline-block
+  padding: 2rem 0 2rem 7rem
+  position: relative
+  span
+    @include titleBigBold
+    color: $color2
+  &::before
+    content: ""
+    width: 100px
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-image: url(../images/icoWaveGray.png)
+    background-size: 6rem auto
+    background-repeat: no-repeat
+    background-position: center
+
 .zTextWaves
   padding: 0 110px
   display: inline-block
@@ -183,6 +203,78 @@
           span
             width: 1rem
             height: 1rem
+
+.zSlidertheme2
+  .owl-theme
+    position: relative
+    z-index: 3
+    .sliderNavigation    
+      .owl-nav
+        display: flex
+        justify-content: space-between
+        position: relative
+        z-index: 2
+        div, div:hover
+          width: 8rem
+          height: 45px
+          color: $color3
+          font-size: 3rem
+          background-color: $color1
+          box-shadow: none
+          background-repeat: no-repeat
+        .owl-prev
+        .owl-next
+
+      .owl-dots
+        position: relative
+        .owl-dot
+          position: relative
+          margin: 1rem
+          span
+            @include transitionFast
+            width: auto
+            height: auto
+            display: block
+            background-color: $color8
+            position: relative
+            &::after
+              @include transitionFast
+              content: ""
+              width: 20px
+              height: 20px
+              position: absolute
+              top: 2.5rem
+              left: 1rem
+              border-radius: 50%
+              background-color: $color1
+        .active
+          span
+            width: 50px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            top: 2rem
+            &::after
+              content: ""
+              width: 50px
+              height: 50px
+              position: absolute
+              top: -4px
+              left: -4px
+              border-radius: 50%
+              border: 4px solid $color1
+              background-color: transparent
+      &::after
+        content: ""
+        width: 100%
+        height: 1px
+        background-color: $color1
+        position: absolute
+        top: 5rem
+        left: 0
+        z-index: -1
 
 .splitterSec
   background-image: url(../images/splitterPageHeader.png)
@@ -257,6 +349,10 @@
       background-color: $color7
     @include lg
       padding: 4rem 0 4rem 8rem
+      display: block
+      background-image: url("../images/bgsust.png")
+      background-position: bottom right
+      background-repeat: no-repeat
       div
         max-width: 40rem
   &__bg

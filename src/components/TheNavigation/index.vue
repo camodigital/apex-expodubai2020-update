@@ -46,7 +46,10 @@
             </a>
           </li> -->
           <li class="theNavigation__nav__item">
-            <a href="#">
+            <a
+              target="_blank"
+              href="http://web.apexbrasil.com.br/cn/aotb0/solicitacaodeevento"
+            >
               <span>
                 {{ $t("nav.participate") }}
               </span>

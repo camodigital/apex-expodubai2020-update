@@ -2,11 +2,19 @@
   <div class="secHistory">
     <div class="secHistory__container">
       <header class="secHistory__header">
-        <h1 class="titleBigSpanWave" v-html="$t('history.titlecall')"></h1>
+        <h1 class="titleBigSpanWaveGray" v-html="$t('history.titlecall')"></h1>
       </header>
-      <div class="secHistory__slider">
-        <carousel :items="1" :loop="true" :navText="['', '']">
-          <div class="secHistory__slide s1">
+      <div class="secHistory__slider zSlidertheme2">
+        <carousel
+          :items="1"
+          :loop="true"
+          :dotsData="true"
+          :navText="['&#10229;', '&#10230;']"
+        >
+          <div
+            class="secHistory__slide s1"
+            data-dot="<span class='dataHistory'>1851</span>"
+          >
             <div class="zRow">
               <div class="zCol"></div>
               <div class="zCol">
@@ -24,7 +32,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide s2">
+          <div
+            class="secHistory__slide s2"
+            data-dot="<span class='dataHistory'>1862</span>"
+          >
             <div class="zRow">
               <div class="zCol"></div>
               <div class="zCol">
@@ -42,7 +53,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide s3">
+          <div
+            class="secHistory__slide s3"
+            data-dot="<span class='dataHistory'>1876</span>"
+          >
             <div class="zRow">
               <div class="zCol"></div>
               <div class="zCol">
@@ -60,7 +74,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide s4">
+          <div
+            class="secHistory__slide s4"
+            data-dot="<span class='dataHistory'>1922</span>"
+          >
             <div class="zRow">
               <div class="zCol"></div>
               <div class="zCol">
@@ -78,7 +95,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide">
+          <div
+            class="secHistory__slide"
+            data-dot="<span class='dataHistory'>1939</span>"
+          >
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
@@ -103,7 +123,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide">
+          <div
+            class="secHistory__slide"
+            data-dot="<span class='dataHistory'>1958</span>"
+          >
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
@@ -128,7 +151,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide">
+          <div
+            class="secHistory__slide"
+            data-dot="<span class='dataHistory'>1970</span>"
+          >
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
@@ -153,7 +179,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide">
+          <div
+            class="secHistory__slide"
+            data-dot="<span class='dataHistory'>2010</span>"
+          >
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
@@ -178,7 +207,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide">
+          <div
+            class="secHistory__slide"
+            data-dot="<span class='dataHistory'>2015</span>"
+          >
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
@@ -203,7 +235,10 @@
             </div>
           </div>
 
-          <div class="secHistory__slide">
+          <div
+            class="secHistory__slide"
+            data-dot="<span class='dataHistory'>2020</span>"
+          >
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
@@ -242,6 +277,23 @@ export default {
   components: {
     TheFigure,
     carousel
+  },
+  methods: {
+    organizeNavSlider() {
+      const slider = document.querySelector(".secHistory .owl-carousel");
+      const owlDots = document.querySelector(".secHistory .owl-dots");
+      const owlNav = document.querySelector(".secHistory .owl-nav");
+      const sliderNavigation = document.createElement("div");
+
+      sliderNavigation.classList.add("sliderNavigation");
+
+      slider.append(sliderNavigation);
+      sliderNavigation.append(owlDots);
+      sliderNavigation.append(owlNav);
+    }
+  },
+  mounted() {
+    this.organizeNavSlider();
   }
 };
 </script>

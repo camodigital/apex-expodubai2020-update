@@ -5,7 +5,7 @@
         <div class="zRow">
           <div class="zCol">
             <TheFigure>
-              <img src="@/assets/images/expo2020-call.jpg" alt="" />
+              <img src="@/assets/images/pavilion1.jpg" alt="" />
             </TheFigure>
           </div>
           <div class="zCol">

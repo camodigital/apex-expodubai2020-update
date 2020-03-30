@@ -1,8 +1,13 @@
 .secHistory
+  display: none
   position: relative
   background-color: $color8
 
+  @include md
+    display: block
+
   &__header
+    margin-bottom: 10rem
     text-align: center
 
   .zRow
@@ -18,3 +23,8 @@
   &__title
     margin-bottom: 2rem
     color: $color1
+
+  .sliderNavigation
+    width: 100%
+    position: absolute
+    top: -10rem

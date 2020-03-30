@@ -1,7 +1,7 @@
 <template>
-  <div class="secDesc">
-    <div class="secDesc__container">
-      <div class="secDesc__content">
+  <div class="secDesc2">
+    <div class="secDesc2__container">
+      <div class="secDesc2__content">
         <div class="megaHeader">
           <div class="megaHeader__content">
             <h1
@@ -30,7 +30,7 @@
 import TheFigure from "@/components/TheFigure";
 
 export default {
-  name: "SecDesc",
+  name: "SecDesc2",
   components: {
     TheFigure
   }
