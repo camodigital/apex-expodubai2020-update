@@ -1,6 +1,7 @@
 <template>
   <div class="secNews">
     <div class="secNews__container theContainer">
+      <span class="theWave1 theWave"><TheWaveH /></span>
       <header class="secNews__header">
         <h1 class="zTitleBigBold" v-html="$t('news.titlecall')"></h1>
       </header>
@@ -124,13 +125,15 @@
 import TheFigure from "@/components/TheFigure";
 import TheContent1 from "@/components/TheContent1";
 import TheButton from "@/components/TheButton";
+import TheWaveH from "@/components/TheWaveH";
 
 export default {
   name: "SecNews",
   components: {
     TheButton,
     TheFigure,
-    TheContent1
+    TheContent1,
+    TheWaveH
   }
 };
 </script>

@@ -14,22 +14,28 @@
       </div>
       <div class="secIntro__content">
         <div class="secIntro__content__buttons">
-          <TheButton :text="$t('intro.buttonvideo')">
-            <slot>
-              <IcoPlay />
-            </slot>
-          </TheButton>
+          <div>
+            <button @click="toggler = !toggler">
+              <TheButton :text="$t('intro.buttonvideo')">
+                <slot>
+                  <IcoPlay />
+                </slot>
+              </TheButton>
+            </button>
+          </div>
 
-          <a
-            target="_blank"
-            href="http://web.apexbrasil.com.br/cn/aotb0/solicitacaodeevento"
-          >
-            <TheButton :text="$t('intro.buttonparticipate')">
-              <slot>
-                <IcoParticipate />
-              </slot>
-            </TheButton>
-          </a>
+          <div>
+            <a
+              target="_blank"
+              href="http://web.apexbrasil.com.br/cn/aotb0/solicitacaodeevento"
+            >
+              <TheButton :text="$t('intro.buttonparticipate')">
+                <slot>
+                  <IcoParticipate />
+                </slot>
+              </TheButton>
+            </a>
+          </div>
         </div>
       </div>
       <div class="secIntro__content__countdown">
@@ -39,6 +45,12 @@
         <TheVideoBg />
       </div>
     </div>
+    <FsLightbox
+      :toggler="toggler"
+      :sources="[
+        'https://www.youtube.com/watch?v=gSro3r6nb3A&feature=youtu.be'
+      ]"
+    />
   </div>
 </template>
 
@@ -49,6 +61,7 @@ import TheCountDown from "@/components/TheCountDown/";
 import TheVideoBg from "@/components/TheVideoBg";
 import IcoPlay from "@/assets/images/play-button.svg";
 import IcoParticipate from "@/assets/images/up.svg";
+import FsLightbox from "fslightbox-vue";
 
 export default {
   name: "SecIntro",
@@ -58,8 +71,15 @@ export default {
     TheCountDown,
     TheVideoBg,
     IcoPlay,
-    IcoParticipate
-  }
+    IcoParticipate,
+    FsLightbox
+  },
+  data() {
+    return {
+      toggler: false
+    };
+  },
+  methods: {}
 };
 </script>
 

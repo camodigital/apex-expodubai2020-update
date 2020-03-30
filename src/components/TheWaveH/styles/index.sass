@@ -1,0 +1,34 @@
+.theWaveH
+  opacity: .7
+  @include sm
+    display: none
+  &__container
+    width: 120px
+    height: 80px
+    position: relative
+    overflow: hidden
+
+  &__wave
+    z-index: 3
+
+    svg
+      width: 120px
+      height: auto
+  
+  &__waveOne
+    width: 120px
+    height: 80px
+    position: absolute
+    top: 3px
+    svg
+      fill: $color7
+
+
+  &__waveTwo
+    width: 120px
+    height: 80px
+    position: absolute
+    top: 2px
+    transform: rotate(180deg) translateX(-100%)
+    svg
+      fill: $color7

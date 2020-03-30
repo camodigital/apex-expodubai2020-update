@@ -67,6 +67,11 @@
       background-color: $color7
       z-index: 1
 
+    &__container
+      width: 100%
+      height: 100%
+      position: relative
+
   &__bg
     width: 100%
     height: 100%
@@ -83,3 +88,32 @@
     @include md
       max-width: 400px
       margin: 0 auto
+
+  .theWaveH
+    transform: rotate(90deg) scale(.8)
+    svg
+      fill: $color8
+
+  .theWave
+    position: absolute
+    display: inline-block
+
+  .theWave1
+    top: 0
+    left: -25px
+
+  .theWave2
+    top: 15%
+    right: -25px
+
+  .theWave3
+    top: 35%
+    left: -25px
+
+  .theWave4
+    bottom: 10px
+    left: -25px
+
+  .theWave5
+    bottom: 10%
+    right: -25px

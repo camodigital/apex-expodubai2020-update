@@ -51,12 +51,18 @@
       </div>
       <div class="theFooter__col">
         <div class="theFooter__social">
-          <div class="theFooter__social__title">SIGA-NOS</div>
+          <div
+            class="theFooter__social__title"
+            v-html="$t('footer.titlesocial')"
+          ></div>
           <a href="#" class="theFooter__social__link">
             <IcoFacebook />
           </a>
           <a href="#" class="theFooter__social__link">
             <IcoInstagram />
+          </a>
+          <a href="#" class="theFooter__social__link">
+            <IcoTwitter />
           </a>
         </div>
       </div>
@@ -66,15 +72,17 @@
 
 <script>
 import Logo from "@/assets/images/logo.svg";
-import IcoFacebook from "@/assets/images/facebook3.svg";
-import IcoInstagram from "@/assets/images/instagram.svg";
+import IcoFacebook from "@/assets/images/icoFacebook.svg";
+import IcoInstagram from "@/assets/images/icoInstagram.svg";
+import IcoTwitter from "@/assets/images/icoTwitter.svg";
 
 export default {
   name: "TheFooter",
   components: {
     Logo,
     IcoFacebook,
-    IcoInstagram
+    IcoInstagram,
+    IcoTwitter
   }
 };
 </script>

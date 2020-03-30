@@ -1,12 +1,17 @@
 .secSocial
   display: none
+  position: relative
   @include lg
     display: block
-    padding: 1rem
+    padding: 1rem 1rem 10rem
+    background-image: url("../../../assets/images/bgsust.png")
+    background-position: bottom right
+    background-repeat: no-repeat
   &__container
     width: 100%
     margin: 0 auto
     padding: 1rem
+    position: relative
     display: grid
     grid-template-columns: 1fr 1fr
     grid-template-rows: 1fr
@@ -50,3 +55,38 @@
       height: 2rem
       margin-right: .5rem
       fill: $color3
+
+  .theWaveH
+    svg
+      fill: $color8
+
+  .theWave1
+    transform: rotate(90deg) scale(.8)
+    display: inline-block
+    position: absolute
+    bottom: 1.6rem
+    left: -4.8rem
+
+  .theWind
+    opacity: .5
+
+  .theWind1
+    position: absolute
+    right: -1rem
+    bottom: 0
+
+  .theWind2
+    position: absolute
+    right: 5%
+    bottom: 0
+
+    .theWind
+      width: 100px
+
+  .theWind3
+    position: absolute
+    right: 5%
+    bottom: 0
+
+    .theWind
+      width: 60px

@@ -22,6 +22,7 @@ import SecNews from "./SecNews/";
 import SecSocial from "./SecSocial/";
 import SecParticipate from "./SecParticipate/";
 import secContactUs from "./SecContactUs/";
+import { TweenMax } from "gsap/all";
 
 export default {
   name: "HomePage",
@@ -35,6 +36,17 @@ export default {
     SecSocial,
     SecParticipate,
     secContactUs
+  },
+  methods: {
+    hideLogoInHome() {
+      const brand = document.querySelector(".theNavigation__brand__image");
+      TweenMax.set(brand, {
+        opacity: 0
+      });
+    }
+  },
+  mounted() {
+    this.hideLogoInHome();
   }
 };
 </script>

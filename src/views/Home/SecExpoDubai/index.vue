@@ -2,6 +2,7 @@
   <div class="secExpoDubai">
     <div class="secExpoDubai__container theContainer">
       <div class="secExpoDubai__content">
+        <TheWaveH />
         <div class="zRow">
           <div class="zCol">
             <TheFigure>
@@ -23,6 +24,21 @@
         </div>
       </div>
     </div>
+    <span class="theWind1">
+      <TheWind />
+    </span>
+    <span class="theWind2">
+      <TheWind />
+    </span>
+    <span class="theWind3">
+      <TheWind />
+    </span>
+    <span class="theWind4">
+      <TheWind />
+    </span>
+    <span class="theWind5">
+      <TheWind />
+    </span>
   </div>
 </template>
 
@@ -30,13 +46,17 @@
 import TheFigure from "@/components/TheFigure";
 import TheContent1 from "@/components/TheContent1";
 import TheButton from "@/components/TheButton/";
+import TheWaveH from "@/components/TheWaveH";
+import TheWind from "@/components/TheWind";
 
 export default {
   name: "SecExpoDubai",
   components: {
     TheButton,
     TheContent1,
-    TheFigure
+    TheFigure,
+    TheWaveH,
+    TheWind
   }
 };
 </script>

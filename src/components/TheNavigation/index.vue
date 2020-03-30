@@ -60,10 +60,13 @@
         </ul>
         <div class="theNavigation__nav__support">
           <div class="theNavigation__nav__language">
-            <div class="theNavigation__nav__language__button" ref="langButton">
+            <button
+              class="theNavigation__nav__language__button"
+              ref="langButton"
+            >
               {{ language }}
               <ArrowDown />
-            </div>
+            </button>
             <ul class="theNavigation__nav__language__list" ref="langList">
               <li ref="langButtonPt"><flagPt />PT</li>
               <li ref="langButtonEn"><flagEn />EN</li>
@@ -262,7 +265,9 @@ export default {
     },
     handleResize() {
       window.addEventListener("resize", () => {
-        location.reload();
+        if (window.innerWidth <= 600) {
+          location.reload();
+        }
       });
     }
   },

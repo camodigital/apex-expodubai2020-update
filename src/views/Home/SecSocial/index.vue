@@ -1,6 +1,7 @@
 <template>
   <div class="secSocial">
     <div class="secSocial__container theContainer">
+      <span class="theWave1 theWave"><TheWaveH /></span>
       <div class="secSocial__facebook">
         <div class="secSocial__facebook__header">
           <h1 class="zTitleMedium"><IcoFacebook />Facebook</h1>
@@ -134,17 +135,31 @@
         </div>
       </div>
     </div>
+    <span class="theWind1">
+      <TheWind />
+    </span>
+    <span class="theWind2">
+      <TheWind />
+    </span>
+    <span class="theWind3">
+      <TheWind />
+    </span>
   </div>
 </template>
 
 <script>
 import IcoFacebook from "@/assets/images/icoFacebook.svg";
 import IcoInstagram from "@/assets/images/icoInstagram.svg";
+import TheWaveH from "@/components/TheWaveH";
+import TheWind from "@/components/TheWind";
+
 export default {
   name: "SecSocial",
   components: {
     IcoFacebook,
-    IcoInstagram
+    IcoInstagram,
+    TheWaveH,
+    TheWind
   }
 };
 </script>

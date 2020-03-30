@@ -74,7 +74,15 @@
         </carousel>
       </div>
     </div>
-    <div class="secPavilion__line"></div>
+    <div class="secPavilion__line">
+      <div class="secPavilion__line__container">
+        <span class="theWave1 theWave"><TheWaveH /></span>
+        <span class="theWave2 theWave"><TheWaveH /></span>
+        <span class="theWave3 theWave"><TheWaveH /></span>
+        <span class="theWave4 theWave"><TheWaveH /></span>
+        <span class="theWave5 theWave"><TheWaveH /></span>
+      </div>
+    </div>
     <div class="secPavilion__bg">
       <TheFigure>
         <slot>
@@ -90,6 +98,7 @@ import TheFigure from "@/components/TheFigure";
 import TheContent1 from "@/components/TheContent1";
 import TheButton from "@/components/TheButton/";
 import carousel from "vue-owl-carousel2";
+import TheWaveH from "@/components/TheWaveH";
 
 export default {
   name: "SecPavilion",
@@ -97,7 +106,8 @@ export default {
     TheButton,
     carousel,
     TheFigure,
-    TheContent1
+    TheContent1,
+    TheWaveH
   },
   methods: {
     organizeNavSlider() {

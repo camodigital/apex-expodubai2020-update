@@ -14,6 +14,8 @@
                 </TheFigure>
               </div>
               <div class="zCol">
+                <span class="theWave1"><TheWaveH /></span>
+                <span class="theWave2"><TheWaveH /></span>
                 <TheContent1
                   :title="$t('BrazilExpo.titlecall')"
                   :text="$t('BrazilExpo.call')"
@@ -39,6 +41,8 @@
                 </TheFigure>
               </div>
               <div class="zCol">
+                <span class="theWave1"><TheWaveH /></span>
+                <span class="theWave2"><TheWaveH /></span>
                 <TheContent1
                   :title="$t('history.titlecall')"
                   :text="$t('history.call')"
@@ -63,6 +67,7 @@ import TheFigure from "@/components/TheFigure";
 import TheContent1 from "@/components/TheContent1";
 import carousel from "vue-owl-carousel2";
 import TheButton from "@/components/TheButton/";
+import TheWaveH from "@/components/TheWaveH";
 
 export default {
   name: "SecBrazilExpo",
@@ -70,7 +75,8 @@ export default {
     carousel,
     TheButton,
     TheFigure,
-    TheContent1
+    TheContent1,
+    TheWaveH
   },
   methods: {
     organizeNavSlider() {

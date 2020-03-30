@@ -10,6 +10,7 @@
 import TheHeader from "@/templates/TheHeader/";
 import TheMain from "@/templates/TheMain/";
 import TheFooter from "@/templates/TheFooter/";
+
 export default {
   components: {
     TheHeader,

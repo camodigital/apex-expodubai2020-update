@@ -27,12 +27,24 @@
 <script>
 import IcoSust from "@/assets/images/icosustenta.svg";
 import TheFigure from "@/components/TheFigure";
+import { TweenMax } from "gsap/all";
 
 export default {
   name: "SecSustainability",
   components: {
     TheFigure,
     IcoSust
+  },
+  methods: {
+    hideLogoInHome() {
+      const brand = document.querySelector(".theNavigation__brand__image");
+      TweenMax.set(brand, {
+        opacity: 1
+      });
+    }
+  },
+  mounted() {
+    this.hideLogoInHome();
   }
 };
 </script>

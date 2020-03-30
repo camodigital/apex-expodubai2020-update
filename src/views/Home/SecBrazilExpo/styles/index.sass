@@ -14,6 +14,7 @@
         grid-template-rows: 1fr
 
       .zCol
+        position: relative
         &:nth-child(1)
           @include lg
             order: 2
@@ -53,3 +54,17 @@
     @include lg
       top: -20px
       transform: translate(300px, 0)
+
+  .theWaveH
+    svg
+      fill: $color8
+
+  .theWave1
+    position: absolute
+    top: 0
+    left: 0
+
+  .theWave2
+    position: absolute
+    bottom: 0
+    right: 0
