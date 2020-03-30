@@ -1,10 +1,22 @@
 <template>
-  <div class="secForm">SecForm</div>
+  <div class="secForm">
+    <header class="secForm__header">
+      <h1 class="titleBigSpanWave" v-html="$t('contactus.titlecall')"></h1>
+    </header>
+    <div class="container">
+      <div class="secForm__content"><TheForm /></div>
+    </div>
+  </div>
 </template>
 
 <script>
+import TheForm from "@/components/TheForm";
+
 export default {
-  name: "SecForm"
+  name: "SecForm",
+  components: {
+    TheForm
+  }
 };
 </script>
 

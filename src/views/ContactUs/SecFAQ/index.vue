@@ -1,10 +1,25 @@
 <template>
-  <div class="secFAQ">SecFAQ</div>
+  <div class="secFAQ">
+    <div class="secFAQ__container .theContainer">
+      <header
+        class="secFAQ__header zTitleBigSpan"
+        v-html="$t('faq.titlecall')"
+      ></header>
+      <div class="secFAQ__content">
+        <TheExpandText />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import TheExpandText from "@/components/TheExpandText";
+
 export default {
-  name: "SecFAQ"
+  name: "SecFAQ",
+  components: {
+    TheExpandText
+  }
 };
 </script>
 

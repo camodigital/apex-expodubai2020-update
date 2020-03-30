@@ -9,7 +9,7 @@
               v-html="$t('BrazilExpo.titlecall')"
             ></h1>
             <div class="megaHeader__text">
-              <div v-html="$t('BrazilExpo.call')"></div>
+              <div v-html="$t('BrazilExpo.content')"></div>
             </div>
           </div>
           <div class="megaHeader__bg">

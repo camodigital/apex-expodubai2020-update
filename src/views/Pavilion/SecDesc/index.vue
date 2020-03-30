@@ -3,7 +3,7 @@
     <div class="secDesc__container">
       <div
         class="secDesc__content textCenter"
-        v-html="$t('ExpoDubai.call')"
+        v-html="$t('pavilion.content')"
       ></div>
     </div>
   </div>

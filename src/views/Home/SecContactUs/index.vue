@@ -10,33 +10,7 @@
           <h3 v-html="$t('contactus.titleform')" class="zTitleSmall"></h3>
         </div>
         <div class="secContactUs__contact__content">
-          <form action="" class="secContactUs__contact__form">
-            <input
-              type="text"
-              class="secContactUs__contact__input"
-              placeholder="Name"
-            />
-            <input
-              type="text"
-              class="secContactUs__contact__input"
-              placeholder="E-mail"
-            />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Mensagem"
-              class="secContactUs__contact__textarea"
-            ></textarea>
-            <div class="secContactUs__contact__button">
-              <TheButton :text="$t('contactus.buttonform')">
-                <slot>
-                  <IcoSubmit />
-                </slot>
-              </TheButton>
-            </div>
-          </form>
+          <TheForm />
         </div>
       </div>
       <div class="secContactUs__faq">
@@ -60,14 +34,14 @@
 <script>
 import IcoFaq from "@/assets/images/question2.svg";
 import TheButton from "@/components/TheButton";
-import IcoSubmit from "@/assets/images/telegram.svg";
+import TheForm from "@/components/TheForm";
 
 export default {
   name: "SecContactUs",
   components: {
     TheButton,
     IcoFaq,
-    IcoSubmit
+    TheForm
   }
 };
 </script>
