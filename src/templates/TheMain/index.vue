@@ -1,6 +1,8 @@
 <template>
   <main class="theMain">
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
   </main>
 </template>
 
@@ -10,9 +12,12 @@ export default {
 };
 </script>
 
-<style lang="sass">
-@import '../../assets/styles/settings/vars'
-@import '../../assets/styles/settings/mixins'
-@import '../../assets/styles/settings/mediaQueries'
-@import "./styles/index"
+<style lang="sass" scoped>
+
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+
+.fade-enter-active, .fade-leave-active
+  transition: all 1s ease
 </style>

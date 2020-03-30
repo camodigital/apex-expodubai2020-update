@@ -56,7 +56,7 @@ export default {
 
       if (page.classList.contains("homePage")) {
         // Set the date we're counting down to
-        let countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+        let countDownDate = new Date("Oct 20, 2020 12:00:00").getTime();
 
         // Update the count down every 1 second
         let x = setInterval(function() {
