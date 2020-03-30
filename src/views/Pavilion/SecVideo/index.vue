@@ -13,11 +13,13 @@
               v-html="$t('ExpoDubai.subtitlevideo')"
             ></div>
             <div class="secVideoButton__button">
-              <TheButton :text="$t('ExpoDubai.buttonvideo')">
-                <slot>
-                  <IcoPlay />
-                </slot>
-              </TheButton>
+              <button @click="toggler = !toggler">
+                <TheButton :text="$t('ExpoDubai.buttonvideo')">
+                  <slot>
+                    <IcoPlay />
+                  </slot>
+                </TheButton>
+              </button>
             </div>
           </div>
           <div class="secVideoButton__bg">
@@ -28,6 +30,12 @@
         </div>
       </div>
     </div>
+    <FsLightbox
+      :toggler="toggler"
+      :sources="[
+        'https://www.youtube.com/watch?v=gSro3r6nb3A&feature=youtu.be'
+      ]"
+    />
   </div>
 </template>
 
@@ -35,13 +43,20 @@
 import TheFigure from "@/components/TheFigure";
 import IcoPlay from "@/assets/images/play-button.svg";
 import TheButton from "@/components/TheButton/";
+import FsLightbox from "fslightbox-vue";
 
 export default {
   name: "SecVideo",
   components: {
     IcoPlay,
     TheButton,
-    TheFigure
+    TheFigure,
+    FsLightbox
+  },
+  data() {
+    return {
+      toggler: false
+    };
   }
 };
 </script>

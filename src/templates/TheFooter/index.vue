@@ -55,13 +55,25 @@
             class="theFooter__social__title"
             v-html="$t('footer.titlesocial')"
           ></div>
-          <a href="#" class="theFooter__social__link">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/expo2020dubai/?hl=pt-br"
+            class="theFooter__social__link"
+          >
             <IcoFacebook />
           </a>
-          <a href="#" class="theFooter__social__link">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/Expo2020Dubai/"
+            class="theFooter__social__link"
+          >
             <IcoInstagram />
           </a>
-          <a href="#" class="theFooter__social__link">
+          <a
+            target="_blank"
+            href="https://twitter.com/expo2020dubai"
+            class="theFooter__social__link"
+          >
             <IcoTwitter />
           </a>
         </div>

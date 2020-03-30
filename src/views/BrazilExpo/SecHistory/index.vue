@@ -103,7 +103,7 @@
               <div class="zCol">
                 <TheFigure>
                   <img
-                    src="@/assets/images/brasilnaexpo.jpg"
+                    src="@/assets/images/h1939.png"
                     :alt="$t('BrazilExpo.titlecall')"
                   />
                 </TheFigure>
@@ -131,7 +131,7 @@
               <div class="zCol">
                 <TheFigure>
                   <img
-                    src="@/assets/images/brasilnaexpo.jpg"
+                    src="@/assets/images/h1958.png"
                     :alt="$t('BrazilExpo.titlecall')"
                   />
                 </TheFigure>
@@ -159,7 +159,7 @@
               <div class="zCol">
                 <TheFigure>
                   <img
-                    src="@/assets/images/brasilnaexpo.jpg"
+                    src="@/assets/images/h1970.png"
                     :alt="$t('BrazilExpo.titlecall')"
                   />
                 </TheFigure>
@@ -187,7 +187,7 @@
               <div class="zCol">
                 <TheFigure>
                   <img
-                    src="@/assets/images/brasilnaexpo.jpg"
+                    src="@/assets/images/h2010.png"
                     :alt="$t('BrazilExpo.titlecall')"
                   />
                 </TheFigure>
@@ -215,7 +215,7 @@
               <div class="zCol">
                 <TheFigure>
                   <img
-                    src="@/assets/images/brasilnaexpo.jpg"
+                    src="@/assets/images/h2015.png"
                     :alt="$t('BrazilExpo.titlecall')"
                   />
                 </TheFigure>
@@ -243,7 +243,7 @@
               <div class="zCol">
                 <TheFigure>
                   <img
-                    src="@/assets/images/brasilnaexpo.jpg"
+                    src="@/assets/images/h2020.png"
                     :alt="$t('BrazilExpo.titlecall')"
                   />
                 </TheFigure>
