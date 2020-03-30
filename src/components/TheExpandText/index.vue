@@ -38,7 +38,7 @@
             <div class="ico"><ArrowDown /></div>
           </div>
           <div class="theExpandText__text">
-            <div v-html="$t('faq.contentquestion1')"></div>
+            <div v-html="$t('faq.contentquestion4')"></div>
           </div>
         </div>
 

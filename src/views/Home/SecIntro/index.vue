@@ -19,11 +19,17 @@
               <IcoPlay />
             </slot>
           </TheButton>
-          <TheButton :text="$t('intro.buttonparticipate')">
-            <slot>
-              <IcoParticipate />
-            </slot>
-          </TheButton>
+
+          <a
+            target="_blank"
+            href="http://web.apexbrasil.com.br/cn/aotb0/solicitacaodeevento"
+          >
+            <TheButton :text="$t('intro.buttonparticipate')">
+              <slot>
+                <IcoParticipate />
+              </slot>
+            </TheButton>
+          </a>
         </div>
       </div>
       <div class="secIntro__content__countdown">

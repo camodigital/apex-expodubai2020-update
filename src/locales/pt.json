@@ -20,6 +20,10 @@
     "minutescountdown": "Minutos",
     "secondscountdown": "Segundos"
   },
+  "news":{
+    "titlecall": "Notícias",
+    "buttoncall": "saiba mais"
+  },
   "ExpoDubai":{
     "titlecall": "O que é a <span>Expo 2020?</span>",
     "call": "<p>Conexão e legado – essas palavras representam o espírito das Expos!</p><p>Desde 1851, ano da primeira edição do projeto, até hoje as Exposições Universais atraem pessoas de todo o mundo para conferir os avanços tecnológicos e debater as perspectivas do futuro da nossa sociedade.</p><p>Saiba mais sobre a maior vitrine mundial, que atraiu mais de 20 milhões de visitantes apenas em sua edição de 2015, realizada na Itália, clicando abaixo.</p>",
@@ -110,7 +114,7 @@
     "contentquestion1": "<p>O pavilhão do Brasil está localizado no Distrito da Sustentabilidade. A ideia é conduzir o visitante a uma experiência sensorial que tem esse Brasil aberto ao mundo, cheio de oportunidades, moderno, produtivo, ambientalmente consciente e sustentável como fundo.</p>",
     "titlequestion2": "Quais as expectativas concretas de resultados da participação?",
     "contentquestion2": "<p>As Expos são eventos direcionados ao público final, em larga medida, formado por famílias e visitantes em momentos de lazer. É, portanto, um evento no qual praticamente todos os países participam em busca de ganhos de imagem, decorrentes da experiência oferecida aos visitantes. De acordo com o planejamento da Organização da Expo, a maior parte dos visitantes será formada por nacionais dos Emirados Árabes Unidos (EAU) e por turistas chineses e indianos. São mercados extremamente relevantes para os produtos brasileiros. Esperamos contribuir para que os visitantes que passem por nosso pavilhão desenvolvam uma conexão permanente com o Brasil, de modo que, quando entrem em contato com um produto brasileiro, seja ele econômico ou cultural, o resultado seja uma associação positiva.</p>",
-    "titlequestion3": "Os Emirados e mais especificamente Dubai têm tentado se transformar em hub de logística e polo turístico. <span>Há alguma oportunidade para o Brasil nisso? Qual? ",
+    "titlequestion3": "Os Emirados e mais especificamente Dubai têm tentado se transformar em hub de logística e polo turístico.Há alguma oportunidade para o Brasil nisso? Qual? ",
     "contentquestion3": "<p>Além de ser um mercado extremamente importante para nossos produtos (destaque, por exemplo, para nossas exportações de proteína animal ou do setor de transportes para o país), os EAU são também fonte importante de investimento estrangeiro (com investimento, por exemplo, de empresa emirática no porto de Santos). Pode-se dizer também que o mercado dos EAU serve como “selo de qualidade” para os demais mercados da região, tornando-se estratégico para nossas empresas.</p>",
     "titlequestion4": "Só a Apex-Brasil está envolvida com o projeto ou existem também outras empresas ou órgãos governamentais?",
     "contentquestion4": "<p>A Apex-Brasil tem a responsabilidade de liderar a participação brasileira na Exposição Universal e foi designada formalmente pelo Governo Federal para fazê-lo, tendo também firmado o contrato de participação com o Comitê Organizador.</p><p>Um Grupo Gestor da Participação Brasileira na Expo foi constituído desde 2018 e, atualmente, é composto por várias entidades governamentais e ministérios (MRE, Secom/PR, Mapa, Cidadania, MMA, MTUR, Embratur, MCTI, MMFDH, Economia). A Apex-Brasil reporta-se regularmente a esse grupo e o consulta sobre os mais diversos temas. Até o momento, foram realizadas oito reuniões do grupo gestor.</p>",

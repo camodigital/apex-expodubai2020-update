@@ -19,7 +19,9 @@
                   :text="$t('BrazilExpo.call')"
                 >
                   <slot>
-                    <TheButton :text="$t('BrazilExpo.buttoncall')" />
+                    <router-link :to="`/${$i18n.locale}/brazilexpo`">
+                      <TheButton :text="$t('BrazilExpo.buttoncall')" />
+                    </router-link>
                   </slot>
                 </TheContent1>
               </div>
@@ -42,7 +44,9 @@
                   :text="$t('history.call')"
                 >
                   <slot>
-                    <TheButton :text="$t('history.buttoncall')" />
+                    <router-link :to="`/${$i18n.locale}/brazilexpo`">
+                      <TheButton :text="$t('history.buttoncall')" />
+                    </router-link>
                   </slot>
                 </TheContent1>
               </div>

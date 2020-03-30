@@ -20,11 +20,13 @@
         ></h3>
         <div class="secContactUs__faq__text" v-html="$t('faq.call')"></div>
         <div class="secContactUs__faq__button">
-          <TheButton :text="$t('faq.buttoncall')">
-            <slot>
-              <IcoFaq />
-            </slot>
-          </TheButton>
+          <router-link :to="`/${$i18n.locale}/contactus`">
+            <TheButton :text="$t('faq.buttoncall')">
+              <slot>
+                <IcoFaq />
+              </slot>
+            </TheButton>
+          </router-link>
         </div>
       </div>
     </div>

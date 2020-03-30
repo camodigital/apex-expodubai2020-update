@@ -7,7 +7,9 @@
           :text="$t('pavilion.call')"
         >
           <slot>
-            <TheButton :text="$t('pavilion.buttoncall')" />
+            <router-link :to="`/${$i18n.locale}/pavilion`">
+              <TheButton :text="$t('pavilion.buttoncall')" />
+            </router-link>
           </slot>
         </TheContent1>
       </div>

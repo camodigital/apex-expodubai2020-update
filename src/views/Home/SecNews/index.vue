@@ -2,7 +2,7 @@
   <div class="secNews">
     <div class="secNews__container theContainer">
       <header class="secNews__header">
-        <h1 class="zTitleBigBold">Notícias</h1>
+        <h1 class="zTitleBigBold" v-html="$t('news.titlecall')"></h1>
       </header>
       <div class="secNews__content">
         <div class="secNews__grid">
@@ -25,7 +25,12 @@
                   classTitle="zTitleSmallBold"
                 >
                   <slot>
-                    <TheButton text="saiba mais" />
+                    <a
+                      target="_blank"
+                      href="https://portal.apexbrasil.com.br/noticia/brasil-inaugura-obra-do-pavilhao-nacional-na-expo-2020-em-dubai/"
+                    >
+                      <TheButton :text="$t('news.buttoncall')" />
+                    </a>
                   </slot>
                 </TheContent1>
               </div>
@@ -46,7 +51,10 @@
               </div>
               <div class="zCol">
                 <h2 class="zTitleSmallBold">
-                  <a href="">
+                  <a
+                    target="_blank"
+                    href="https://portal.apexbrasil.com.br/noticia/aberto-credenciamento-de-midia-para-cobertura-da-expo-2020-em-dubai/"
+                  >
                     Aberto credenciamento de mídia para cobertura da Expo 2020
                     em Dubai
                   </a>
@@ -69,7 +77,10 @@
               </div>
               <div class="zCol">
                 <h2 class="zTitleSmallBold">
-                  <a href="">
+                  <a
+                    target="_blank"
+                    href="https://portal.apexbrasil.com.br/noticia/Projeto-arquitetonico-para-o-pavilhao-do-Brasil-na-Expo-Dubai-2020-e-divulgado/"
+                  >
                     Projeto arquitetônico para o pavilhão do Brasil na Expo
                     Dubai 2020 é divulgado
                   </a>
@@ -92,7 +103,10 @@
               </div>
               <div class="zCol">
                 <h2 class="zTitleSmallBold">
-                  <a href="">
+                  <a
+                    target="_blank"
+                    href="https://portal.apexbrasil.com.br/noticia/RETA-FINAL-INSCRICAO-PARA-SELECAO-DO-PROJETO-PARA-A-EXPO-DUBAI-2020-TERMINA-SABADO-27-10/"
+                  >
                     Reta final: Inscrição para seleção do projeto para a Expo
                     Dubai 2020 termina sábado, 27/10
                   </a>

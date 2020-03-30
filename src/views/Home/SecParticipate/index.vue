@@ -8,11 +8,16 @@
           classTitle="zTitleWave"
         >
           <slot>
-            <TheButton :text="$t('participate.button')">
-              <slot>
-                <IcoParticipate />
-              </slot>
-            </TheButton>
+            <a
+              target="_blank"
+              href="http://web.apexbrasil.com.br/cn/aotb0/solicitacaodeevento"
+            >
+              <TheButton :text="$t('participate.button')">
+                <slot>
+                  <IcoParticipate />
+                </slot>
+              </TheButton>
+            </a>
           </slot>
         </TheContent1>
       </div>

@@ -1,10 +1,48 @@
 <template>
-  <div class="secVideo">SecVideo</div>
+  <div class="secVideo">
+    <div class="secVideo__container">
+      <div class="secVideo__content">
+        <div class="secVideoButton">
+          <div class="secVideoButton__content">
+            <h1
+              class="secVideoButton__title"
+              v-html="$t('ExpoDubai.titlevideo')"
+            ></h1>
+            <div
+              class="secVideoButton__subtitle"
+              v-html="$t('ExpoDubai.subtitlevideo')"
+            ></div>
+            <div class="secVideoButton__button">
+              <TheButton :text="$t('ExpoDubai.buttonvideo')">
+                <slot>
+                  <IcoPlay />
+                </slot>
+              </TheButton>
+            </div>
+          </div>
+          <div class="secVideoButton__bg">
+            <TheFigure>
+              <img src="@/assets/images/expo2020-call.jpg" alt="" />
+            </TheFigure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import TheFigure from "@/components/TheFigure";
+import IcoPlay from "@/assets/images/play-button.svg";
+import TheButton from "@/components/TheButton/";
+
 export default {
-  name: "SecVideo"
+  name: "SecVideo",
+  components: {
+    IcoPlay,
+    TheButton,
+    TheFigure
+  }
 };
 </script>
 

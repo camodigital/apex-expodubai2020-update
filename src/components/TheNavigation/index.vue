@@ -3,7 +3,7 @@
     <div class="theNavigation__container">
       <div class="theNavigation__brand">
         <router-link
-          :to="`/${$i18n.language}/`"
+          :to="`/${$i18n.locale}/`"
           class="theNavigation__brand__link"
           :title="$t('intro.title')"
         >
@@ -61,7 +61,7 @@
         <div class="theNavigation__nav__support">
           <div class="theNavigation__nav__language">
             <div class="theNavigation__nav__language__button" ref="langButton">
-              pt
+              {{ language }}
               <ArrowDown />
             </div>
             <ul class="theNavigation__nav__language__list" ref="langList">
@@ -92,7 +92,7 @@ export default {
   name: "TheNavigation",
   data() {
     return {
-      language: "pt"
+      language: "PT"
     };
   },
   components: {
@@ -136,6 +136,7 @@ export default {
 
       const handleButtonPt = () => {
         if (lang != "pt") {
+          this.language = "PT";
           lang = "pt";
           this.$i18n.locale = lang;
           this.$router.push({
@@ -150,6 +151,7 @@ export default {
       const handleButtonEn = () => {
         if (lang != "en") {
           lang = "en";
+          this.language = "EN";
           this.$i18n.locale = lang;
           this.$router.push({
             params: { lang: lang }
@@ -248,6 +250,10 @@ export default {
             closeNav();
           }
         };
+
+        navItems.forEach(item => {
+          item.addEventListener("click", closeNav);
+        });
 
         navOverlay.addEventListener("click", closeNav);
 

@@ -20,6 +20,10 @@
     "minutescountdown": "Minutes",
     "secondscountdown": "Seconds"
   },
+  "news":{
+    "titlecall": "News",
+    "buttoncall": "learn more"
+  },
   "ExpoDubai":{
     "titlecall": "What is <span>Expo Dubai 2020?</span>",
     "call": "<p>Connection and legacy – those words comprise the spirit of the Expos!</p><p>Since its first edition in 1851, the Universal Exhibitions attract people from all over the world to marvel at the latest technological advances and discuss the perspectives for the future of society.</p><p>Click below to learn more about the world's largest showcase, which attracted more than 20 million visitors in its last edition alone, held in Milan, Italy, in 2015.</p>",

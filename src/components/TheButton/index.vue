@@ -22,6 +22,9 @@ export default {
   props: {
     text: {
       default: "saiba mais"
+    },
+    link: {
+      default: "3"
     }
   }
 };

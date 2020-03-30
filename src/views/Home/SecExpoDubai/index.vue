@@ -14,7 +14,9 @@
               :text="$t('ExpoDubai.call')"
             >
               <slot>
-                <TheButton :text="$t('ExpoDubai.buttoncall')" />
+                <router-link :to="`/${$i18n.locale}/expodubai`">
+                  <TheButton :text="$t('ExpoDubai.buttoncall')" />
+                </router-link>
               </slot>
             </TheContent1>
           </div>
