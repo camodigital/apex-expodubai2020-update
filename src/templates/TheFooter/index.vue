@@ -31,14 +31,19 @@
                 {{ $t("nav.pavilion") }}
               </router-link>
             </li>
+            <!-- <li class="theFooter__nav__item">
+            <a href="#">
+              {{ $t("nav.news") }}
+            </a>
+          </li> -->
             <li class="theFooter__nav__item">
-              <a href="#">
-                {{ $t("nav.news") }}
-              </a>
-            </li>
-            <li class="theFooter__nav__item">
-              <a href="#">
-                {{ $t("nav.participate") }}
+              <a
+                target="_blank"
+                href="http://web.apexbrasil.com.br/cn/aotb0/solicitacaodeevento"
+              >
+                <span>
+                  {{ $t("nav.participate") }}
+                </span>
               </a>
             </li>
             <li class="theFooter__nav__item">

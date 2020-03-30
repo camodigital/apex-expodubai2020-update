@@ -10,16 +10,19 @@
           <div class="secSocial__facebook__item">
             <div class="secSocial__facebook__figure">
               <img
-                src="@/assets/images/facebook1.jpg"
+                src="@/assets/images/face-01.jpg"
                 alt=""
                 class="secSocial__facebook__image"
               />
             </div>
             <div class="secSocial__facebook__content">
               <div class="secSocial__facebook__text">
-                <a href="#" target="_blank">
-                  Expo 2020 Dubai is closely monitoring ongoing developments and
-                  taking all sensible precautions...
+                <a
+                  href="https://www.facebook.com/Expo2020Dubai/videos/204891537481295"
+                  target="_blank"
+                >
+                  The time we spend apart should remind us how crucial it is
+                  that we stand together...
                 </a>
               </div>
             </div>
@@ -27,16 +30,19 @@
           <div class="secSocial__facebook__item">
             <div class="secSocial__facebook__figure">
               <img
-                src="@/assets/images/facebook2.jpg"
+                src="@/assets/images/face-02.jpg"
                 alt=""
                 class="secSocial__facebook__image"
               />
             </div>
             <div class="secSocial__facebook__content">
               <div class="secSocial__facebook__text">
-                <a href="#" target="_blank">
-                  Experience the innovation on show in the #CanadaPavilion 🇨🇦 at
-                  The World's Greatest Show...
+                <a
+                  href="https://www.facebook.com/Expo2020Dubai/videos/233157807829289"
+                  target="_blank"
+                >
+                  The health and safety of everyone involved in #Expo2020 is our
+                  top priority. Watch to learn more about our..
                 </a>
               </div>
             </div>
@@ -44,16 +50,20 @@
           <div class="secSocial__facebook__item">
             <div class="secSocial__facebook__figure">
               <img
-                src="@/assets/images/facebook3.jpg"
+                src="@/assets/images/face-03.jpg"
                 alt=""
                 class="secSocial__facebook__image"
               />
             </div>
             <div class="secSocial__facebook__content">
               <div class="secSocial__facebook__text">
-                <a href="#" target="_blank">
-                  Stop by our official store at Global Village to pick up some
-                  exclusive #Expo2020 #Dubai...
+                <a
+                  href="https://www.facebook.com/photo?fbid=4126859867327830&set=a.441478172532703"
+                  target="_blank"
+                >
+                  يراقب إكسبو 2020 دبي التطورات الجارية عن كثب، ويتخذ حزمة من
+                  الاحتياطات اللازمة للحد من خطورة الإصابة بالفيروس بين جميع
+                  المعنيين بإكسبو في ضوء استعد...
                 </a>
               </div>
             </div>
@@ -68,9 +78,12 @@
         <div class="secSocial__instagram__list">
           <div class="secSocial__instagram__item">
             <div class="secSocial__instagram__figure">
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/p/B-UzNb8nqx-/"
+                target="_blank"
+              >
                 <img
-                  src="@/assets/images/instagram1.jpg"
+                  src="@/assets/images/insta-01.jpg"
                   alt=""
                   class="secSocial__instagram__image"
                 />
@@ -79,9 +92,12 @@
           </div>
           <div class="secSocial__instagram__item">
             <div class="secSocial__instagram__figure">
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/p/B-SxcsqHGyr/"
+                target="_blank"
+              >
                 <img
-                  src="@/assets/images/instagram2.jpg"
+                  src="@/assets/images/insta-02.jpg"
                   alt=""
                   class="secSocial__instagram__image"
                 />
@@ -90,9 +106,12 @@
           </div>
           <div class="secSocial__instagram__item">
             <div class="secSocial__instagram__figure">
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/p/B-DB_JUHU8C/"
+                target="_blank"
+              >
                 <img
-                  src="@/assets/images/instagram3.jpg"
+                  src="@/assets/images/insta-03.jpg"
                   alt=""
                   class="secSocial__instagram__image"
                 />
@@ -101,9 +120,12 @@
           </div>
           <div class="secSocial__instagram__item">
             <div class="secSocial__instagram__figure">
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/p/B9tOCr7nHU2/"
+                target="_blank"
+              >
                 <img
-                  src="@/assets/images/instagram4.jpg"
+                  src="@/assets/images/insta-04.jpg"
                   alt=""
                   class="secSocial__instagram__image"
                 />
@@ -112,9 +134,12 @@
           </div>
           <div class="secSocial__instagram__item">
             <div class="secSocial__instagram__figure">
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/p/B9o0lsUHEPR/"
+                target="_blank"
+              >
                 <img
-                  src="@/assets/images/instagram5.jpg"
+                  src="@/assets/images/insta-05.jpg"
                   alt=""
                   class="secSocial__instagram__image"
                 />
@@ -123,9 +148,12 @@
           </div>
           <div class="secSocial__instagram__item">
             <div class="secSocial__instagram__figure">
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/p/B9jq7tonNzI/"
+                target="_blank"
+              >
                 <img
-                  src="@/assets/images/instagram6.jpg"
+                  src="@/assets/images/insta-06.jpg"
                   alt=""
                   class="secSocial__instagram__image"
                 />

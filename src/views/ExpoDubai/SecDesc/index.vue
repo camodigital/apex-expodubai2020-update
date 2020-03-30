@@ -6,12 +6,32 @@
         v-html="$t('ExpoDubai.content')"
       ></div>
     </div>
+    <span class="theWind1">
+      <TheWind />
+    </span>
+    <span class="theWind2">
+      <TheWind />
+    </span>
+    <span class="theWind3">
+      <TheWind />
+    </span>
+    <span class="theWind4">
+      <TheWind />
+    </span>
+    <span class="theWind5">
+      <TheWind />
+    </span>
   </div>
 </template>
 
 <script>
+import TheWind from "@/components/TheWind";
+
 export default {
-  name: "SecDesc"
+  name: "SecDesc",
+  components: {
+    TheWind
+  }
 };
 </script>
 

@@ -10,6 +10,15 @@
             ></h1>
             <div class="megaHeader__text">
               <div v-html="$t('BrazilExpo.content')"></div>
+              <span class="theWind1">
+                <TheWind />
+              </span>
+              <span class="theWind2">
+                <TheWind />
+              </span>
+              <span class="theWind3">
+                <TheWind />
+              </span>
             </div>
           </div>
           <div class="megaHeader__bg">
@@ -28,11 +37,13 @@
 
 <script>
 import TheFigure from "@/components/TheFigure";
+import TheWind from "@/components/TheWind";
 
 export default {
   name: "SecDesc2",
   components: {
-    TheFigure
+    TheFigure,
+    TheWind
   }
 };
 </script>

@@ -268,7 +268,7 @@ export default {
     },
     handleResize() {
       window.addEventListener("resize", () => {
-        if (window.innerWidth <= 600) {
+        if (window.innerWidth <= 500) {
           location.reload();
         }
       });
