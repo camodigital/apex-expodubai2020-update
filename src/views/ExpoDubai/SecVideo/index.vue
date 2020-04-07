@@ -33,7 +33,7 @@
     <FsLightbox
       :toggler="toggler"
       :sources="[
-        'https://www.youtube.com/watch?v=NGRPP57U4zo&feature=youtu.be'
+        'https://www.youtube.com/watch?v=BMVYTrQtrTo&feature=youtu.be'
       ]"
     />
   </div>

@@ -18,7 +18,7 @@
           ></textarea>
         </div>
         <div class="theForm__button">
-          <button class=" theButton">
+          <button class=" theButton" disabled>
             <div class="theButton__container">
               <div class="theButton__text">
                 {{ $t("contactus.buttonform") }}

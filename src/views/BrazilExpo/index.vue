@@ -14,6 +14,7 @@ import SecVideo from "@/views/BrazilExpo/SecVideo";
 import SecSustainability from "@/views/BrazilExpo/SecSustainability";
 import SecGoals from "@/views/BrazilExpo/SecGoals";
 import SecHistory from "@/views/BrazilExpo/SecHistory";
+import { TweenMax } from "gsap/all";
 
 export default {
   name: "BrazilExpoPage",
@@ -23,6 +24,17 @@ export default {
     SecSustainability,
     SecGoals,
     SecHistory
+  },
+  methods: {
+    hideLogoInHome() {
+      const brand = document.querySelector(".theNavigation__brand__image");
+      TweenMax.set(brand, {
+        opacity: 1
+      });
+    }
+  },
+  mounted() {
+    this.hideLogoInHome();
   }
 };
 </script>

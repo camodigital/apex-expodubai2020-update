@@ -62,14 +62,14 @@
           ></div>
           <a
             target="_blank"
-            href="https://www.instagram.com/expo2020dubai/?hl=pt-br"
+            href="https://www.facebook.com/Expo2020Dubai/"
             class="theFooter__social__link"
           >
             <IcoFacebook />
           </a>
           <a
             target="_blank"
-            href="https://www.facebook.com/Expo2020Dubai/"
+            href="https://www.instagram.com/expo2020dubai/?hl=pt-br"
             class="theFooter__social__link"
           >
             <IcoInstagram />

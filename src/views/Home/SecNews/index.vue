@@ -10,14 +10,19 @@
           <div class="secNews__item">
             <div class="zRow">
               <div class="zCol">
-                <TheFigure>
-                  <slot>
-                    <img
-                      src="@/assets/images/news1.jpg"
-                      alt="O Pavilhão do Brasil"
-                    />
-                  </slot>
-                </TheFigure>
+                <a
+                  target="_blank"
+                  href="https://portal.apexbrasil.com.br/noticia/brasil-inaugura-obra-do-pavilhao-nacional-na-expo-2020-em-dubai/"
+                >
+                  <TheFigure>
+                    <slot>
+                      <img
+                        src="@/assets/images/news1.jpg"
+                        alt="O Pavilhão do Brasil"
+                      />
+                    </slot>
+                  </TheFigure>
+                </a>
               </div>
               <div class="zCol">
                 <TheContent1
@@ -41,14 +46,19 @@
           <div class="secNews__item">
             <div class="zRow">
               <div class="zCol">
-                <TheFigure>
-                  <slot>
-                    <img
-                      src="@/assets/images/news2.jpg"
-                      alt="O Pavilhão do Brasil"
-                    />
-                  </slot>
-                </TheFigure>
+                <a
+                  target="_blank"
+                  href="https://portal.apexbrasil.com.br/noticia/aberto-credenciamento-de-midia-para-cobertura-da-expo-2020-em-dubai/"
+                >
+                  <TheFigure>
+                    <slot>
+                      <img
+                        src="@/assets/images/news2.jpg"
+                        alt="O Pavilhão do Brasil"
+                      />
+                    </slot>
+                  </TheFigure>
+                </a>
               </div>
               <div class="zCol">
                 <h2 class="zTitleSmallBold">
@@ -67,14 +77,19 @@
           <div class="secNews__item">
             <div class="zRow">
               <div class="zCol">
-                <TheFigure>
-                  <slot>
-                    <img
-                      src="@/assets/images/news3.jpg"
-                      alt="O Pavilhão do Brasil"
-                    />
-                  </slot>
-                </TheFigure>
+                <a
+                  target="_blank"
+                  href="https://portal.apexbrasil.com.br/noticia/Projeto-arquitetonico-para-o-pavilhao-do-Brasil-na-Expo-Dubai-2020-e-divulgado/"
+                >
+                  <TheFigure>
+                    <slot>
+                      <img
+                        src="@/assets/images/news3.jpg"
+                        alt="O Pavilhão do Brasil"
+                      />
+                    </slot>
+                  </TheFigure>
+                </a>
               </div>
               <div class="zCol">
                 <h2 class="zTitleSmallBold">
@@ -93,14 +108,19 @@
           <div class="secNews__item">
             <div class="zRow">
               <div class="zCol">
-                <TheFigure>
-                  <slot>
-                    <img
-                      src="@/assets/images/news4.jpg"
-                      alt="O Pavilhão do Brasil"
-                    />
-                  </slot>
-                </TheFigure>
+                <a
+                  target="_blank"
+                  href="https://portal.apexbrasil.com.br/noticia/RETA-FINAL-INSCRICAO-PARA-SELECAO-DO-PROJETO-PARA-A-EXPO-DUBAI-2020-TERMINA-SABADO-27-10/"
+                >
+                  <TheFigure>
+                    <slot>
+                      <img
+                        src="@/assets/images/news4.jpg"
+                        alt="O Pavilhão do Brasil"
+                      />
+                    </slot>
+                  </TheFigure>
+                </a>
               </div>
               <div class="zCol">
                 <h2 class="zTitleSmallBold">

@@ -31,7 +31,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(3)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-03.jpg"
@@ -42,7 +42,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(4)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-04.jpg"
@@ -53,7 +53,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(5)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-05.jpg"
@@ -64,7 +64,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(6)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-06.jpg"
@@ -79,7 +79,7 @@
           <div class="secPhotos__slide">
             <div class="secPhotos__list">
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(7)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-07.jpg"
@@ -90,7 +90,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(8)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-08.jpg"
@@ -101,7 +101,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(9)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-09.jpg"
@@ -112,7 +112,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(10)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-10.jpg"
@@ -123,7 +123,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(11)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-11.jpg"
@@ -134,7 +134,7 @@
                 </button>
               </div>
               <div class="secPhotos__item">
-                <button @click="openLightboxOnSlide(2)">
+                <button @click="openLightboxOnSlide(12)">
                   <div class="secPhotos__figure">
                     <img
                       src="@/assets/images/expo-12.jpg"

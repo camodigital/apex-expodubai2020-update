@@ -6,7 +6,7 @@
   top: 0
   left: 0
   color: $color8
-  @include lg
+  @include expnav
     padding: .5rem 2rem
 
   &__container
@@ -17,7 +17,7 @@
     @include md
       grid-template-columns: 16rem 1fr
       grid-template-rows: 1fr
-    @include lg
+    @include expnav
       grid-template-columns: 18rem 1fr
       grid-template-rows: 1fr
 
@@ -54,7 +54,7 @@
     flex-direction: column
     justify-content: center
     align-items: flex-end
-    @include lg
+    @include expnav
       flex-direction: row
       justify-content: flex-end
       align-items: center
@@ -72,7 +72,7 @@
       z-index: 20
       @include md
         width: 35%
-      @include lg
+      @include expnav
         width: auto
         height: 100%
         position: relative
@@ -91,11 +91,11 @@
         text-decoration: none
         &:hover
           color: $color3
-        @include lg
+        @include expnav
           color: $color8
         span
           font-weight: bold
-      @include lg
+      @include expnav
         margin-left: 1rem
         display: inline-block
       .router-link-exact-active
@@ -111,7 +111,7 @@
       display: inline-block
       position: relative
       z-index: 21
-      @include lg
+      @include expnav
         margin: 0
         margin-left: 1rem
       &__button
@@ -172,7 +172,7 @@
       position: relative
       cursor: pointer
       z-index: 21
-      @include lg
+      @include expnav
         display: none
       div
         @include transitionFast
@@ -210,7 +210,7 @@
   color: $color4
   box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.2)
   background-color: $color7
-  @include lg
+  @include expnav
     padding: 0 2rem
 
   &__brand
@@ -222,8 +222,6 @@
       opacity: 1
   
   &__nav
-
-    &__list
     
     &__item
       a
@@ -286,6 +284,3 @@
       &:hover
         div
           background-color: $color3
-          &:nth-child(1)
-          &:nth-child(2)
-          &:nth-child(3)

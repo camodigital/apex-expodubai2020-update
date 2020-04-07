@@ -1,6 +1,9 @@
 $sm-width: 0px
+$sm-height: 0px
 $md-width: 758px
+$md-height: 600px
 $lg-width: 1170px
+$exp-nav: 1200px
 
 @mixin sm 
   @media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) 
@@ -12,6 +15,14 @@ $lg-width: 1170px
 
 @mixin lg 
   @media (min-width: #{$lg-width}) 
+    @content
+
+@mixin expnav 
+  @media (min-width: #{$exp-nav}) 
+    @content
+
+@mixin mdh
+  @media (min-height: #{$sm-height}) and (max-height: #{$md-height - 1px}) 
     @content
 
 @mixin landscape

@@ -119,7 +119,8 @@ export default {
       const openLangList = () => {
         TweenMax.to(langList, 0.5, {
           x: 0,
-          opacity: 1
+          opacity: 1,
+          ease: "none"
         });
         langListActive = true;
       };
@@ -127,7 +128,8 @@ export default {
       const closeLangList = () => {
         TweenMax.to(langList, 0.5, {
           x: 200,
-          opacity: 0
+          opacity: 0,
+          ease: "none"
         });
         langListActive = false;
       };
@@ -190,7 +192,7 @@ export default {
     activeNav() {
       const navOverlay = this.$refs.navOverlay;
 
-      if (window.innerWidth <= 1170) {
+      if (window.innerWidth <= 1200) {
         const navButton = this.$refs.navButton;
         const body = document.body;
         const navList = this.$refs.navList;
@@ -268,7 +270,7 @@ export default {
     },
     handleResize() {
       window.addEventListener("resize", () => {
-        if (window.innerWidth <= 500) {
+        if (window.innerWidth <= 750) {
           location.reload();
         }
       });
@@ -278,7 +280,7 @@ export default {
     this.handleLanguage();
     this.fixNav();
     this.activeNav();
-    this.handleResize();
+    // this.handleResize();
   }
 };
 </script>
