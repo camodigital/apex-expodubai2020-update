@@ -3,6 +3,7 @@ $sm-height: 0px
 $md-width: 758px
 $md-height: 600px
 $lg-width: 1170px
+$lgx-width: 1400px
 $exp-nav: 1200px
 
 @mixin sm 
@@ -15,6 +16,10 @@ $exp-nav: 1200px
 
 @mixin lg 
   @media (min-width: #{$lg-width}) 
+    @content
+
+@mixin lgx 
+  @media (min-width: #{$lgx-width}) 
     @content
 
 @mixin expnav 
