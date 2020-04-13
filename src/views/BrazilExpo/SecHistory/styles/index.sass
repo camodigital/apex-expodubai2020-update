@@ -1,25 +1,36 @@
 .secHistory
-  padding: 2rem 1rem
-  display: none
+  padding: 1rem
   position: relative
   background-color: $color8
+  @include md
+    padding: 2rem 0rem
 
   @include md
     display: block
 
   &__header
-    margin-bottom: 10rem
-    text-align: center
+    margin-bottom: 4rem
+    @include md
+      margin-bottom: 10rem
+      text-align: center
 
   .zRow
-    display: flex
-    justify-content: center
+    @include md
+      display: flex
+      justify-content: center
 
   .zCol
+    &:nth-child(1)
+      img
+        margin-bottom: 2rem
+        @include md
+          margin-bottom: 0
+
     &:nth-child(2)
-      width: 80%
-      max-width: 60rem
-      padding: 1rem 4rem
+      @include md
+        width: 80%
+        max-width: 60rem
+        padding: 1rem 4rem
 
   &__title
     margin-bottom: 2rem
@@ -28,4 +39,11 @@
   .sliderNavigation
     width: 100%
     position: absolute
-    top: -10rem
+    top: -5rem
+    
+    @include md
+      top: -10rem
+
+  .titleBigSpanWaveGray
+    span
+      display: block

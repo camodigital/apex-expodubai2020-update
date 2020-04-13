@@ -32,9 +32,7 @@
     </div>
     <FsLightbox
       :toggler="toggler"
-      :sources="[
-        'https://www.youtube.com/watch?v=BMVYTrQtrTo&feature=youtu.be'
-      ]"
+      :sources="['https://www.youtube.com/watch?v=z3PdVAviXfg']"
     />
   </div>
 </template>

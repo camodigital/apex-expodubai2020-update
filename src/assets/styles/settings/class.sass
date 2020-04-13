@@ -211,6 +211,9 @@
     .sliderNavigation    
       .owl-nav
         display: flex
+        @include md
+          display: none
+
         justify-content: space-between
         position: relative
         z-index: 2
@@ -224,6 +227,10 @@
           background-repeat: no-repeat
 
       .owl-dots
+        display: none
+        @include md
+          display: block
+
         position: relative
         .owl-dot
           position: relative
@@ -242,7 +249,7 @@
               height: 20px
               position: absolute
               top: 2.5rem
-              left: 1rem
+              left: .5rem
               border-radius: 50%
               background-color: $color1
         .active
@@ -265,6 +272,9 @@
               border: 4px solid $color1
               background-color: transparent
       &::after
+        display: none
+        @include md
+          display: block
         content: ""
         width: 100%
         height: 1px

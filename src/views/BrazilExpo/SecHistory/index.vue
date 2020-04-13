@@ -5,12 +5,7 @@
         <h1 class="titleBigSpanWaveGray" v-html="$t('history.titlecall')"></h1>
       </header>
       <div class="secHistory__slider zSlidertheme2">
-        <carousel
-          :items="1"
-          :loop="true"
-          :dotsData="true"
-          :navText="['&#10229;', '&#10230;']"
-        >
+        <carousel :items="1" :loop="true" :navText="['&#10229;', '&#10230;']">
           <div
             class="secHistory__slide s1"
             data-dot="<span class='dataHistory'>1851</span>"
@@ -271,6 +266,7 @@
 <script>
 import TheFigure from "@/components/TheFigure";
 import carousel from "vue-owl-carousel2";
+// import $ from "jquery";
 
 export default {
   name: "SecHistory",
@@ -290,10 +286,31 @@ export default {
       slider.append(sliderNavigation);
       sliderNavigation.append(owlDots);
       sliderNavigation.append(owlNav);
+    },
+    insertDataDots() {
+      const dots = document.querySelectorAll(".secHistory .owl-dot span");
+      const dates = [
+        "1851",
+        "1862",
+        "1876",
+        "1922",
+        "1939",
+        "1958",
+        "1970",
+        "2010",
+        "2015",
+        "2020"
+      ];
+
+      dots.forEach((dot, index) => {
+        dot.innerHTML = dates[index];
+      });
+      console.log("teste");
     }
   },
   mounted() {
     this.organizeNavSlider();
+    this.insertDataDots();
   }
 };
 </script>

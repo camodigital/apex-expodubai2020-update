@@ -192,7 +192,7 @@ export default {
     activeNav() {
       const navOverlay = this.$refs.navOverlay;
 
-      if (window.innerWidth <= 1200) {
+      if (window.innerWidth <= 1340) {
         const navButton = this.$refs.navButton;
         const body = document.body;
         const navList = this.$refs.navList;
@@ -270,7 +270,7 @@ export default {
     },
     handleResize() {
       window.addEventListener("resize", () => {
-        if (window.innerWidth <= 750) {
+        if (window.innerWidth >= 900) {
           location.reload();
         }
       });
@@ -280,7 +280,7 @@ export default {
     this.handleLanguage();
     this.fixNav();
     this.activeNav();
-    // this.handleResize();
+    this.handleResize();
   }
 };
 </script>
