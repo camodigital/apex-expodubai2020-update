@@ -266,7 +266,6 @@
 <script>
 import TheFigure from "@/components/TheFigure";
 import carousel from "vue-owl-carousel2";
-// import $ from "jquery";
 
 export default {
   name: "SecHistory",
@@ -305,7 +304,6 @@ export default {
       dots.forEach((dot, index) => {
         dot.innerHTML = dates[index];
       });
-      console.log("teste");
     }
   },
   mounted() {
