@@ -36,7 +36,11 @@
       text-align: center
       color: $color3
     &__subtitle
+      max-width: 300px
+      margin: 0 auto
       text-align: center
+      @include md
+        max-width: none
   &__content
     &__buttons
       display: flex
