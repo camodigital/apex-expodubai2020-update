@@ -26,8 +26,8 @@
               </div>
               <div class="zCol">
                 <TheContent1
-                  title="Brasil inaugura obra do Pavilhão Nacional naExpo 2020, em Dubai"
-                  text="Previsão é de que a obra seja iniciada em dezembro. País é, neste omento, o que está em mais avançado estágio de preparação no continente, à frente inclusive de EUA e Canadá"
+                  title="Brasil inaugura obra do Pavilhão Nacional na Expo 2020, em Dubai"
+                  text="Previsão é de que a obra seja iniciada em dezembro. País é, neste momento, o que está em mais avançado estágio de preparação no continente, à frente inclusive de EUA e Canadá"
                   classTitle="zTitleSmallBold"
                 >
                   <slot>

@@ -83,10 +83,13 @@
           </a>
         </div>
       </div>
-      <span class="theCountdown__days" style="display: none"></span>
-      <span class="theCountdown__hours" style="display: none"></span>
-      <span class="theCountdown__minutes" style="display: none"></span>
-      <span class="theCountdown__seconds" style="display: none"></span>
+      <div class="theFooter__col">
+        <div class="apex_logo">
+          <a target="_blank" href="https://portal.apexbrasil.com.br/">
+            <img src="@/assets/images/apex-brasil.png" alt=""
+          /></a>
+        </div>
+      </div>
     </div>
   </footer>
 </template>

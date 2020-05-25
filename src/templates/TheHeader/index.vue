@@ -1,16 +1,19 @@
 <template>
   <header class="theHeader">
     <TheNavigation />
+    <ThePopUp />
   </header>
 </template>
 
 <script>
 import TheNavigation from "@/components/TheNavigation";
+import ThePopUp from "@/components/ThePopUp";
 
 export default {
   name: "TheHeader",
   components: {
-    TheNavigation
+    TheNavigation,
+    ThePopUp
   }
 };
 </script>

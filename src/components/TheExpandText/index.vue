@@ -51,6 +51,16 @@
             <div v-html="$t('faq.contentquestion5')"></div>
           </div>
         </div>
+
+        <div class="theExpandText__item">
+          <div class="theExpandText__title">
+            <div v-html="$t('faq.titlequestion6')"></div>
+            <div class="ico"><ArrowDown /></div>
+          </div>
+          <div class="theExpandText__text">
+            <div v-html="$t('faq.contentquestion6')"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

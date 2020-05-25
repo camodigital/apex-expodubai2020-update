@@ -1,0 +1,127 @@
+{
+  "nav":{
+    "home": "Home",
+    "ExpoDubai": "O que é a Expo 2020 Dubai?",
+    "BrazilExpo": "O Brasil na Expo 2020",
+    "pavilion": "O Pavilhão do Brasil",
+    "news": "Notícias",
+    "participate": "Participe",
+    "contactus": "Fale Conosco"
+  },
+  "intro":{
+    "logo": "Expo Dubai 2020 - Brasil",
+    "title": "O Brasil na Expo Dubai 2020",
+    "subtitle": "De 20/10/2020 a 10/04/2021 Dubai, Emirados Árabes Unidos",
+    "buttonvideo": "Assista ao vídeo",
+    "buttonparticipate": "Participe",
+    "titlecountdown": "Em <span>Breve</span>",
+    "dayscountdown": "Dias",
+    "hourscountdown": "Horas",
+    "minutescountdown": "Minutos",
+    "secondscountdown": "Segundos"
+  },
+  "news":{
+    "titlecall": "Notícias",
+    "buttoncall": "saiba mais"
+  },
+  "ExpoDubai":{
+    "titlecall": "O que é a <span>Expo 2020?</span>",
+    "call": "<p>Conexão e legado – essas palavras representam o espírito das Expos.</p><p>Desde 1851, ano da primeira edição do projeto, até hoje, as Exposições Universais atraem pessoas de todo o mundo para conferir os avanços tecnológicos e debater as perspectivas do futuro da nossa sociedade.</p><p>Saiba mais sobre a maior vitrine mundial, que atraiu mais de 20 milhões de visitantes apenas em sua edição de 2015, realizada na Itália, clicando abaixo.</p>",
+    "buttoncall": "Saiba Mais",
+    "titlepage":"O que é a <span>Expo Dubai 2020?</span>",
+    "content": "<p>A Expo 2020 é a próxima edição da Exposição Universal, evento itinerante que ocorre a cada cinco anos, em que a maior atração são os pavilhões dos países participantes. O evento ocorrerá entre 20 de outubro de 2020 e 10 de abril de 2021, em Dubai, nos Emirados Árabes Unidos. A expectativa é atrair milhões de visitantes de todo o mundo com o intuito de explorar inovações, ideias, avanços científicos e tecnológicos. Reunirá diversos setores, tais como: empresas privadas, ONGs e instituições governamentais, todas destinadas a discutir negócios, tecnologia, urbanismo, sustentabilidade, ciências, cultura, gastronomia e economia.</p><p>Em 2020, com o tema “<i>Connecting Minds, Creating the Future</i>” (Conectando Mentes, Criando o Futuro”), a Expo Dubai estará organizada em três eixos temáticos: Oportunidade, Mobilidade e Sustentabilidade.</p>",
+    "titlevideo": "Assista <span>ao vídeo</span>",
+    "subtitlevideo": "da Expo Dubai.",
+    "buttonvideo": "Clique Aqui",
+    "titlephotos": "Vejas <span>as Fotos</span>"
+  },
+  "BrazilExpo":{
+    "titlecall": "O Brasil na Expo <span>Dubai 2020</span>",
+    "call": "<p>O Brasil tem o passaporte carimbado desde a primeira edição da Exposição Universal, realizada no Reino Unido, em 1851, e sempre contribuiu com várias inovações de <i>design</i> e tecnologia.</p><p>Em Dubai, o país participa do evento com um pavilhão na área de Sustentabilidade, abordando os temas: aproveitamento consciente do meio ambiente para produção, diferentes potenciais agrícolas e a geração de energia renovável, dentre outros.</p><p>O Pavilhão Brasileiro traz uma proposta imersiva aos seus visitantes, com sons e cheiros de vários ecossistemas de diversas regiões do país, garantindo experiência única.</p>",
+    "buttoncall": "Saiba Mais",
+    "titlepage": "O Brasil na <span>Expo Dubai 2020</span>",
+    "content": "<p>Juntos pelo Desenvolvimento Sustentável. Na Expo Dubai 2020, o Brasil traz uma experiência de sensações para apresentar propostas de melhoria do uso de recursos naturais, estratégias de crescimento agrícola sustentável, novas formas de geração de energia limpa, entre outros temas.</p><p>Sinta o perfume das grandes matas, descubra os climas dos diversos biomas e se encante com as cores de um país unicamente especial. Tudo isso, enquanto descobre como o Brasil está agindo para preservar o planeta e expandir a oferta de alimentos.</p>",
+    "buttonvideo": "Assista ao vídeo",
+    "titlesustainability": "Sustentabilidade",
+    "contentsustainability": "<p>O Pavilhão do Brasil destacará a sustentabilidade, a partir do tema <i>TOGETHER FOR SUSTAINABLE DEVELOPMENT</i>, dividido em natureza, pessoas e o amanhã (<i>Together for Nature, Together for People e Together for Tomorrow</i>). Esses são os pontos de partida para que os arquitetos mostrem a diversidade de fauna e flora, a multiplicidade étnica, criativa e cultural do povo brasileiro e ainda apresentem o Brasil como um país agregador, além de ator de relevância global nas questões internacionais relacionadas à sustentabilidade. A palavra-chave que resume o tema do pavilhão verde-amarelo é a sociobiodiversidade brasileira. O Pavilhão do Brasil, desde a sua concepção, deve refletir essa característica tão única do país.</p><p>O Pavilhão do Brasil será construído no distrito da sustentabilidade da Expo 2020. O projeto do pavilhão, dos arquitetos JPG.ARQ, MMBB e Ben-Avid, foi selecionado por meio de concurso organizado em parceria com o Instituto de Arquitetos do Brasil e inspirado pelas águas brasileiras. Os visitantes poderão caminhar por uma lâmina d’água, que representa os rios brasileiros e ocupará a maior parte do espaço. A experiência será complementada por projeções, sons, músicas e aromas.</p>",
+    "titlegoals": "Nossos <span>Objetivos</span>",
+    "increasetourism": "Aumentar o Turismo",
+    "promoteinnovation": "Promover a Inovação",
+    "promotesustainability": "Promover a Sustentabilidade",
+    "diversifymarkets": "Diversificar Mercados Internacionais",
+    "supporteducation": "Apoiar a Educação Internacional",
+    "attractinvestments": "Atrair Investimentos Estrangeiros"
+  },
+  "history":{
+    "titlecall": "História do <span>Brasil na Expo</span>",
+    "call": "<p>Conectando Mentes, criando o Futuro. Na Expo Dubai 2020, o Brasil traz propostas de melhoria do uso de recursos naturais, estratégias de crescimento agrícola sustentável e novas formas de geração de energia limpa, entre outros temas.</p><p>Sinta o perfume das grandes matas, descubra os climas dos diversos biomas e se encante com as cores de um país unicamente especial. Tudo isso, enquanto descobre como o Brasil está agindo para preservar o planeta e expandir a oferta de alimento.</p>",
+    "buttoncall": "Saiba Mais",
+    "title1851": "Expo Londres 1851, Reino Unido",
+    "content1851": "<p>O Brasil já participou de 31 Exposições Universais, contando a partir da primeira presença oficial registrada em 1862. A 32ª acontecerá neste ano, em Dubai. Confira abaixo alguns destaques da presença brasileira neste giga evento mundial.</p><p>1851 – Primeira edição, realizada em Londres, registra a primeira participação brasileira, ainda na época do Império. O evento atraiu seis milhões de visitantes e 14 mil expositores oriundos de 34 países, distribuídos em seis hectares no Hyde Park, na região central de Londres.</p>",
+    "title1862": "Expo Londres 1862, Reino Unido",
+    "content1862": "<p>O Brasil passa a participar oficialmente e regularmente das Exposições Universais, buscando mostrar ao mundo seu potencial natural e industrial, de modo a atrair, além de imigrantes, investidores e mercados externos. Com o apoio e o subsídio de Dom Pedro II, essa era uma forma de inserir o país no grupo das nações civilizadas, exibindo seus avanços científicos e estabilidade política.</p>",
+    "title1876": "Filadélfia 1876, Estados Unidos da América",
+    "content1876": "<p>Dom Pedro II foi convidado ilustre da edição realizada na Filadélfia (EUA).</p>",
+    "title1922": "Rio de Janeiro 1922, Brasil",
+    "content1922": "<p>Por ocasião das comemorações do primeiro centenário de Independência, ocorreu uma exposição de caráter internacional no Rio de Janeiro, que contou com a participação de 13 países.</p>",
+    "title1939": "Nova Iorque 1939,  Estados Unidos da América",
+    "content1939": "<p>Na Expo Nova Iorque (EUA) Lúcio Costa e Oscar Niemeyer surpreenderam o mundo com formas livres, nas quais as qualidades plásticas do concreto foram aproveitadas ao máximo.</p>",
+    "title1958": "Expo Bruxelas 1958, Bélgica",
+    "content1958": "<p>A Expo Bruxelas representou a oportunidade para apresentar internacionalmente os “50 anos em 5” prometidos pelo presidente Juscelino Kubitschek. A exposição foi realizada entre 17 de abril e 19 de outubro de 1958, contou com a participação de 52 países e teve mais de 40 milhões de visitantes. O Pavilhão do Brasil foi idealizado pelo arquiteto Sergio Bernardes e foi marcado pela exploração da estrutura metálica e cabos de aço.</p>",
+    "title1970": "Expo Osaka 1970, Japão",
+    "content1970": "<p>No momento da Exposição Universal de Osaka (Japão), o Brasil se encontrava fora do circuito de Exposições Universais havia 12 anos. O Pavilhão do Brasil na Expo Osaka, de autoria de um grupo de arquitetos paulistas (Paulo Mendes da Rocha, Jorge Caron, Júlio Katinsky e Ruy Ohtake, com grande equipe de colaboradores arquitetos, estudantes e artistas plásticos), mostrou com vãos de até 30 metros e balanços de 20 metros as qualidades construtivas do concreto protendido.</p>",
+    "title2010": "Expo Xangai 2010, China",
+    "content2010": "<p>Com o tema <i>Better City – Better Life</i>, a Expo Universal 2010, realizada em Xangai (China) recebeu público total de 73 milhões de pessoas. Coordenado pela Apex-Brasil, o Pavilhão do Brasil, cujo tema foi Cidades Pulsantes, teve 2 mil m², recebeu 2,63 milhões de visitantes e sediou 15 eventos (5 ministeriais, 7 culturais e 3 de negócios). O Pavilhão foi criado a partir de um galpão alugado pelo governo brasileiro, com projeto assinado pelo arquiteto Fernando Brandão. A fachada foi criada a partir de estruturas metálicas e trama de madeira certificada pintada de verde.</p>",
+    "title2015": "Expo Milão 2015, Itália",
+    "content2015": "<p>Novamente coordenado pela Apex-Brasil, o Pavilhão do Brasil foi um dos grandes destaques da Expo realizada em Milão. O espaço brasileiro foi concebido pelo Studio Arthur Casas, em parceria com o Atelier Marko Brajovic e o Studio Mosae, e trouxe uma rede onde as pessoas podiam caminhar. Ocupando área total de 5.357 m², a estrutura apresentou o tema Alimentando o Mundo com Soluções, recebeu 5,3 milhões de visitantes e ganhou o prêmio Towards a Sustainable EXPO na categoria Design e Materiais da Edificação. O Pavilhão sediou 36 eventos, com a participação de 73 empresas brasileiras, 8 entidades setoriais, 20 órgãos governamentais e 12 estados brasileiros.</p>",
+    "title2020": "Expo Dubai 2020,  Emirados Árabes Unidos",
+    "content2020": "<p>O tema geral da Expo Dubai é <i>Connecting Minds, Creating the Future</i>, com três subtemas: <i>Opportunity, Mobility e Sustainability</i>. Esses três temas dividem geograficamente o Parque de Exposições. O Pavilhão do Brasil está localizado no distrito da sustentabilidade e está sendo construído em um lote de 3.772,59 m². O projeto é dos arquitetos da JPG.ARQ, MMBB Arquitetos e Ben-Avid e tem a água como elemento principal. Espera-se que, enquanto caminham pelo enorme espelho d’água que domina a praça central do pavilhão, os visitantes sejam transportados pelo Brasil em uma experiência sensorial composta por projeções, sons e aromas.</p>"
+  },
+  "pavilion": {
+    "titlecall": "O Pavilhão <span>do Brasil</span>",
+    "call": "<p>O pavilhão será como um oásis no deserto, um mistura de climas, sons e cheiros dos biomas brasileiros transportados exclusivamente para a Expo Dubai 2020.</p><p>Sinta a água nos seus pés e conecte-se com um país repleto de oportunidades.</p>",
+    "buttoncall": "Saiba Mais",
+    "titlepage": "O Pavilhão do Brasil",
+    "content": "<p>O Pavilhão do Brasil ficará no Distrito da Sustentabilidade da Expo 2020. A escolha do projeto foi feita por meio de um concurso organizado em parceria com o Instituto de Arquitetos do Brasil e o projeto escolhido foi inspirado nas águas brasileiras.</p><p>O espaço oferecerá uma experiência de imersão sensorial em que os visitantes, em pleno deserto de Dubai, poderão caminhar por uma lâmina d’água que representa os rios e lagos brasileiros. A experiência será complementada por projeções, variações de temperatura, sons, músicas, aromas e um visual fascinante, tornando a experiência completa.</p><p>Durante o dia, será um espaço de sombra e descanso. À noite, o pavilhão ganha ainda mais vida e se transforma em um cubo luminoso flutuante que apresenta ao mundo um país aberto, cheio de oportunidades, moderno, produtivo, ambientalmente consciente e sustentável. A ideia é que a simples presença nesse espaço produza nos visitantes uma conexão emocional permanente com o Brasil.</p>",
+    "titlebusinessgeneration": "Geração de <span>Negócios</span>",
+    "contentbusinessgeneration": "<p>O pavilhão também será uma oportunidade de ativação de marcas e de produtos brasileiros nos mercados local e regional. De acordo com o planejamento da Organização da Expo Dubai, a maior parte dos visitantes será formada por habitantes dos Emirados Árabes Unidos e por turistas chineses e indianos, que fazem parte de mercados extremamente relevantes para produtos brasileiros. Essa será uma oportunidade para que os visitantes do pavilhão desenvolvam uma associação positiva com as marcas brasileiras.</p>",
+    "titletheme": "Tema do <span>Pavilhão do Brasil<span>",
+    "contenttheme": "<p>A palavra-chave que resume o tema do Pavilhão do Brasil é associada à biodiversidade. Destacará a sustentabilidade a partir do tema <i>TOGETHER FOR DIVERSITY</i>, dividido em natureza, pessoas e o amanhã (<i>Together for Nature, Together for People e Together for Tomorrow</i>). Esses foram os pilares que nortearam toda a criação do espaço do Brasil.</p><p>O objetivo é que o espaço represente a diversidade de fauna e flora, a multiplicidade étnica, criativa e cultura do povo brasileiro e ainda reforce a imagem do Brasil como um país agregador, moderno, parceiro e de relevância global nas questões internacionais relacionadas à sustentabilidade.</p>",
+    "titlevideo":"Assista <span>ao vídeo</span>",
+    "subtitlevideo":"do evento abaixo.",
+    "buttonvideo": "Clique Aqui",
+    "titlephotos": "Vejas <span>as Fotos</span>"
+  },
+  "participate":{
+    "titlecall": "Participe",
+    "call": "<p>Sua empresa não pode ficar de fora da EXPO 2020, um dos mais importantes eventos mundiais, que reúne diversos públicos, como: empresas privadas, ONGs e instituições governamentais para discutir temas como negócios, tecnologia, urbanismo, sustentabilidade, ciências, cultura, gastronomia e economia.</p>",
+    "button": "Cadastre-se"
+  },
+  "contactus": {
+    "titlecall": "Fale <span>Conosco</span>",
+    "subtitlecall": "Tem alguma dúvida sobre o evento? <br/>Nos mande a mensagem ou acesse a nossa seção de perguntas frequentes.",
+    "titleform": "Entre <span>em contato</span>",
+    "inputname": "Nome",
+    "inputemail": "E-mail",
+    "inputmessage": "Mensagem",
+    "buttonform": "enviar"
+  },
+  "faq":{
+    "titlecall": "Perguntas <span>Frequentes</span>",
+    "call": "<p>Dúvidas sobre a Expo 2020 Dubai, como participar do evento ou os temas que serão falados? Clique abaixo.</p>",
+    "buttoncall": "Acessar o FAQ",
+    "titlequestion1": "Qual o conceito de país que o Brasil pretende passar?",
+    "contentquestion1": "<p>O pavilhão do Brasil está localizado no Distrito da Sustentabilidade. A ideia é conduzir o visitante a uma experiência sensorial e mostrar ao mundo esse Brasil cheio de oportunidades, moderno, produtivo, ambientalmente consciente e sustentável como fundo.</p>",
+    "titlequestion2": "Quais as expectativas concretas de resultados da participação?",
+    "contentquestion2": "<p>As Expos são eventos direcionados ao público final, em larga medida, formado por famílias e visitantes em momentos de lazer. É, portanto, um evento no qual praticamente todos os países participam em busca de ganhos de imagem, decorrentes da experiência oferecida aos visitantes.</p><p>De acordo com o planejamento da Organização da Expo, a maior parte dos visitantes será formada por nacionais dos Emirados Árabes Unidos (EAU) e por turistas chineses e indianos. São mercados extremamente relevantes para os produtos brasileiros. O que esperamos é contribuir para que os visitantes que passem por nosso pavilhão desenvolvam uma conexão permanente com o Brasil, de modo que, quando entrem em contato com um produto brasileiro, seja ele econômico ou cultural, o resultado seja uma associação positiva.</p>",
+    "titlequestion3": "Os Emirados e mais especificamente Dubai têm tentado se transformar em <i>hub</i> de logística e polo turístico. Há alguma oportunidade para o Brasil nisso? Qual?",
+    "contentquestion3": "<p>Além de ser um mercado extremamente importante para nossos produtos (destaque, por exemplo, para nossas exportações de proteína animal ou do setor de transportes para o país), os EAU são também fonte importante de investimento estrangeiro (com investimento, por exemplo, de empresa emirática no Porto de Santos). Pode-se dizer também que o mercado dos EAU serve como “selo de qualidade” para os demais mercados da região, tornando-se estratégico para nossas empresas.</p>",
+    "titlequestion4": "Só a Apex-Brasil está envolvida com o projeto ou existem também outras empresas ou órgãos governamentais?",
+    "contentquestion4": "<p>A Apex-Brasil tem a responsabilidade de liderar a participação brasileira na Exposição Universal e foi designada formalmente pelo Governo Federal para fazê-lo, tendo também firmado o contrato de participação com o Comitê Organizador.</p><p>Um Grupo Gestor da Participação Brasileira na Expo foi constituído desde 2018 e, atualmente, é composto por várias entidades governamentais e ministérios (MRE, Secom/PR, Mapa, Cidadania, MMA, MTUR, Embratur, MCTI, MMFDH, Economia). A Apex-Brasil reporta-se regularmente a esse grupo e o consulta sobre os mais diversos temas. Até o momento, foram realizadas oito reuniões do grupo gestor.</p>",
+    "titlequestion5": "De onde vem o orçamento da Apex-Brasil que servirá para a construção do Pavilhão Brasileiro?",
+    "contentquestion5": "<p>Os recursos para a construção do Pavilhão do Brasil na Expo Dubai 2020 são integralmente da Apex-Brasil. A Agência é um Serviço Social Autônomo e compõe o denominado “Sistema S”, não fazendo parte da Administração Pública Direta ou Indireta. É uma entidade privada e sem fins lucrativos, que atua em estreita cooperação com o poder público para a execução de políticas de promoção de exportações e atração de investimentos estrangeiros. Para tanto, mantém um Contrato de Gestão com o Ministério das Relações Exteriores.</p>"
+  },
+  "footer": {
+    "titlesocial": "Siga-nos"
+  }
+} 

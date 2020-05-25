@@ -74,7 +74,14 @@
             data-dot="<span class='dataHistory'>1922</span>"
           >
             <div class="zRow">
-              <div class="zCol"></div>
+              <div class="zCol">
+                <TheFigure>
+                  <img
+                    src="@/assets/images/expo-brasil1922.jpg"
+                    :alt="$t('BrazilExpo.titlecall')"
+                  />
+                </TheFigure>
+              </div>
               <div class="zCol">
                 <div class="secHistory__content">
                   <h2

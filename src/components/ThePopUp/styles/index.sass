@@ -1,0 +1,51 @@
+.thePopUp
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 600
+
+  &__hide
+    display: none
+
+  &__container
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(0, 0, 0, 0.8)
+
+  &__content
+    width: 100%
+    max-width: 500px
+    padding: 3rem
+    text-align: center
+    font-size: 1.2rem
+    border-radius: 5px
+    background-color: $color7
+
+  &__close
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    position: relative
+
+    &:hover
+      svg
+        transform: scale(1.2)
+
+    svg
+      width: 35px
+      height: 35px
+      position: absolute
+      top: -3.7rem
+      right: -3.7rem
+      transition: .5s
+      cursor: pointer
+
+  &__learnMore
+    a
+      font-weight: bold
+      color: $color2
