@@ -38,6 +38,15 @@ export default {
     secContactUs
   },
   methods: {
+    toggleBodyClass(addRemoveClass, className) {
+      const el = document.body;
+
+      if (addRemoveClass === "addClass") {
+        el.classList.add(className);
+      } else {
+        el.classList.remove(className);
+      }
+    },
     hideLogoInHome() {
       const brand = document.querySelector(".theNavigation__brand__image");
       TweenMax.set(brand, {
@@ -47,6 +56,10 @@ export default {
   },
   mounted() {
     this.hideLogoInHome();
+    this.toggleBodyClass("addClass", "home");
+  },
+  destroyed() {
+    this.toggleBodyClass("removeClass", "home");
   }
 };
 </script>

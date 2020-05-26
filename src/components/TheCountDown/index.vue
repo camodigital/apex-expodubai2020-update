@@ -83,7 +83,6 @@ export default {
           // If the count down is finished, write some text
           if (distance < 0) {
             clearInterval(x);
-            console.log("contagem finalizada");
           }
         }, 1000);
       }

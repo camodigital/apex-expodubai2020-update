@@ -245,7 +245,7 @@
               <div class="zCol">
                 <TheFigure>
                   <img
-                    src="@/assets/images/h2020.png"
+                    src="@/assets/images/brasil-01z.jpg"
                     :alt="$t('BrazilExpo.titlecall')"
                   />
                 </TheFigure>
@@ -254,11 +254,11 @@
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title2020')"
+                    v-html="$t('history.title2021')"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content2020')"
+                    v-html="$t('history.content2021')"
                   ></div>
                 </div>
               </div>
