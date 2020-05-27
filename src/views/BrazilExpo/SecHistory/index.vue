@@ -237,7 +237,7 @@
             </div>
           </div>
 
-          <div
+          <!-- <div
             class="secHistory__slide"
             data-dot="<span class='dataHistory'>2020</span>"
           >
@@ -263,7 +263,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </carousel>
       </div>
     </div>
