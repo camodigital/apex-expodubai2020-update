@@ -5,11 +5,11 @@
         <div class="thePopUp__close"><buttonClose @click="hide" /></div>
         <div class="thePopUp__message">
           <p>
-            A Expo 2020 Dubai foi adiada para 2021/2022 em razão da pandemia da
+            A Expo 2020 Dubai foi adiada para 2021/2022, em razão da pandemia da
             Covid-19.
           </p>
           <p>
-            Expo 2020 Dubai was postponed to 2021/2022 due to the Covid-19
+            Expo 2020 Dubai was postponed to 2021/2022, due to the Covid-19
             pandemic.
           </p>
         </div>
