@@ -27,7 +27,7 @@
           <div>
             <a
               target="_blank"
-              href="http://web.apexbrasil.com.br/cn/aotb0/solicitacaodeevento"
+              href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=CEWR5Xs--Ea5jlHiOyklhsr0d7OZxXxHgC1aqdHQRlZUNzJKUlhNRTcwWlRPNkJRWlNCV1FLVjVWUy4u"
             >
               <TheButton :text="$t('intro.buttonparticipate')">
                 <slot>
