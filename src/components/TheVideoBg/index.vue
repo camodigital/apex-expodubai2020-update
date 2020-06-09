@@ -1,7 +1,7 @@
 <template>
   <div class="theVideoBg">
-    <div class="theVideoBg__container">
-      <div class="theVideoBg__overlay"></div>
+    <div class="theVideoBg__overlay"></div>
+    <div v-if="showVideo" class="theVideoBg__container">
       <video
         class="theVideoBg__video"
         poster="@/assets/images/intro.jpg"
@@ -17,7 +17,24 @@
 
 <script>
 export default {
-  name: "TheVideoBg"
+  name: "TheVideoBg",
+  data() {
+    return {
+      showVideo: false
+    };
+  },
+  methods: {
+    isMobile() {
+      if (window.innerWidth < 600) {
+        this.showVideo = false;
+      } else {
+        this.showVideo = true;
+      }
+    }
+  },
+  mounted() {
+    this.isMobile();
+  }
 };
 </script>
 

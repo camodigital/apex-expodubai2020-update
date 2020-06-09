@@ -48,7 +48,7 @@
           <li class="theNavigation__nav__item">
             <a
               target="_blank"
-              href="http://web.apexbrasil.com.br/cn/aotb0/solicitacaodeevento"
+              href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=CEWR5Xs--Ea5jlHiOyklhsr0d7OZxXxHgC1aqdHQRlZUNzJKUlhNRTcwWlRPNkJRWlNCV1FLVjVWUy4u"
             >
               <span>
                 {{ $t("nav.participate") }}
@@ -269,8 +269,10 @@ export default {
       }
     },
     handleResize() {
+      let wSize = window.innerWidth;
+
       window.addEventListener("resize", () => {
-        if (window.innerWidth >= 900) {
+        if (window.innerWidth != wSize) {
           location.reload();
         }
       });
