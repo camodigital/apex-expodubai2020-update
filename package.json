@@ -9,9 +9,11 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "gsap": "^3.2.6",
     "vue": "^2.6.11",
+    "vue-axios": "^2.1.5",
     "vue-i18n": "^8.0.0",
     "vue-owl-carousel2": "^2.0.7",
     "vue-router": "^3.1.5",
@@ -25,6 +27,7 @@
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.0.3",
+    "emailjs-com": "^2.4.1",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",

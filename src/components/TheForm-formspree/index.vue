@@ -13,7 +13,7 @@
           <input
             type="text"
             :placeholder="$t('contactus.inputname')"
-            name="user_name"
+            name="nome"
             v-model="nameMsg"
           />
         </div>
@@ -21,13 +21,13 @@
           <input
             type="email"
             :placeholder="$t('contactus.inputemail')"
-            name="user_email"
+            name="email"
             v-model="emailMsg"
           />
         </div>
         <div class="theForm__textarea">
           <textarea
-            name="message"
+            name="mensagem"
             cols="30"
             rows="10"
             :placeholder="$t('contactus.inputmessage')"
@@ -58,7 +58,7 @@
 
 <script>
 import IcoSubmit from "@/assets/images/telegram.svg";
-import emailjs from "emailjs-com";
+import axios from "axios";
 
 export default {
   name: "TheForm",
@@ -82,22 +82,31 @@ export default {
         this.showSucess = false;
       }, 2000);
     },
-    sendEmail: e => {
-      emailjs
-        .sendForm(
-          "gmail",
-          "form_contact",
-          e.target,
-          "user_O0PbwXD0k2e7p6gFB4PeB"
-        )
-        .then(
-          result => {
-            console.log("SUCCESS!", result.status, result.text);
-          },
-          error => {
-            console.log("FAILED...", error);
+    sendEmail() {
+      this.loadingTxt = true;
+      axios
+        .post("https://formspree.io/mqkydybb", {
+          name: this.nameMsg,
+          from: this.emailMsg,
+          _subject: `${this.nameMsg} | Expo Dubai Site`,
+          message: this.messageMsg
+        })
+        .then(response => {
+          this.nameMsg = "";
+          this.emailMsg = "";
+          this.messageMsg = "";
+          this.loadingTxt = false;
+          //i redirect my app to '/success' route once payload completed.
+          this.$router.push({ path: "/" });
+          console.log(response);
+          this.handleShowSucess();
+        })
+        .catch(error => {
+          if (error.response) {
+            // eslint-disable-next-line no-alert
+            alert(error.response.data);
           }
-        );
+        });
     }
   }
 };

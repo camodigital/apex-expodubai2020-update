@@ -1,0 +1,25 @@
+.faceFeed
+  margin-top: 1rem
+
+  &__item
+    margin-bottom: 1rem
+    background: $color8
+
+    a
+      display: grid
+      grid-template-columns: 30% 1fr
+      grid-template-rows: 1fr
+
+  &__image
+    max-height: 105px
+    overflow: hidden
+
+    img
+      width: 100%
+      max-width: none
+      height: 100%
+      -o-object-fit: cover
+      object-fit: cover
+
+  &__text
+    padding: 1rem
