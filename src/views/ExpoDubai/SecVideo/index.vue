@@ -32,7 +32,9 @@
     </div>
     <FsLightbox
       :toggler="toggler"
-      :sources="['https://www.youtube.com/watch?v=z3PdVAviXfg']"
+      :sources="[
+        'https://www.youtube.com/watch?v=-SK8Xxp3-qg&feature=emb_title'
+      ]"
     />
   </div>
 </template>
@@ -55,6 +57,31 @@ export default {
     return {
       toggler: false
     };
+  },
+  methods: {
+    reloadIframes() {
+      const button = document.querySelector(".secVideoButton__button");
+
+      button.addEventListener("click", () => {
+        setTimeout(() => {
+          //change lang
+          let lang = this.$i18n.locale;
+
+          this.$i18n.locale = lang;
+
+          setTimeout(() => {
+            //reload
+            const iframe = document.querySelector(
+              ".fslightbox-container iframe"
+            );
+            iframe.src += "";
+          }, 2000);
+        }, 2000);
+      });
+    }
+  },
+  mounted() {
+    this.reloadIframes();
   }
 };
 </script>

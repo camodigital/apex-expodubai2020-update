@@ -1,5 +1,5 @@
 {
-  "nav":{
+  "nav": {
     "home": "Home",
     "ExpoDubai": "O que é a Expo Dubai?",
     "BrazilExpo": "O Brasil na Expo",
@@ -8,7 +8,7 @@
     "participate": "Participe",
     "contactus": "Fale Conosco"
   },
-  "intro":{
+  "intro": {
     "logo": "Expo Dubai - Brasil",
     "title": "O Brasil na Expo Dubai",
     "subtitle": "De 1º/10/2021 a 31/03/2022. Dubai, Emirados Árabes Unidos.",
@@ -20,22 +20,23 @@
     "minutescountdown": "Minutos",
     "secondscountdown": "Segundos"
   },
-  "news":{
+  "news": {
     "titlecall": "Notícias",
     "buttoncall": "saiba mais"
   },
-  "ExpoDubai":{
+  "ExpoDubai": {
     "titlecall": "O que é a <span>Expo Dubai?</span>",
     "call": "<p>Conexão e legado – essas palavras representam o espírito das Expos.</p><p>Desde 1851, ano da primeira edição do projeto, as Exposições Universais atraem pessoas de todo o mundo para conferir os avanços tecnológicos e debater as perspectivas do futuro da nossa sociedade.</p><p>Saiba mais sobre a maior vitrine mundial, que atraiu mais de 20 milhões de visitantes apenas em sua edição de 2015, realizada na Itália, clicando abaixo.</p>",
     "buttoncall": "Saiba Mais",
-    "titlepage":"O que é a <span>Expo Dubai?</span>",
+    "titlepage": "O que é a <span>Expo Dubai?</span>",
     "content": "<p>A Expo Dubai é a próxima edição da Exposição Universal, evento itinerante que ocorre a cada cinco anos, em que a maior atração são os pavilhões dos países participantes. O evento ocorrerá entre 1º de outubro de 2021 e 31 de março de 2022, em Dubai, nos Emirados Árabes Unidos. A expectativa é atrair milhões de visitantes de todo o mundo com o intuito de explorar inovações, ideias, avanços científicos e tecnológicos. Reunirá diversos setores, tais como: empresas privadas, ONGs e instituições governamentais, todas destinadas a discutir negócios, tecnologia, urbanismo, sustentabilidade, ciências, cultura, gastronomia e economia.</p><p>Em 2021, com o tema “<i>Connecting Minds, Creating the Future</i>” (Conectando Mentes, Criando o Futuro”), a Expo Dubai estará organizada em três eixos temáticos: Oportunidade, Mobilidade e Sustentabilidade.</p>",
     "titlevideo": "Assista <span>ao vídeo</span>",
     "subtitlevideo": "da Expo Dubai.",
     "buttonvideo": "Clique Aqui",
-    "titlephotos": "Vejas <span>as Fotos</span>"
+    "titlephotos": "Vejas <span>as Fotos</span>",
+    "linkvideo": "https://www.youtube.com/watch?v=-SK8Xxp3-qg&feature=youtu.be"
   },
-  "BrazilExpo":{
+  "BrazilExpo": {
     "titlecall": "O Brasil na Expo <span>Dubai</span>",
     "call": "<p>O Brasil tem o passaporte carimbado desde a primeira edição da Exposição Universal, realizada no Reino Unido, em 1851, e sempre contribuiu com várias inovações de <i>design</i> e tecnologia.</p><p>Em Dubai, o país participa do evento com um pavilhão no distrito da sustentabilidade, abordando os temas: aproveitamento consciente do meio ambiente para produção, diferentes potenciais agrícolas e a geração de energia renovável, dentre outros.</p><p>O Pavilhão Brasileiro traz uma proposta imersiva aos seus visitantes, com sons e cheiros de vários ecossistemas de diversas regiões do país, garantindo experiência única.</p>",
     "buttoncall": "Saiba Mais",
@@ -43,7 +44,7 @@
     "content": "<p>Juntos pelo Desenvolvimento Sustentável. Na Expo Dubai, o Brasil traz uma experiência de sensações para apresentar propostas de melhoria do uso de recursos naturais, estratégias de crescimento agrícola sustentável, novas formas de geração de energia limpa, entre outros temas.</p><p>Sinta o perfume das grandes matas, descubra os climas dos diversos biomas e se encante com as cores de um país unicamente especial. Tudo isso, enquanto descobre como o Brasil está agindo para preservar o planeta e expandir a oferta de alimentos.</p>",
     "buttonvideo": "Assista ao vídeo",
     "titlesustainability": "Sustentabilidade",
-    "contentsustainability": "<p>O Pavilhão do Brasil destacará a sustentabilidade, a partir do tema <i>TOGETHER FOR SUSTAINABLE DEVELOPMENT</i>, dividido em natureza, pessoas e o amanhã (<i>Together for Nature, Together for People e Together for Tomorrow</i>). Esses são os pontos de partida para mostrar a diversidade de fauna e flora, a multiplicidade étnica, criativa e cultural do povo brasileiro e ainda apresentem o Brasil como um país agregador, além de ator de relevância global nas questões internacionais relacionadas à sustentabilidade. A palavra-chave que resume o tema do pavilhão verde-amarelo é a sociobiodiversidade brasileira. O Pavilhão do Brasil, desde a sua concepção, deve refletir essa característica tão única do país.</p><p>O pavilhão está sendo construído no distrito da sustentabilidade da Expo Dubai. O projeto do pavilhão, dos arquitetos JPG.ARQ, MMBB e Ben-Avid, foi selecionado por meio de concurso organizado em parceria com o Instituto de Arquitetos do Brasil e inspirado pelas águas brasileiras. Os visitantes poderão caminhar por uma lâmina d’água, que representa os rios brasileiros e ocupará a maior parte do espaço. A experiência será complementada por projeções, sons, músicas e aromas.</p>",
+    "contentsustainability": "<p>O Pavilhão do Brasil destacará a sustentabilidade, a partir do tema <i>TOGETHER FOR SUSTAINABLE DEVELOPMENT</i>, dividido em natureza, pessoas e o amanhã (<i>Together for Nature, Together for People e Together for Tomorrow</i>). Esses são os pontos de partida para mostrar a diversidade de fauna e flora, a multiplicidade étnica, criativa e cultural do povo brasileiro e ainda apresentar o Brasil como um país agregador, além de ator de relevância global nas questões internacionais relacionadas à sustentabilidade. A palavra-chave que resume o tema do pavilhão verde-amarelo é a sociobiodiversidade brasileira. O Pavilhão do Brasil, desde a sua concepção, deve refletir essa característica tão única do país.</p><p>O pavilhão está sendo construído no distrito da sustentabilidade da Expo Dubai. O projeto do pavilhão, dos arquitetos JPG.ARQ, MMBB e Ben-Avid, foi selecionado por meio de concurso organizado em parceria com o Instituto de Arquitetos do Brasil e inspirado pelas águas brasileiras. Os visitantes poderão caminhar por uma lâmina d’água, que representa os rios brasileiros e ocupará a maior parte do espaço. A experiência será complementada por projeções, sons, músicas e aromas.</p>",
     "titlegoals": "Nossos <span>Objetivos</span>",
     "increasetourism": "Aumentar o Turismo",
     "promoteinnovation": "Promover a Inovação",
@@ -52,7 +53,7 @@
     "supporteducation": "Apoiar a Educação Internacional",
     "attractinvestments": "Atrair Investimentos Estrangeiros"
   },
-  "history":{
+  "history": {
     "titlecall": "História do <span>Brasil nas Expos</span>",
     "call": "<p>Conectando Mentes, criando o Futuro. Na Expo Dubai, o Brasil traz propostas de melhoria do uso de recursos naturais, estratégias de crescimento agrícola sustentável e novas formas de geração de energia limpa, entre outros temas.</p><p>Sinta o perfume das grandes matas, descubra os climas dos diversos biomas e se encante com as cores de um país unicamente especial. Tudo isso, enquanto descobre como o Brasil está agindo para preservar o planeta e expandir a oferta de alimento.</p>",
     "buttoncall": "Saiba Mais",
@@ -87,12 +88,12 @@
     "contentbusinessgeneration": "<p>O pavilhão também será uma oportunidade de ativação de marcas e de produtos brasileiros nos mercados local e regional. De acordo com o planejamento da Organização da Expo Dubai, a maior parte dos visitantes será formada por habitantes dos Emirados Árabes Unidos e por turistas chineses e indianos, que fazem parte de mercados extremamente relevantes para produtos brasileiros. Essa será uma oportunidade para que os visitantes do pavilhão desenvolvam uma associação positiva com as marcas brasileiras.</p>",
     "titletheme": "Tema do <span>Pavilhão do Brasil<span>",
     "contenttheme": "<p>A palavra-chave que resume o tema do Pavilhão do Brasil é associada à biodiversidade. Destacará a sustentabilidade, a partir do tema <i>Together for Sustainable Development</i>, dividido em natureza, pessoas e o amanhã (<i>Together for Nature, Together for People e Together for Tomorrow</i>). Esses foram os pilares que nortearam toda a criação do espaço do Brasil.</p><p>O objetivo é que o espaço represente a diversidade de fauna e flora, a multiplicidade étnica, criativa e cultura do povo brasileiro e, ainda, reforce a imagem do Brasil, como um país agregador, moderno, parceiro e de relevância global nas questões internacionais relacionadas à sustentabilidade.</p>",
-    "titlevideo":"Assista <span>ao vídeo</span>",
-    "subtitlevideo":"do evento abaixo.",
+    "titlevideo": "Assista <span>ao vídeo</span>",
+    "subtitlevideo": "do evento abaixo.",
     "buttonvideo": "Clique Aqui",
     "titlephotos": "Vejas <span>as Fotos</span>"
   },
-  "participate":{
+  "participate": {
     "titlecall": "Participe",
     "call": "<p>Sua empresa não pode ficar de fora da Expo Dubai, um dos mais importantes eventos mundiais, que reúne diversos públicos, empresas privadas, ONGs e instituições governamentais para discutir sobre negócios, tecnologia, urbanismo, sustentabilidade, ciências, cultura, gastronomia e economia.</p>",
     "button": "Cadastre-se"
@@ -106,7 +107,7 @@
     "inputmessage": "Mensagem",
     "buttonform": "enviar"
   },
-  "faq":{
+  "faq": {
     "titlecall": "Perguntas <span>Frequentes</span>",
     "call": "<p>Dúvidas sobre a Expo Dubai, como participar do evento ou os temas que serão falados? Clique abaixo.</p>",
     "buttoncall": "Acessar o FAQ",
@@ -126,4 +127,4 @@
   "footer": {
     "titlesocial": "Siga-nos"
   }
-} 
+}

@@ -8,7 +8,7 @@
           :title="$t('intro.title')"
         >
           <div class="theNavigation__brand__image" ref="brand">
-            <Logo />
+            <img src="@/assets/images/logo-branca.png" alt />
           </div>
           <div class="theNavigation__brand__imagefix">
             <img
@@ -88,7 +88,6 @@
 </template>
 
 <script>
-import Logo from "@/assets/images/logo.svg";
 import ArrowDown from "@/assets/images/down-arrow.svg";
 import flagEn from "@/assets/images/en.svg";
 import flagPt from "@/assets/images/pt.svg";
@@ -102,7 +101,6 @@ export default {
     };
   },
   components: {
-    Logo,
     ArrowDown,
     flagEn,
     flagPt

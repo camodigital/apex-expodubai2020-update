@@ -68,7 +68,9 @@ export default {
       emailMsg: "",
       messageMsg: "",
       loadingTxt: false,
-      showSucess: false
+      showSucess: false,
+      result: null,
+      error: null
     };
   },
   components: {
@@ -92,10 +94,13 @@ export default {
         )
         .then(
           result => {
-            console.log("SUCCESS!", result.status, result.text);
+            // console.log("SUCCESS!", result.status, result.text);
+            alert("Mensagem enviada com sucesso.");
+            this.result = result;
           },
           error => {
-            console.log("FAILED...", error);
+            // console.log("FAILED...", error);
+            this.error = error;
           }
         );
     }

@@ -3,8 +3,8 @@
     <div class="theFooter__container">
       <div class="theFooter__col">
         <div class="theFooter__logo">
-          <a href="">
-            <Logo />
+          <a href>
+            <img src="@/assets/images/logo-branca.png" alt />
           </a>
         </div>
       </div>
@@ -35,15 +35,13 @@
             <a href="#">
               {{ $t("nav.news") }}
             </a>
-          </li> -->
+            </li>-->
             <li class="theFooter__nav__item">
               <a
                 target="_blank"
                 href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=CEWR5Xs--Ea5jlHiOyklhsr0d7OZxXxHgC1aqdHQRlZUNzJKUlhNRTcwWlRPNkJRWlNCV1FLVjVWUy4u"
               >
-                <span>
-                  {{ $t("nav.participate") }}
-                </span>
+                <span>{{ $t("nav.participate") }}</span>
               </a>
             </li>
             <li class="theFooter__nav__item">
@@ -86,8 +84,8 @@
       <div class="theFooter__col">
         <div class="apex_logo">
           <a target="_blank" href="https://portal.apexbrasil.com.br/">
-            <img src="@/assets/images/apex-brasil.png" alt=""
-          /></a>
+            <img src="@/assets/images/apex-brasil.png" alt />
+          </a>
         </div>
       </div>
     </div>
@@ -99,7 +97,6 @@
 </template>
 
 <script>
-import Logo from "@/assets/images/logo.svg";
 import IcoFacebook from "@/assets/images/icoFacebook.svg";
 import IcoInstagram from "@/assets/images/icoInstagram.svg";
 import IcoTwitter from "@/assets/images/icoTwitter.svg";
@@ -107,7 +104,6 @@ import IcoTwitter from "@/assets/images/icoTwitter.svg";
 export default {
   name: "TheFooter",
   components: {
-    Logo,
     IcoFacebook,
     IcoInstagram,
     IcoTwitter

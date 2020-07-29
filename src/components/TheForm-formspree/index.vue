@@ -1,8 +1,6 @@
 <template>
   <div class="theForm">
     <div class="theForm__container">
-      <div v-if="showSucess" class="showSucess">E-mail enviado.</div>
-      <div v-if="loadingTxt" class="showSend">Enviando sua mensagem...</div>
       <form
         role="form"
         method="POST"
@@ -36,7 +34,7 @@
         </div>
         <div class="theForm__button">
           <button
-            class=" theButton"
+            class="theButton"
             :disabled="!nameMsg || !emailMsg || !messageMsg"
           >
             <div class="theButton__container">
@@ -67,8 +65,9 @@ export default {
       nameMsg: "",
       emailMsg: "",
       messageMsg: "",
-      loadingTxt: false,
-      showSucess: false
+      loadingTxt: true,
+      showSucess: true,
+      responseGeral: null
     };
   },
   components: {
@@ -98,7 +97,7 @@ export default {
           this.loadingTxt = false;
           //i redirect my app to '/success' route once payload completed.
           this.$router.push({ path: "/" });
-          console.log(response);
+          this.responseGeral = response;
           this.handleShowSucess();
         })
         .catch(error => {

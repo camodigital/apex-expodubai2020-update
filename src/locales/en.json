@@ -33,7 +33,8 @@
     "titlevideo": "Watch <span>the video</span>",
     "subtitlevideo": "of the event below.",
     "buttonvideo": "Click Here",
-    "titlephotos": "See <span>the Photos</span>"
+    "titlephotos": "See <span>the Photos</span>",
+    "linkvideo": "https://www.youtube.com/watch?v=6aM0y02x-yM&feature=youtu.be"
   },
   "BrazilExpo":{
     "titlecall": "Brazil at Expo <span>Dubai</span>",

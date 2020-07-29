@@ -3,7 +3,7 @@
     <div class="secIntro__container">
       <div class="secIntro__header">
         <div class="secIntro__header__logo">
-          <Logo />
+          <img src="@/assets/images/logo-branca.png" alt />
         </div>
         <div class="secIntro__header__title">
           <h1>{{ $t("intro.title") }}</h1>
@@ -48,14 +48,13 @@
     <FsLightbox
       :toggler="toggler"
       :sources="[
-        'https://www.youtube.com/watch?v=BMVYTrQtrTo&feature=youtu.be'
+        'https://www.youtube.com/watch?v=-SK8Xxp3-qg&feature=emb_title'
       ]"
     />
   </div>
 </template>
 
 <script>
-import Logo from "@/assets/images/logo.svg";
 import TheButton from "@/components/TheButton/";
 import TheCountDown from "@/components/TheCountDown/";
 import TheVideoBg from "@/components/TheVideoBg";
@@ -66,7 +65,6 @@ import FsLightbox from "fslightbox-vue";
 export default {
   name: "SecIntro",
   components: {
-    Logo,
     TheButton,
     TheCountDown,
     TheVideoBg,
