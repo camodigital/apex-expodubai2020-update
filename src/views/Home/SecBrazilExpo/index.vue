@@ -9,7 +9,7 @@
                 <TheFigure>
                   <img
                     src="@/assets/images/brasilnaexpo.jpg"
-                    :alt="$t('BrazilExpo.titlecall')"
+                    :alt="$t('apiBrasil.titlecall')"
                   />
                 </TheFigure>
               </div>
@@ -17,12 +17,12 @@
                 <span class="theWave1"><TheWaveH /></span>
                 <span class="theWave2"><TheWaveH /></span>
                 <TheContent1
-                  :title="$t('BrazilExpo.titlecall')"
-                  :text="$t('BrazilExpo.call')"
+                  :title="$t('apiBrasil.title')"
+                  :text="$t('apiBrasil.call')"
                 >
                   <slot>
                     <router-link :to="`/${$i18n.locale}/brazilexpo`">
-                      <TheButton :text="$t('BrazilExpo.buttoncall')" />
+                      <TheButton :text="$t('apiGeral.button_readmore')" />
                     </router-link>
                   </slot>
                 </TheContent1>
@@ -36,7 +36,7 @@
                 <TheFigure>
                   <img
                     src="@/assets/images/historiaexpo.jpg"
-                    :alt="$t('history.titlecall')"
+                    :alt="$t('apiBrasil.history_title')"
                   />
                 </TheFigure>
               </div>
@@ -44,12 +44,12 @@
                 <span class="theWave1"><TheWaveH /></span>
                 <span class="theWave2"><TheWaveH /></span>
                 <TheContent1
-                  :title="$t('history.titlecall')"
-                  :text="$t('history.call')"
+                  :title="$t('apiBrasil.history_title')"
+                  :text="$t('apiBrasil.history_call')"
                 >
                   <slot>
                     <router-link :to="`/${$i18n.locale}/brazilexpo`">
-                      <TheButton :text="$t('history.buttoncall')" />
+                      <TheButton :text="$t('apiGeral.button_readmore')" />
                     </router-link>
                   </slot>
                 </TheContent1>

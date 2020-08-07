@@ -2,7 +2,10 @@
   <div class="secHistory">
     <div class="secHistory__container">
       <header class="secHistory__header">
-        <h1 class="titleBigSpanWaveGray" v-html="$t('history.titlecall')"></h1>
+        <h1
+          class="titleBigSpanWaveGray"
+          v-html="$t('apiBrasil.history_title')"
+        ></h1>
       </header>
       <div class="secHistory__slider zSlidertheme2">
         <carousel :items="1" :loop="true" :navText="['&#10229;', '&#10230;']">
@@ -16,11 +19,11 @@
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title1851')"
+                    v-html="$t('apiBrasil.history')[0].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content1851')"
+                    v-html="$t('apiBrasil.history')[0].text"
                   ></div>
                 </div>
               </div>
@@ -37,11 +40,11 @@
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title1862')"
+                    v-html="$t('apiBrasil.history')[1].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content1862')"
+                    v-html="$t('apiBrasil.history')[1].text"
                   ></div>
                 </div>
               </div>
@@ -58,11 +61,11 @@
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title1876')"
+                    v-html="$t('apiBrasil.history')[2].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content1876')"
+                    v-html="$t('apiBrasil.history')[2].text"
                   ></div>
                 </div>
               </div>
@@ -76,21 +79,18 @@
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
-                  <img
-                    src="@/assets/images/expo-brasil1922.jpg"
-                    :alt="$t('BrazilExpo.titlecall')"
-                  />
+                  <img :src="$t('apiBrasil.history')[3].photo" />
                 </TheFigure>
               </div>
               <div class="zCol">
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title1922')"
+                    v-html="$t('apiBrasil.history')[3].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content1922')"
+                    v-html="$t('apiBrasil.history')[3].text"
                   ></div>
                 </div>
               </div>
@@ -104,21 +104,18 @@
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
-                  <img
-                    src="@/assets/images/h1939.png"
-                    :alt="$t('BrazilExpo.titlecall')"
-                  />
+                  <img :src="$t('apiBrasil.history')[4].photo" />
                 </TheFigure>
               </div>
               <div class="zCol">
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title1939')"
+                    v-html="$t('apiBrasil.history')[4].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content1939')"
+                    v-html="$t('apiBrasil.history')[4].text"
                   ></div>
                 </div>
               </div>
@@ -132,21 +129,18 @@
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
-                  <img
-                    src="@/assets/images/h1958.png"
-                    :alt="$t('BrazilExpo.titlecall')"
-                  />
+                  <img :src="$t('apiBrasil.history')[5].photo" />
                 </TheFigure>
               </div>
               <div class="zCol">
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title1958')"
+                    v-html="$t('apiBrasil.history')[5].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content1958')"
+                    v-html="$t('apiBrasil.history')[5].text"
                   ></div>
                 </div>
               </div>
@@ -160,21 +154,18 @@
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
-                  <img
-                    src="@/assets/images/h1970.png"
-                    :alt="$t('BrazilExpo.titlecall')"
-                  />
+                  <img :src="$t('apiBrasil.history')[6].photo" />
                 </TheFigure>
               </div>
               <div class="zCol">
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title1970')"
+                    v-html="$t('apiBrasil.history')[6].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content1970')"
+                    v-html="$t('apiBrasil.history')[6].text"
                   ></div>
                 </div>
               </div>
@@ -188,21 +179,18 @@
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
-                  <img
-                    src="@/assets/images/h2010.png"
-                    :alt="$t('BrazilExpo.titlecall')"
-                  />
+                  <img :src="$t('apiBrasil.history')[7].photo" />
                 </TheFigure>
               </div>
               <div class="zCol">
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title2010')"
+                    v-html="$t('apiBrasil.history')[7].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content2010')"
+                    v-html="$t('apiBrasil.history')[7].text"
                   ></div>
                 </div>
               </div>
@@ -216,54 +204,23 @@
             <div class="zRow">
               <div class="zCol">
                 <TheFigure>
-                  <img
-                    src="@/assets/images/h2015.png"
-                    :alt="$t('BrazilExpo.titlecall')"
-                  />
+                  <img :src="$t('apiBrasil.history')[8].photo" />
                 </TheFigure>
               </div>
               <div class="zCol">
                 <div class="secHistory__content">
                   <h2
                     class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title2015')"
+                    v-html="$t('apiBrasil.history')[8].title"
                   ></h2>
                   <div
                     class="secHistory__title"
-                    v-html="$t('history.content2015')"
+                    v-html="$t('apiBrasil.history')[8].text"
                   ></div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- <div
-            class="secHistory__slide"
-            data-dot="<span class='dataHistory'>2020</span>"
-          >
-            <div class="zRow">
-              <div class="zCol">
-                <TheFigure>
-                  <img
-                    src="@/assets/images/brasil-01z.jpg"
-                    :alt="$t('BrazilExpo.titlecall')"
-                  />
-                </TheFigure>
-              </div>
-              <div class="zCol">
-                <div class="secHistory__content">
-                  <h2
-                    class="secHistory__title zTitleSmallBold"
-                    v-html="$t('history.title2021')"
-                  ></h2>
-                  <div
-                    class="secHistory__title"
-                    v-html="$t('history.content2021')"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </carousel>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="secForm">
     <header class="secForm__header">
-      <h1 class="titleBigSpanWave" v-html="$t('contactus.titlecall')"></h1>
+      <h1 class="titleBigSpanWave" v-html="$t('apiFaq.title_form')"></h1>
     </header>
     <div class="container">
       <div class="secForm__content"><TheForm /></div>

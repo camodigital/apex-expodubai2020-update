@@ -3,7 +3,7 @@
     <div class="secFAQ__container .theContainer">
       <header
         class="secFAQ__header zTitleBigSpan"
-        v-html="$t('faq.titlecall')"
+        v-html="$t('apiFaq.title_faq')"
       ></header>
       <div class="secFAQ__content">
         <TheExpandText />

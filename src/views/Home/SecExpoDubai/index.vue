@@ -11,12 +11,12 @@
           </div>
           <div class="zCol">
             <TheContent1
-              :title="$t('ExpoDubai.titlecall')"
-              :text="$t('ExpoDubai.call')"
+              :title="$t('apiExpodubai.title')"
+              :text="$t('apiExpodubai.call')"
             >
               <slot>
                 <router-link :to="`/${$i18n.locale}/expodubai`">
-                  <TheButton :text="$t('ExpoDubai.buttoncall')" />
+                  <TheButton :text="$t('apiGeral.button_readmore')" />
                 </router-link>
               </slot>
             </TheContent1>

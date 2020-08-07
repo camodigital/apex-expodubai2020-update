@@ -1,26 +1,9 @@
 <template>
-  <div class="thePopUp">
+  <div class="thePopUp thePopUp__hide">
     <div class="thePopUp__container">
       <div class="thePopUp__content">
         <div class="thePopUp__close"><buttonClose @click="hide" /></div>
-        <div class="thePopUp__message">
-          <p>
-            A Expo 2020 Dubai foi adiada para 2021/2022, em razão da pandemia da
-            Covid-19.
-          </p>
-          <p>
-            Expo 2020 Dubai was postponed to 2021/2022, due to the Covid-19
-            pandemic.
-          </p>
-        </div>
-        <div class="thePopUp__learnMore">
-          <a
-            target="_blank"
-            href="https://portal.apexbrasil.com.br/noticia/expo-2020-dubai-e-adiada-em-um-ano/"
-          >
-            Saiba Mais / Learn More
-          </a>
-        </div>
+        <div class="thePopUp__message" v-html="$t('apiGeral.text_popup')"></div>
       </div>
     </div>
   </div>
@@ -28,17 +11,38 @@
 
 <script>
 import buttonClose from "@/assets/images/close.svg";
+import axios from "axios";
 
 export default {
   name: "ThePopUp",
+  data() {
+    return {
+      actived: null,
+      urlBase:
+        "http://camodigital.com.br/cms/expodubai/wp-json/api/geral/o-brasil-na-expo-dubai"
+    };
+  },
   components: {
     buttonClose
   },
   methods: {
+    active() {
+      axios.get(this.urlBase).then(response => {
+        this.actived = response.data.active_popup;
+
+        if (this.actived) {
+          const popUp = document.querySelector(".thePopUp");
+          popUp.classList.remove("thePopUp__hide");
+        }
+      });
+    },
     hide() {
       const popUp = document.querySelector(".thePopUp");
       popUp.classList.add("thePopUp__hide");
     }
+  },
+  mounted() {
+    this.active();
   }
 };
 </script>

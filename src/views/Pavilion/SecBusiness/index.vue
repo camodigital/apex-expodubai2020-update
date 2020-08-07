@@ -5,13 +5,13 @@
         <div class="zRow">
           <div class="zCol">
             <TheFigure>
-              <img src="@/assets/images/intro.jpg" alt="" />
+              <img :src="$t('apiPavilhao.photo_business')" alt="" />
             </TheFigure>
           </div>
           <div class="zCol">
             <TheContent1
-              :title="$t('pavilion.titlebusinessgeneration')"
-              :text="$t('pavilion.contentbusinessgeneration')"
+              :title="$t('apiPavilhao.title_business')"
+              :text="$t('apiPavilhao.text_business')"
             >
               <slot> </slot>
             </TheContent1>

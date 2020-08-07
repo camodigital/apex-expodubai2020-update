@@ -7,12 +7,12 @@
             <div class="titleIcon__icon"><IcoSust /></div>
             <h1
               class="titleIcon__title"
-              v-html="$t('BrazilExpo.titlesustainability')"
+              v-html="$t('apiBrasil.title_sustainability')"
             ></h1>
           </div>
         </div>
         <div class="secSustainability__text">
-          <div v-html="$t('BrazilExpo.contentsustainability')"></div>
+          <div v-html="$t('apiBrasil.text_sustainability')"></div>
         </div>
       </div>
       <div class="secSustainability__bg">

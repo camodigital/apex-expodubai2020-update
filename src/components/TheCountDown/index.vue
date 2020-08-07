@@ -1,6 +1,9 @@
 <template>
   <div class="theCountdown">
-    <h3 class="theCountdown__title" v-html="$t('intro.titlecountdown')"></h3>
+    <h3
+      class="theCountdown__title"
+      v-html="$t('apiGeral.title_countdown')"
+    ></h3>
     <div class="theCountdown__list">
       <div class="theCountdown__item">
         <div class="theCountdown__number">
@@ -8,7 +11,7 @@
           <countDownIcon />
         </div>
         <div class="theCountdown__text">
-          {{ $t("intro.dayscountdown") }}
+          {{ $t("apiGeral.days_countdown") }}
         </div>
       </div>
       <div class="theCountdown__item">
@@ -17,7 +20,7 @@
           <countDownIcon />
         </div>
         <div class="theCountdown__text">
-          {{ $t("intro.hourscountdown") }}
+          {{ $t("apiGeral.hours_countdown") }}
         </div>
       </div>
       <div class="theCountdown__item">
@@ -26,7 +29,7 @@
           <countDownIcon />
         </div>
         <div class="theCountdown__text">
-          {{ $t("intro.minutescountdown") }}
+          {{ $t("apiGeral.minutes_countdown") }}
         </div>
       </div>
       <div class="theCountdown__item">
@@ -35,7 +38,7 @@
           <countDownIcon />
         </div>
         <div class="theCountdown__text">
-          {{ $t("intro.secondscountdown") }}
+          {{ $t("apiGeral.seconds_countdown") }}
         </div>
       </div>
     </div>
@@ -47,6 +50,11 @@ import countDownIcon from "../../assets/images/icocountdown.svg";
 
 export default {
   name: "TheCountdown",
+  data() {
+    return {
+      dateCountDown: "Oct 1, 2021 12:00:00"
+    };
+  },
   components: {
     countDownIcon
   },
@@ -56,7 +64,7 @@ export default {
 
       if (page.classList.contains("homePage")) {
         // Set the date we're counting down to
-        let countDownDate = new Date("Oct 1, 2021 12:00:00").getTime();
+        let countDownDate = new Date(this.dateCountDown).getTime();
 
         // Update the count down every 1 second
         let x = setInterval(function() {

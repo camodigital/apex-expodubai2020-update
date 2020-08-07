@@ -3,7 +3,7 @@
     <div class="secDesc__container">
       <div
         class="secDesc__content textCenter"
-        v-html="$t('pavilion.content')"
+        v-html="$t('apiPavilhao.text')"
       ></div>
     </div>
     <span class="theWind1">

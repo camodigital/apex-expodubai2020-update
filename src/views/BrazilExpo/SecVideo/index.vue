@@ -6,15 +6,15 @@
           <div class="secVideoButton__content">
             <h1
               class="secVideoButton__title"
-              v-html="$t('ExpoDubai.titlevideo')"
+              v-html="$t('apiBrasil.video_title')"
             ></h1>
             <div
               class="secVideoButton__subtitle"
-              v-html="$t('ExpoDubai.subtitlevideo')"
+              v-html="$t('apiBrasil.video_subtitle')"
             ></div>
             <div class="secVideoButton__button">
               <button @click="toggler = !toggler">
-                <TheButton :text="$t('ExpoDubai.buttonvideo')">
+                <TheButton :text="$t('apiGeral.button_click')">
                   <slot>
                     <IcoPlay />
                   </slot>

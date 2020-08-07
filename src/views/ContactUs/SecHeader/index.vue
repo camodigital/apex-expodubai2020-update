@@ -2,7 +2,7 @@
   <div class="secHeader">
     <div class="secHeader__container splitterSec">
       <div class="secHeader__content">
-        <h1 class="zTitleWaves" v-html="$t('contactus.titlecall')"></h1>
+        <h1 class="zTitleWaves" v-html="$t('apiFaq.title')"></h1>
       </div>
     </div>
     <div class="secHeader__bg">

@@ -2,63 +2,17 @@
   <div class="theExpandText">
     <div class="theExpandText__container">
       <div class="theExpandText__list">
-        <div class="theExpandText__item">
+        <div
+          class="theExpandText__item"
+          v-for="item in $t('apiFaq.faq')"
+          v-bind:key="item.title"
+        >
           <div class="theExpandText__title">
-            <div v-html="$t('faq.titlequestion1')"></div>
+            <div v-html="item.faq_question"></div>
             <div class="ico"><ArrowDown /></div>
           </div>
           <div class="theExpandText__text">
-            <div v-html="$t('faq.contentquestion1')"></div>
-          </div>
-        </div>
-
-        <div class="theExpandText__item">
-          <div class="theExpandText__title">
-            <div v-html="$t('faq.titlequestion2')"></div>
-            <div class="ico"><ArrowDown /></div>
-          </div>
-          <div class="theExpandText__text">
-            <div v-html="$t('faq.contentquestion2')"></div>
-          </div>
-        </div>
-
-        <div class="theExpandText__item">
-          <div class="theExpandText__title">
-            <div v-html="$t('faq.titlequestion3')"></div>
-            <div class="ico"><ArrowDown /></div>
-          </div>
-          <div class="theExpandText__text">
-            <div v-html="$t('faq.contentquestion3')"></div>
-          </div>
-        </div>
-
-        <div class="theExpandText__item">
-          <div class="theExpandText__title">
-            <div v-html="$t('faq.titlequestion4')"></div>
-            <div class="ico"><ArrowDown /></div>
-          </div>
-          <div class="theExpandText__text">
-            <div v-html="$t('faq.contentquestion4')"></div>
-          </div>
-        </div>
-
-        <div class="theExpandText__item">
-          <div class="theExpandText__title">
-            <div v-html="$t('faq.titlequestion5')"></div>
-            <div class="ico"><ArrowDown /></div>
-          </div>
-          <div class="theExpandText__text">
-            <div v-html="$t('faq.contentquestion5')"></div>
-          </div>
-        </div>
-
-        <div class="theExpandText__item">
-          <div class="theExpandText__title">
-            <div v-html="$t('faq.titlequestion6')"></div>
-            <div class="ico"><ArrowDown /></div>
-          </div>
-          <div class="theExpandText__text">
-            <div v-html="$t('faq.contentquestion6')"></div>
+            <div v-html="item.faq_answer"></div>
           </div>
         </div>
       </div>

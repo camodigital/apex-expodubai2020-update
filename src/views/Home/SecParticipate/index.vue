@@ -3,16 +3,13 @@
     <div class="secParticipate__container">
       <div class="secParticipate__content">
         <TheContent1
-          :title="$t('participate.titlecall')"
-          :text="$t('participate.call')"
+          :title="$t('apiParticipe.title')"
+          :text="$t('apiParticipe.text')"
           classTitle="zTitleWave"
         >
           <slot>
-            <a
-              target="_blank"
-              href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=CEWR5Xs--Ea5jlHiOyklhsr0d7OZxXxHgC1aqdHQRlZUNzJKUlhNRTcwWlRPNkJRWlNCV1FLVjVWUy4u"
-            >
-              <TheButton :text="$t('participate.button')">
+            <a target="_blank" :href="$t('apiParticipe.link')">
+              <TheButton :text="$t('apiGeral.button_participate')">
                 <slot>
                   <IcoParticipate />
                 </slot>

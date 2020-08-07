@@ -3,12 +3,12 @@
     <div class="secPavilion__container">
       <div class="secPavilion__content">
         <TheContent1
-          :title="$t('pavilion.titlecall')"
-          :text="$t('pavilion.call')"
+          :title="$t('apiPavilhao.title')"
+          :text="$t('apiPavilhao.call')"
         >
           <slot>
             <router-link :to="`/${$i18n.locale}/pavilion`">
-              <TheButton :text="$t('pavilion.buttoncall')" />
+              <TheButton :text="$t('apiGeral.button_readmore')" />
             </router-link>
           </slot>
         </TheContent1>
@@ -19,7 +19,7 @@
             <TheFigure>
               <slot>
                 <img
-                  src="@/assets/images/pavilion1.jpg"
+                  :src="$t('apiPavilhao.galery')[0]"
                   alt="O Pavilhão do Brasil"
                 />
               </slot>
@@ -27,26 +27,7 @@
             <TheFigure>
               <slot>
                 <img
-                  src="@/assets/images/pavilion2.jpg"
-                  alt="O Pavilhão do Brasil"
-                />
-              </slot>
-            </TheFigure>
-          </div>
-
-          <div class="secPavilion__slide">
-            <TheFigure>
-              <slot>
-                <img
-                  src="@/assets/images/pavilion3.jpg"
-                  alt="O Pavilhão do Brasil"
-                />
-              </slot>
-            </TheFigure>
-            <TheFigure>
-              <slot>
-                <img
-                  src="@/assets/images/pavilion4.jpg"
+                  :src="$t('apiPavilhao.galery')[1]"
                   alt="O Pavilhão do Brasil"
                 />
               </slot>
@@ -57,7 +38,7 @@
             <TheFigure>
               <slot>
                 <img
-                  src="@/assets/images/pavilion5.jpg"
+                  :src="$t('apiPavilhao.galery')[2]"
                   alt="O Pavilhão do Brasil"
                 />
               </slot>
@@ -65,7 +46,26 @@
             <TheFigure>
               <slot>
                 <img
-                  src="@/assets/images/pavilion6.jpg"
+                  :src="$t('apiPavilhao.galery')[3]"
+                  alt="O Pavilhão do Brasil"
+                />
+              </slot>
+            </TheFigure>
+          </div>
+
+          <div class="secPavilion__slide">
+            <TheFigure>
+              <slot>
+                <img
+                  :src="$t('apiPavilhao.galery')[4]"
+                  alt="O Pavilhão do Brasil"
+                />
+              </slot>
+            </TheFigure>
+            <TheFigure>
+              <slot>
+                <img
+                  :src="$t('apiPavilhao.galery')[5]"
                   alt="O Pavilhão do Brasil"
                 />
               </slot>

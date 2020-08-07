@@ -4,12 +4,9 @@
       <div class="secDesc2__content">
         <div class="megaHeader">
           <div class="megaHeader__content">
-            <h1
-              class="megaHeader__title"
-              v-html="$t('BrazilExpo.titlecall')"
-            ></h1>
+            <h1 class="megaHeader__title" v-html="$t('apiBrasil.title')"></h1>
             <div class="megaHeader__text">
-              <div v-html="$t('BrazilExpo.content')"></div>
+              <div v-html="$t('apiBrasil.text')"></div>
               <span class="theWind1">
                 <TheWind />
               </span>
@@ -25,7 +22,7 @@
             <TheFigure>
               <img
                 src="@/assets/images/expodubai2020.jpg"
-                :alt="$t('BrazilExpo.titlecall')"
+                :alt="$t('apiBrasil.title')"
               />
             </TheFigure>
           </div>

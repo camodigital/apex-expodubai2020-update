@@ -3,21 +3,18 @@
     <div class="secNews__container theContainer">
       <span class="theWave1 theWave"><TheWaveH /></span>
       <header class="secNews__header">
-        <h1 class="zTitleBigBold" v-html="$t('news.titlecall')"></h1>
+        <h1 class="zTitleBigBold" v-html="$t('apiNoticias.news_title')"></h1>
       </header>
       <div class="secNews__content">
         <div class="secNews__grid">
           <div class="secNews__item">
             <div class="zRow">
               <div class="zCol">
-                <a
-                  target="_blank"
-                  href="https://portal.apexbrasil.com.br/noticia/brasil-inaugura-obra-do-pavilhao-nacional-na-expo-2020-em-dubai/"
-                >
+                <a target="_blank" :href="$t('apiNoticias.news')[0].link">
                   <TheFigure>
                     <slot>
                       <img
-                        src="@/assets/images/news1.jpg"
+                        :src="$t('apiNoticias.news')[0].photo"
                         alt="O Pavilhão do Brasil"
                       />
                     </slot>
@@ -26,16 +23,13 @@
               </div>
               <div class="zCol">
                 <TheContent1
-                  title="Brasil inaugura obra do Pavilhão Nacional na Expo 2020, em Dubai"
-                  text="Previsão é de que a obra seja iniciada em dezembro. País é, neste momento, o que está em mais avançado estágio de preparação no continente, à frente inclusive de EUA e Canadá"
+                  :title="$t('apiNoticias.news')[0].title"
+                  :text="$t('apiNoticias.news')[0].call"
                   classTitle="zTitleSmallBold"
                 >
                   <slot>
-                    <a
-                      target="_blank"
-                      href="https://portal.apexbrasil.com.br/noticia/brasil-inaugura-obra-do-pavilhao-nacional-na-expo-2020-em-dubai/"
-                    >
-                      <TheButton :text="$t('news.buttoncall')" />
+                    <a target="_blank" :href="$t('apiNoticias.news')[0].link">
+                      <TheButton :text="$t('apiGeral.button_readmore')" />
                     </a>
                   </slot>
                 </TheContent1>
@@ -46,14 +40,11 @@
           <div class="secNews__item">
             <div class="zRow">
               <div class="zCol">
-                <a
-                  target="_blank"
-                  href="https://portal.apexbrasil.com.br/noticia/aberto-credenciamento-de-midia-para-cobertura-da-expo-2020-em-dubai/"
-                >
+                <a target="_blank" :href="$t('apiNoticias.news')[1].link">
                   <TheFigure>
                     <slot>
                       <img
-                        src="@/assets/images/news2.jpg"
+                        :src="$t('apiNoticias.news')[1].photo"
                         alt="O Pavilhão do Brasil"
                       />
                     </slot>
@@ -64,10 +55,9 @@
                 <h2 class="zTitleSmallBold">
                   <a
                     target="_blank"
-                    href="https://portal.apexbrasil.com.br/noticia/aberto-credenciamento-de-midia-para-cobertura-da-expo-2020-em-dubai/"
+                    :href="$t('apiNoticias.news')[1].link"
+                    v-html="$t('apiNoticias.news')[1].title"
                   >
-                    Aberto credenciamento de mídia para cobertura da Expo 2020
-                    em Dubai
                   </a>
                 </h2>
               </div>
@@ -77,14 +67,11 @@
           <div class="secNews__item">
             <div class="zRow">
               <div class="zCol">
-                <a
-                  target="_blank"
-                  href="https://portal.apexbrasil.com.br/noticia/Projeto-arquitetonico-para-o-pavilhao-do-Brasil-na-Expo-Dubai-2020-e-divulgado/"
-                >
+                <a target="_blank" :href="$t('apiNoticias.news')[2].link">
                   <TheFigure>
                     <slot>
                       <img
-                        src="@/assets/images/news3.jpg"
+                        :src="$t('apiNoticias.news')[2].photo"
                         alt="O Pavilhão do Brasil"
                       />
                     </slot>
@@ -95,10 +82,9 @@
                 <h2 class="zTitleSmallBold">
                   <a
                     target="_blank"
-                    href="https://portal.apexbrasil.com.br/noticia/Projeto-arquitetonico-para-o-pavilhao-do-Brasil-na-Expo-Dubai-2020-e-divulgado/"
+                    :href="$t('apiNoticias.news')[2].link"
+                    v-html="$t('apiNoticias.news')[2].title"
                   >
-                    Projeto arquitetônico para o pavilhão do Brasil na Expo
-                    Dubai 2020 é divulgado
                   </a>
                 </h2>
               </div>
@@ -108,14 +94,11 @@
           <div class="secNews__item">
             <div class="zRow">
               <div class="zCol">
-                <a
-                  target="_blank"
-                  href="https://portal.apexbrasil.com.br/noticia/RETA-FINAL-INSCRICAO-PARA-SELECAO-DO-PROJETO-PARA-A-EXPO-DUBAI-2020-TERMINA-SABADO-27-10/"
-                >
+                <a target="_blank" :href="$t('apiNoticias.news')[3].link">
                   <TheFigure>
                     <slot>
                       <img
-                        src="@/assets/images/news4.jpg"
+                        :src="$t('apiNoticias.news')[3].photo"
                         alt="O Pavilhão do Brasil"
                       />
                     </slot>
@@ -126,10 +109,9 @@
                 <h2 class="zTitleSmallBold">
                   <a
                     target="_blank"
-                    href="https://portal.apexbrasil.com.br/noticia/RETA-FINAL-INSCRICAO-PARA-SELECAO-DO-PROJETO-PARA-A-EXPO-DUBAI-2020-TERMINA-SABADO-27-10/"
+                    :href="$t('apiNoticias.news')[3].link"
+                    v-html="$t('apiNoticias.news')[3].title"
                   >
-                    Reta final: Inscrição para seleção do projeto para a Expo
-                    Dubai 2020 termina sábado, 27/10
                   </a>
                 </h2>
               </div>

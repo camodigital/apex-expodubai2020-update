@@ -3,20 +3,20 @@
     <div class="secIntro__container">
       <div class="secIntro__header">
         <div class="secIntro__header__logo">
-          <img src="@/assets/images/logo-branca.png" alt />
+          <img :src="$t('apiGeral.logo_light')" alt />
         </div>
         <div class="secIntro__header__title">
-          <h1>{{ $t("intro.title") }}</h1>
+          <h1 v-html="$t('apiGeral.title')"></h1>
         </div>
         <div class="secIntro__header__subtitle">
-          <h2>{{ $t("intro.subtitle") }}</h2>
+          <h2>{{ $t("apiGeral.subtitle") }}</h2>
         </div>
       </div>
       <div class="secIntro__content">
         <div class="secIntro__content__buttons">
           <div>
             <button @click="toggler = !toggler">
-              <TheButton :text="$t('intro.buttonvideo')">
+              <TheButton :text="$t('apiGeral.button_video')">
                 <slot>
                   <IcoPlay />
                 </slot>
@@ -25,11 +25,8 @@
           </div>
 
           <div>
-            <a
-              target="_blank"
-              href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=CEWR5Xs--Ea5jlHiOyklhsr0d7OZxXxHgC1aqdHQRlZUNzJKUlhNRTcwWlRPNkJRWlNCV1FLVjVWUy4u"
-            >
-              <TheButton :text="$t('intro.buttonparticipate')">
+            <a target="_blank" :href="$t('apiParticipe.link')">
+              <TheButton :text="$t('apiGeral.button_participate')">
                 <slot>
                   <IcoParticipate />
                 </slot>

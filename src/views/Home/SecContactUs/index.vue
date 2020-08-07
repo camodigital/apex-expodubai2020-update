@@ -1,13 +1,13 @@
 <template>
   <div class="secContactUs">
     <div class="secContactUs__header">
-      <h1 v-html="$t('contactus.titlecall')" class="zTitleBigSpan"></h1>
-      <h2 v-html="$t('contactus.subtitlecall')"></h2>
+      <h1 v-html="$t('apiFaq.title')" class="zTitleBigSpan"></h1>
+      <h2 v-html="$t('apiFaq.subtitle')"></h2>
     </div>
     <div class="secContactUs__container">
       <div class="secContactUs__contact">
         <div class="secContactUs__contact__title">
-          <h3 v-html="$t('contactus.titleform')" class="zTitleSmall"></h3>
+          <h3 v-html="$t('apiFaq.title_form')" class="zTitleSmall"></h3>
         </div>
         <div class="secContactUs__contact__content">
           <TheForm />
@@ -16,15 +16,15 @@
       <div class="secContactUs__faq">
         <h3
           class="secContactUs__faq__title zTitleSmall"
-          v-html="$t('faq.titlecall')"
+          v-html="$t('apiFaq.title_faq')"
         ></h3>
         <div
           class="secContactUs__faq__text zTextWaves"
-          v-html="$t('faq.call')"
+          v-html="$t('apiFaq.call')"
         ></div>
         <div class="secContactUs__faq__button">
           <router-link :to="`/${$i18n.locale}/contactus`">
-            <TheButton :text="$t('faq.buttoncall')">
+            <TheButton :text="$t('apiGeral.button_faq')">
               <slot>
                 <IcoFaq />
               </slot>

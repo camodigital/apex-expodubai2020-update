@@ -22,22 +22,22 @@
         <ul class="theNavigation__nav__list" ref="navList">
           <li class="theNavigation__nav__item">
             <router-link :to="`/${$i18n.locale}/`">
-              {{ $t("nav.home") }}
+              {{ $t("apiGeral.nav_home") }}
             </router-link>
           </li>
           <li class="theNavigation__nav__item">
             <router-link :to="`/${$i18n.locale}/expodubai`">
-              {{ $t("nav.ExpoDubai") }}
+              {{ $t("apiGeral.nav_expodubai") }}
             </router-link>
           </li>
           <li class="theNavigation__nav__item">
             <router-link :to="`/${$i18n.locale}/brazilexpo`">
-              {{ $t("nav.BrazilExpo") }}
+              {{ $t("apiGeral.nav_brazil") }}
             </router-link>
           </li>
           <li class="theNavigation__nav__item">
             <router-link :to="`/${$i18n.locale}/pavilion`">
-              {{ $t("nav.pavilion") }}
+              {{ $t("apiGeral.nav_pavilion") }}
             </router-link>
           </li>
           <!-- <li class="theNavigation__nav__item">
@@ -46,18 +46,15 @@
             </a>
           </li> -->
           <li class="theNavigation__nav__item">
-            <a
-              target="_blank"
-              href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=CEWR5Xs--Ea5jlHiOyklhsr0d7OZxXxHgC1aqdHQRlZUNzJKUlhNRTcwWlRPNkJRWlNCV1FLVjVWUy4u"
-            >
+            <a target="_blank" :href="$t('apiParticipe.link')">
               <span>
-                {{ $t("nav.participate") }}
+                {{ $t("apiGeral.nav_participate") }}
               </span>
             </a>
           </li>
           <li class="theNavigation__nav__item">
             <router-link :to="`/${$i18n.locale}/contactus`">
-              {{ $t("nav.contactus") }}
+              {{ $t("apiGeral.nav_faq") }}
             </router-link>
           </li>
         </ul>

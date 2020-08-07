@@ -12,7 +12,7 @@
         <div class="theForm__input">
           <input
             type="text"
-            :placeholder="$t('contactus.inputname')"
+            :placeholder="$t('apiFaq.name_form')"
             name="user_name"
             v-model="nameMsg"
           />
@@ -20,7 +20,7 @@
         <div class="theForm__input">
           <input
             type="email"
-            :placeholder="$t('contactus.inputemail')"
+            :placeholder="$t('apiFaq.email_form')"
             name="user_email"
             v-model="emailMsg"
           />
@@ -30,7 +30,7 @@
             name="message"
             cols="30"
             rows="10"
-            :placeholder="$t('contactus.inputmessage')"
+            :placeholder="$t('apiFaq.message_form')"
             v-model="messageMsg"
           ></textarea>
         </div>
@@ -41,7 +41,7 @@
           >
             <div class="theButton__container">
               <div class="theButton__text">
-                {{ $t("contactus.buttonform") }}
+                {{ $t("apiGeral.button_send") }}
               </div>
               <div class="theButton__icon">
                 <slot>

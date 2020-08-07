@@ -2,7 +2,10 @@
   <div class="secPhotos">
     <div class="secPhotos__container">
       <header class="secPhotos__header">
-        <h1 class="titleBigSpanWave" v-html="$t('ExpoDubai.titlephotos')"></h1>
+        <h1
+          class="titleBigSpanWave"
+          v-html="$t('apiPavilhao.galery_title')"
+        ></h1>
       </header>
       <div class="secPhotos__slider zSlidertheme1">
         <carousel :items="1" :loop="true" :navText="['', '']">
@@ -12,7 +15,7 @@
                 <button @click="openLightboxOnSlide(1)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-01.jpg"
+                      :src="$t('apiPavilhao.galery')[0]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -23,7 +26,7 @@
                 <button @click="openLightboxOnSlide(2)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-02.jpg"
+                      :src="$t('apiPavilhao.galery')[1]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -34,7 +37,7 @@
                 <button @click="openLightboxOnSlide(3)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-03.jpg"
+                      :src="$t('apiPavilhao.galery')[2]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -45,7 +48,7 @@
                 <button @click="openLightboxOnSlide(4)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-04.jpg"
+                      :src="$t('apiPavilhao.galery')[3]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -56,7 +59,7 @@
                 <button @click="openLightboxOnSlide(5)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-05.jpg"
+                      :src="$t('apiPavilhao.galery')[4]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -67,7 +70,7 @@
                 <button @click="openLightboxOnSlide(6)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-06.jpg"
+                      :src="$t('apiPavilhao.galery')[5]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -82,7 +85,7 @@
                 <button @click="openLightboxOnSlide(7)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-07.jpg"
+                      :src="$t('apiPavilhao.galery')[6]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -93,7 +96,7 @@
                 <button @click="openLightboxOnSlide(8)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-08.jpg"
+                      :src="$t('apiPavilhao.galery')[7]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -104,7 +107,7 @@
                 <button @click="openLightboxOnSlide(9)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-09.jpg"
+                      :src="$t('apiPavilhao.galery')[8]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -115,7 +118,7 @@
                 <button @click="openLightboxOnSlide(10)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-10.jpg"
+                      :src="$t('apiPavilhao.galery')[9]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -126,7 +129,7 @@
                 <button @click="openLightboxOnSlide(11)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-11.jpg"
+                      :src="$t('apiPavilhao.galery')[10]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -137,7 +140,7 @@
                 <button @click="openLightboxOnSlide(12)">
                   <div class="secPhotos__figure">
                     <img
-                      src="@/assets/images/brasil-12.jpg"
+                      :src="$t('apiPavilhao.galery')[11]"
                       alt=""
                       class="secPhotos_image"
                     />
@@ -153,20 +156,7 @@
     <FsLightbox
       :toggler="toggler"
       :slide="slide"
-      :sources="[
-        'http://camodigital.com.br/cdn/images/brasil-01.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-02.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-03.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-04.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-05.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-06.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-07.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-08.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-09.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-10.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-11.jpg',
-        'http://camodigital.com.br/cdn/images/brasil-12.jpg'
-      ]"
+      :sources="$t('apiPavilhao.galery')"
       type="image"
       :types="[
         'image',

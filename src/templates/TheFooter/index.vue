@@ -13,40 +13,35 @@
           <ul class="theFooter__nav__list">
             <li class="theFooter__nav__item">
               <router-link :to="`/${$i18n.locale}/`">
-                {{ $t("nav.home") }}
+                {{ $t("apiGeral.nav_home") }}
               </router-link>
             </li>
             <li class="theFooter__nav__item">
               <router-link :to="`/${$i18n.locale}/expodubai`">
-                {{ $t("nav.ExpoDubai") }}
+                {{ $t("apiGeral.nav_expodubai") }}
               </router-link>
             </li>
             <li class="theFooter__nav__item">
               <router-link :to="`/${$i18n.locale}/brazilexpo`">
-                {{ $t("nav.BrazilExpo") }}
+                {{ $t("apiGeral.nav_brazil") }}
               </router-link>
             </li>
             <li class="theFooter__nav__item">
               <router-link :to="`/${$i18n.locale}/pavilion`">
-                {{ $t("nav.pavilion") }}
+                {{ $t("apiGeral.nav_pavilion") }}
               </router-link>
             </li>
-            <!-- <li class="theFooter__nav__item">
-            <a href="#">
-              {{ $t("nav.news") }}
-            </a>
-            </li>-->
             <li class="theFooter__nav__item">
               <a
                 target="_blank"
                 href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=CEWR5Xs--Ea5jlHiOyklhsr0d7OZxXxHgC1aqdHQRlZUNzJKUlhNRTcwWlRPNkJRWlNCV1FLVjVWUy4u"
               >
-                <span>{{ $t("nav.participate") }}</span>
+                <span>{{ $t("apiGeral.nav_participate") }}</span>
               </a>
             </li>
             <li class="theFooter__nav__item">
               <router-link :to="`/${$i18n.locale}/contactus`">
-                {{ $t("nav.contactus") }}
+                {{ $t("apiGeral.nav_faq") }}
               </router-link>
             </li>
           </ul>
