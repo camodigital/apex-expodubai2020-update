@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://camodigital.com.br/cms/expodubai/wp-json/api/noticias";
+const url = "https://camoapi.com.br/wp-json/api/noticias";
 
 let apiNoticias = {
   news_title: "News",

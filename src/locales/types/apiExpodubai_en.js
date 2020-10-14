@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url =
-  "http://camodigital.com.br/cms/expodubai/wp-json/api/expodubai/o-que-e-a-expo-dubai";
+  "https://camoapi.com.br/wp-json/api/expodubai/o-que-e-a-expo-dubai";
 
 let apiExpodubai = {
   title: null,

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url =
-  "http://camodigital.com.br/cms/expodubai/wp-json/api/participe/participe";
+  "https://camoapi.com.br/wp-json/api/participe/participe";
 
 let apiParticipe = {
   title: null,

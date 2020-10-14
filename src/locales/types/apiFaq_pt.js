@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url =
-  "http://camodigital.com.br/cms/expodubai/wp-json/api/faq/perguntas-frequentes";
+  "https://camoapi.com.br/wp-json/api/faq/perguntas-frequentes";
 
 let apiFaq = {
   title: null,
