@@ -145,6 +145,9 @@ export default {
           this.$router.push({
             params: { lang: lang }
           });
+
+          document.documentElement.lang = "pt-BR";
+
           closeLangList();
         } else {
           closeLangList();
@@ -159,6 +162,9 @@ export default {
           this.$router.push({
             params: { lang: lang }
           });
+
+          document.documentElement.lang = "en";
+
           closeLangList();
         } else {
           closeLangList();
