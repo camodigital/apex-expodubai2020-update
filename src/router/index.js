@@ -28,23 +28,43 @@ const routes = [
         component: Home
       },
       {
-        path: "expodubai",
-        name: "ExpoDubai",
+        path: "o-que-e-a-expo-dubai",
+        name: "O que é a Expo Dubai",
         component: ExpoDubai
       },
       {
-        path: "brazilexpo",
-        name: "BrazilExpo",
+        path: "what-is-expo-dubai",
+        name: "What is expo dubai",
+        component: ExpoDubai
+      },
+      {
+        path: "o-brasil-na-expo",
+        name: "O Brasil na Expo",
         component: BrazilExpo
       },
       {
-        path: "pavilion",
-        name: "Pavilion",
+        path: "brazil-at-expo-dubai",
+        name: "Brazil at Expo Dubai",
+        component: BrazilExpo
+      },
+      {
+        path: "o-pavilhao-do-brasil",
+        name: "O Pavilhão do Brasil",
         component: Pavilion
       },
       {
-        path: "contactus",
-        name: "ContactUs",
+        path: "the-brazilian-pavilion",
+        name: "The Brazilian Pavilion",
+        component: Pavilion
+      },
+      {
+        path: "fale-conosco",
+        name: "Fale Conosco",
+        component: ContactUs
+      },
+      {
+        path: "contact-us",
+        name: "Contact Us",
         component: ContactUs
       }
     ]

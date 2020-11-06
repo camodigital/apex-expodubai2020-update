@@ -7,13 +7,19 @@ import apiParticipe from "@/locales/types/apiParticipe_en";
 import apiNoticias from "@/locales/types/apiNoticias_en";
 
 const en = {
+  routes: {
+    expodubai: "what-is-expo-dubai",
+    brazilexpo: "brazil-at-expo-dubai",
+    pavilion: "the-brazilian-pavilion",
+    contact: "contact-us"
+  },
   apiGeral,
   apiBrasil,
   apiExpodubai,
   apiPavilhao,
   apiFaq,
   apiParticipe,
-  apiNoticias
+  apiNoticias,
 };
 
 export default en;

@@ -26,17 +26,17 @@
             </router-link>
           </li>
           <li class="theNavigation__nav__item">
-            <router-link :to="`/${$i18n.locale}/expodubai`">
+            <router-link :to="`/${$i18n.locale}/${$t('routes.expodubai')}`">
               {{ $t("apiGeral.nav_expodubai") }}
             </router-link>
           </li>
           <li class="theNavigation__nav__item">
-            <router-link :to="`/${$i18n.locale}/brazilexpo`">
+            <router-link :to="`/${$i18n.locale}/${$t('routes.brazilexpo')}`">
               {{ $t("apiGeral.nav_brazil") }}
             </router-link>
           </li>
           <li class="theNavigation__nav__item">
-            <router-link :to="`/${$i18n.locale}/pavilion`">
+            <router-link :to="`/${$i18n.locale}/${$t('routes.pavilion')}`">
               {{ $t("apiGeral.nav_pavilion") }}
             </router-link>
           </li>
@@ -53,7 +53,7 @@
             </a>
           </li>
           <li class="theNavigation__nav__item">
-            <router-link :to="`/${$i18n.locale}/contactus`">
+            <router-link :to="`/${$i18n.locale}/${$t('routes.contact')}`">
               {{ $t("apiGeral.nav_faq") }}
             </router-link>
           </li>
