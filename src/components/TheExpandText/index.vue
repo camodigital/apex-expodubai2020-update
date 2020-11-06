@@ -8,11 +8,11 @@
           v-bind:key="item.title"
         >
           <div class="theExpandText__title">
-            <div v-html="item.faq_question"></div>
+            <div v-html="item.question"></div>
             <div class="ico"><ArrowDown /></div>
           </div>
           <div class="theExpandText__text">
-            <div v-html="item.faq_answer"></div>
+            <div v-html="item.answer"></div>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ import { TweenMax } from "gsap/all";
 export default {
   name: "TheExpandText",
   components: {
-    ArrowDown
+    ArrowDown,
   },
   methods: {
     handleAccordion() {
@@ -36,12 +36,12 @@ export default {
 
       TweenMax.set(texts, {
         height: 0,
-        opacity: 0
+        opacity: 0,
       });
 
       texts;
 
-      const handleClick = e => {
+      const handleClick = (e) => {
         const item = e.currentTarget;
         const title = item.querySelector(".theExpandText__title");
         const text = item.querySelector(".theExpandText__text div");
@@ -55,7 +55,7 @@ export default {
 
           TweenMax.to(text, 0.2, {
             height: 0,
-            opacity: 0
+            opacity: 0,
           });
         } else {
           item.classList.add("theExpandText__item__active");
@@ -64,19 +64,19 @@ export default {
 
           TweenMax.to(text, 0.2, {
             height: "auto",
-            opacity: 1
+            opacity: 1,
           });
         }
       };
 
-      items.forEach(item => {
+      items.forEach((item) => {
         item.addEventListener("click", handleClick);
       });
-    }
+    },
   },
   mounted() {
     this.handleAccordion();
-  }
+  },
 };
 </script>
 

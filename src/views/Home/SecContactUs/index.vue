@@ -2,7 +2,7 @@
   <div class="secContactUs">
     <div class="secContactUs__header">
       <h1 v-html="$t('apiFaq.title')" class="zTitleBigSpan"></h1>
-      <h2 v-html="$t('apiFaq.subtitle')"></h2>
+      <h2 v-html="$t('apiFaq.call')"></h2>
     </div>
     <div class="secContactUs__container">
       <div class="secContactUs__contact">
@@ -59,8 +59,8 @@ export default {
     TheButton,
     IcoFaq,
     TheForm,
-    TheWind
-  }
+    TheWind,
+  },
 };
 </script>
 

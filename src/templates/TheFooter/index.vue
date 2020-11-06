@@ -49,10 +49,10 @@
       </div>
       <div class="theFooter__col">
         <div class="theFooter__social">
-          <div
+          <!-- <div
             class="theFooter__social__title"
             v-html="$t('footer.titlesocial')"
-          ></div>
+          ></div> -->
           <a
             target="_blank"
             href="https://www.facebook.com/Expo2020Dubai/"
@@ -101,8 +101,8 @@ export default {
   components: {
     IcoFacebook,
     IcoInstagram,
-    IcoTwitter
-  }
+    IcoTwitter,
+  },
 };
 </script>
 

@@ -19,15 +19,15 @@ export default {
     return {
       actived: null,
       urlBase:
-        "http://camodigital.com.br/cms/expodubai/wp-json/api/geral/o-brasil-na-expo-dubai"
+        "https://camoapi.com.br/wp-json/api/geral/o-brasil-na-expo-dubai",
     };
   },
   components: {
-    buttonClose
+    buttonClose,
   },
   methods: {
     active() {
-      axios.get(this.urlBase).then(response => {
+      axios.get(this.urlBase).then((response) => {
         this.actived = response.data.active_popup;
 
         if (this.actived) {
@@ -39,11 +39,11 @@ export default {
     hide() {
       const popUp = document.querySelector(".thePopUp");
       popUp.classList.add("thePopUp__hide");
-    }
+    },
   },
   mounted() {
     this.active();
-  }
+  },
 };
 </script>
 

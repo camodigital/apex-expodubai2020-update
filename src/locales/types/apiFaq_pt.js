@@ -21,7 +21,24 @@ function getData() {
     apiFaq.title = response.data.title;
     apiFaq.call = response.data.call;
     apiFaq.title_faq = response.data.title_faq;
-    apiFaq.faq = response.data.faq;
+
+    // Get custom faq
+    const getFaq = () => {
+      const faqItems = response.data.faq;
+
+      const faqClean = faqItems.map(faq => {
+        const question = faq.faq_question;
+        const answer = faq.faq_answer;
+
+        return {
+          question,
+          answer
+        };
+      });
+
+      return faqClean;
+    };
+    apiFaq.faq = getFaq();
   });
 }
 getData();
