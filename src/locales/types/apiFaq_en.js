@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const url =
-  "https://camoapi.com.br/wp-json/api/faq/perguntas-frequentes";
+const url = "https://camoapi.com.br/wp-json/api/faq/perguntas-frequentes";
 
 let apiFaq = {
   title: null,

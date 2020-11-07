@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const url =
-  "https://camoapi.com.br/wp-json/api/brasil/o-brasil-na-expo-dubai";
+const url = "https://camoapi.com.br/wp-json/api/brasil/o-brasil-na-expo-dubai";
 
 let apiBrasil = {
   title: null,

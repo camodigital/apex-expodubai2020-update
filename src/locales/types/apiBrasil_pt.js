@@ -1,24 +1,23 @@
 import axios from "axios";
 
-const url =
-  "https://camoapi.com.br/wp-json/api/brasil/o-brasil-na-expo-dubai";
+const url = "https://camoapi.com.br/wp-json/api/brasil/o-brasil-na-expo-dubai";
 
 let apiBrasil = {
-  title: null,
-  call: null,
-  text: null,
-  photo: null,
-  video_title: null,
-  video_subtitle: null,
-  video: null,
-  title_sustainability: null,
-  text_sustainability: null,
-  goals_title: null,
-  goals: null,
-  history_title: null,
-  history_photo: null,
-  history_call: null,
-  history: null
+  title: "null",
+  call: "null",
+  text: "null",
+  photo: "null",
+  video_title: "null",
+  video_subtitle: "null",
+  video: "null",
+  title_sustainability: "null",
+  text_sustainability: "null",
+  goals_title: "null",
+  goals: "null",
+  history_title: "null",
+  history_photo: "null",
+  history_call: "null",
+  history: "null"
 };
 
 function getData() {
