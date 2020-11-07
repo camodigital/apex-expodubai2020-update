@@ -1,9 +1,11 @@
 <template>
-  <div id="app" v-if="data">
+  <div id="app">
     <Preloader />
-    <TheHeader />
-    <TheMain />
-    <TheFooter />
+    <div v-if="data">
+      <TheHeader />
+      <TheMain />
+      <TheFooter />
+    </div>
   </div>
 </template>
 
