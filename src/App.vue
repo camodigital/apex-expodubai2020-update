@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="geral">
     <Preloader />
     <div v-if="data">
       <TheHeader />
@@ -85,7 +85,8 @@ export default {
         )
         .catch(errors => {
           // react on errors.
-          console.error(errors);
+          // console.error(errors);
+          return errors;
         });
     }
   },

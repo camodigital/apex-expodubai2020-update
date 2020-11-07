@@ -68,6 +68,12 @@ const routes = [
         component: ContactUs
       }
     ]
+  },
+  {
+    path: "/(.*)",
+    redirect: to => {
+      return "/" + i18n.locale + to.path;
+    }
   }
 ];
 
