@@ -25,6 +25,44 @@ export default {
         separator: "-",
         complement: this.$i18n.t("head.brazilexpo.subtitle")
       };
+    },
+    // Meta tags
+    meta: function() {
+      return [
+        {
+          name: "application-name",
+          content: this.$i18n.t("head.brazilexpo.subtitle")
+        },
+        {
+          name: "description",
+          content: this.$i18n.t("head.brazilexpo.description"),
+          id: "desc"
+        }, // id to replace intead of create element
+        // ...
+        // Twitter
+        {
+          name: "twitter:title",
+          content: this.$i18n.t("head.brazilexpo.subtitle")
+        },
+        // with shorthand
+        {
+          n: `twitter:${this.$i18n.t("head.brazilexpo.subtitle")}`,
+          c: this.$i18n.t("head.brazilexpo.description")
+        },
+        // Facebook / Open Graph
+        { property: "fb:app_id", content: "1486431231600432" },
+        { property: "fb:admins", content: "1486431231600432" },
+        {
+          property: "og:title",
+          content: this.$i18n.t("head.brazilexpo.description")
+        },
+        // with shorthand
+        {
+          p: "og:image",
+          c: "https://brasilexpodubai2020.com/img/logo-color.aa7c60fc.png"
+        }
+        // ...
+      ];
     }
   },
   components: {
