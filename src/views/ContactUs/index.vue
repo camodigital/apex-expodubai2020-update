@@ -14,6 +14,15 @@ import { TweenMax } from "gsap/all";
 
 export default {
   name: "ConstactUsPage",
+  head: {
+    title: function() {
+      return {
+        inner: this.$i18n.t("head.contact.title"),
+        separator: "-",
+        complement: this.$i18n.t("head.contact.subtitle")
+      };
+    }
+  },
   components: {
     SecHeader,
     SecFAQ,

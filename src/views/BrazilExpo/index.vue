@@ -18,6 +18,15 @@ import { TweenMax } from "gsap/all";
 
 export default {
   name: "BrazilExpoPage",
+  head: {
+    title: function() {
+      return {
+        inner: this.$i18n.t("head.brazilexpo.title"),
+        separator: "-",
+        complement: this.$i18n.t("head.brazilexpo.subtitle")
+      };
+    }
+  },
   components: {
     SecDesc,
     SecVideo,

@@ -4,8 +4,11 @@ import router from "./router";
 import store from "./store";
 import i18n from "./i18n";
 import { TweenMax, TimelineMax, CSSPlugin } from "gsap/all";
+import VueHead from "vue-head";
 
 import "./assets/styles/main.sass";
+
+Vue.use(VueHead)
 
 Vue.config.productionTip = false;
 

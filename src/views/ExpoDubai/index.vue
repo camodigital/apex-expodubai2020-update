@@ -16,6 +16,15 @@ import { TweenMax } from "gsap/all";
 
 export default {
   name: "ExpoDubaiPage",
+  head: {
+    title: function() {
+      return {
+        inner: this.$i18n.t("head.expodubai.title"),
+        separator: "-",
+        complement: this.$i18n.t("head.expodubai.subtitle")
+      };
+    }
+  },
   components: {
     SecHeader,
     SecDesc,

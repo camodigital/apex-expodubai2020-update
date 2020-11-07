@@ -20,6 +20,15 @@ import { TweenMax } from "gsap/all";
 
 export default {
   name: "PavilionPage",
+  head: {
+    title: function() {
+      return {
+        inner: this.$i18n.t("head.pavilion.title"),
+        separator: "-",
+        complement: this.$i18n.t("head.pavilion.subtitle")
+      };
+    }
+  },
   components: {
     SecHeader,
     SecDesc,

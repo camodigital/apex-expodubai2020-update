@@ -26,6 +26,15 @@ import { TweenMax } from "gsap/all";
 
 export default {
   name: "HomePage",
+  head: {
+    title: function() {
+      return {
+        inner: this.$i18n.t("head.home.title"),
+        separator: "-",
+        complement: this.$i18n.t("head.home.subtitle")
+      };
+    }
+  },
   components: {
     SecIntro,
     SecExpoDubai,
@@ -38,6 +47,13 @@ export default {
     secContactUs
   },
   methods: {
+    setHeadInfo() {
+      if (this.$i18n.locale == "en") {
+        this.title = "ingles";
+      } else {
+        this.title = "portugues";
+      }
+    },
     toggleBodyClass(addRemoveClass, className) {
       const el = document.body;
 
@@ -57,6 +73,7 @@ export default {
   mounted() {
     this.hideLogoInHome();
     this.toggleBodyClass("addClass", "home");
+    this.setHeadInfo();
   },
   destroyed() {
     this.toggleBodyClass("removeClass", "home");
