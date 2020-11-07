@@ -5,10 +5,16 @@ import store from "./store";
 import i18n from "./i18n";
 import { TweenMax, TimelineMax, CSSPlugin } from "gsap/all";
 import VueHead from "vue-head";
+import VueAnalytics from "vue-analytics";
 
 import "./assets/styles/main.sass";
+//and then use it in main.js
+Vue.use(VueAnalytics, {
+  id: "G-29ZS3SZ52K",
+  router
+});
 
-Vue.use(VueHead)
+Vue.use(VueHead);
 
 Vue.config.productionTip = false;
 
